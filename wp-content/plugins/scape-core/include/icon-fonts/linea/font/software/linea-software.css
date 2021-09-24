@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "linea-software-10";
+  src:url("fonts/linea-software-10.eot");
+  src:url("fonts/linea-software-10.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-software-10.woff") format("woff"),
+    url("fonts/linea-software-10.ttf") format("truetype"),
+    url("fonts/linea-software-10.svg#linea-software-10") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "linea-software-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="scape-linea-software-"]:before,
+[class*=" scape-linea-software-"]:before {
+  font-family: "linea-software-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scape-linea-software-add-vectorpoint:before {
+  content: "a";
+}
+.scape-linea-software-box-oval:before {
+  content: "b";
+}
+.scape-linea-software-box-polygon:before {
+  content: "c";
+}
+.scape-linea-software-box-rectangle:before {
+  content: "d";
+}
+.scape-linea-software-box-roundedrectangle:before {
+  content: "e";
+}
+.scape-linea-software-character:before {
+  content: "f";
+}
+.scape-linea-software-crop:before {
+  content: "g";
+}
+.scape-linea-software-eyedropper:before {
+  content: "h";
+}
+.scape-linea-software-font-allcaps:before {
+  content: "i";
+}
+.scape-linea-software-font-baseline-shift:before {
+  content: "j";
+}
+.scape-linea-software-font-horizontal-scale:before {
+  content: "k";
+}
+.scape-linea-software-font-kerning:before {
+  content: "l";
+}
+.scape-linea-software-font-leading:before {
+  content: "m";
+}
+.scape-linea-software-font-size:before {
+  content: "n";
+}
+.scape-linea-software-font-smallcapital:before {
+  content: "o";
+}
+.scape-linea-software-font-smallcaps:before {
+  content: "p";
+}
+.scape-linea-software-font-strikethrough:before {
+  content: "q";
+}
+.scape-linea-software-font-tracking:before {
+  content: "r";
+}
+.scape-linea-software-font-underline:before {
+  content: "s";
+}
+.scape-linea-software-font-vertical-scale:before {
+  content: "t";
+}
+.scape-linea-software-horizontal-align-center:before {
+  content: "u";
+}
+.scape-linea-software-horizontal-align-left:before {
+  content: "v";
+}
+.scape-linea-software-horizontal-align-right:before {
+  content: "w";
+}
+.scape-linea-software-horizontal-distribute-center:before {
+  content: "x";
+}
+.scape-linea-software-horizontal-distribute-left:before {
+  content: "y";
+}
+.scape-linea-software-horizontal-distribute-right:before {
+  content: "z";
+}
+.scape-linea-software-indent-firstline:before {
+  content: "A";
+}
+.scape-linea-software-indent-left:before {
+  content: "B";
+}
+.scape-linea-software-indent-right:before {
+  content: "C";
+}
+.scape-linea-software-lasso:before {
+  content: "D";
+}
+.scape-linea-software-layers1:before {
+  content: "E";
+}
+.scape-linea-software-layers2:before {
+  content: "F";
+}
+.scape-linea-software-layout:before {
+  content: "G";
+}
+.scape-linea-software-layout-2columns:before {
+  content: "H";
+}
+.scape-linea-software-layout-3columns:before {
+  content: "I";
+}
+.scape-linea-software-layout-4boxes:before {
+  content: "J";
+}
+.scape-linea-software-layout-4columns:before {
+  content: "K";
+}
+.scape-linea-software-layout-4lines:before {
+  content: "L";
+}
+.scape-linea-software-layout-8boxes:before {
+  content: "M";
+}
+.scape-linea-software-layout-header:before {
+  content: "N";
+}
+.scape-linea-software-layout-header-2columns:before {
+  content: "O";
+}
+.scape-linea-software-layout-header-3columns:before {
+  content: "P";
+}
+.scape-linea-software-layout-header-4boxes:before {
+  content: "Q";
+}
+.scape-linea-software-layout-header-4columns:before {
+  content: "R";
+}
+.scape-linea-software-layout-header-complex:before {
+  content: "S";
+}
+.scape-linea-software-layout-header-complex2:before {
+  content: "T";
+}
+.scape-linea-software-layout-header-complex3:before {
+  content: "U";
+}
+.scape-linea-software-layout-header-complex4:before {
+  content: "V";
+}
+.scape-linea-software-layout-header-sideleft:before {
+  content: "W";
+}
+.scape-linea-software-layout-header-sideright:before {
+  content: "X";
+}
+.scape-linea-software-layout-sidebar-left:before {
+  content: "Y";
+}
+.scape-linea-software-layout-sidebar-right:before {
+  content: "Z";
+}
+.scape-linea-software-magnete:before {
+  content: "0";
+}
+.scape-linea-software-pages:before {
+  content: "1";
+}
+.scape-linea-software-paintbrush:before {
+  content: "2";
+}
+.scape-linea-software-paintbucket:before {
+  content: "3";
+}
+.scape-linea-software-paintroller:before {
+  content: "4";
+}
+.scape-linea-software-paragraph:before {
+  content: "5";
+}
+.scape-linea-software-paragraph-align-left:before {
+  content: "6";
+}
+.scape-linea-software-paragraph-align-right:before {
+  content: "7";
+}
+.scape-linea-software-paragraph-center:before {
+  content: "8";
+}
+.scape-linea-software-paragraph-justify-all:before {
+  content: "9";
+}
+.scape-linea-software-paragraph-justify-center:before {
+  content: "!";
+}
+.scape-linea-software-paragraph-justify-left:before {
+  content: "\"";
+}
+.scape-linea-software-paragraph-justify-right:before {
+  content: "#";
+}
+.scape-linea-software-paragraph-space-after:before {
+  content: "$";
+}
+.scape-linea-software-paragraph-space-before:before {
+  content: "%";
+}
+.scape-linea-software-pathfinder-exclude:before {
+  content: "&";
+}
+.scape-linea-software-pathfinder-intersect:before {
+  content: "'";
+}
+.scape-linea-software-pathfinder-subtract:before {
+  content: "(";
+}
+.scape-linea-software-pathfinder-unite:before {
+  content: ")";
+}
+.scape-linea-software-pen:before {
+  content: "*";
+}
+.scape-linea-software-pen-add:before {
+  content: "+";
+}
+.scape-linea-software-pen-remove:before {
+  content: ",";
+}
+.scape-linea-software-pencil:before {
+  content: "-";
+}
+.scape-linea-software-polygonallasso:before {
+  content: ".";
+}
+.scape-linea-software-reflect-horizontal:before {
+  content: "/";
+}
+.scape-linea-software-reflect-vertical:before {
+  content: ":";
+}
+.scape-linea-software-remove-vectorpoint:before {
+  content: ";";
+}
+.scape-linea-software-scale-expand:before {
+  content: "<";
+}
+.scape-linea-software-scale-reduce:before {
+  content: "=";
+}
+.scape-linea-software-selection-oval:before {
+  content: ">";
+}
+.scape-linea-software-selection-polygon:before {
+  content: "?";
+}
+.scape-linea-software-selection-rectangle:before {
+  content: "@";
+}
+.scape-linea-software-selection-roundedrectangle:before {
+  content: "[";
+}
+.scape-linea-software-shape-oval:before {
+  content: "]";
+}
+.scape-linea-software-shape-polygon:before {
+  content: "^";
+}
+.scape-linea-software-shape-rectangle:before {
+  content: "_";
+}
+.scape-linea-software-shape-roundedrectangle:before {
+  content: "`";
+}
+.scape-linea-software-slice:before {
+  content: "{";
+}
+.scape-linea-software-transform-bezier:before {
+  content: "|";
+}
+.scape-linea-software-vector-box:before {
+  content: "}";
+}
+.scape-linea-software-vector-composite:before {
+  content: "~";
+}
+.scape-linea-software-vector-line:before {
+  content: "\\";
+}
+.scape-linea-software-vertical-align-bottom:before {
+  content: "\e000";
+}
+.scape-linea-software-vertical-align-center:before {
+  content: "\e001";
+}
+.scape-linea-software-vertical-align-top:before {
+  content: "\e002";
+}
+.scape-linea-software-vertical-distribute-bottom:before {
+  content: "\e003";
+}
+.scape-linea-software-vertical-distribute-center:before {
+  content: "\e004";
+}
+.scape-linea-software-vertical-distribute-top:before {
+  content: "\e005";
+}

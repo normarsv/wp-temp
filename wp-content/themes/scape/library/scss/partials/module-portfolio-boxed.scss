@@ -1,0 +1,113 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   BOXED LAYOUT
+/*---------------------------------------------------------------*/
+
+.portfolio-boxed {
+	padding: 0;
+
+	.wtbx-grid-boxed {
+		overflow: visible !important;
+		max-width: none;
+	}
+
+	&.full-width {
+
+		#content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		& + .page-links .row-inner {
+			max-width: none;
+		}
+
+		.wtbx-grid.row-inner {
+			max-width: none;
+		}
+	}
+
+	article.portfolio-entry {
+		margin: 0;
+		@include translate3d(0,0,0);
+
+		&:hover {
+			z-index: 2;
+
+			.portfolio-boxed-overlay {
+				opacity: 1;
+			}
+		}
+
+		&.content-icon {
+			.portfolio-boxed-content,
+			.portfolio-boxed-content:hover {
+				background: none !important;
+				top: 50% !important;
+				left: 50% !important;
+				bottom: auto !important;
+				right: auto !important;
+				width: auto !important;
+				height: auto !important;
+				padding: 0 !important;
+				@include translate3d(-50%,-50%,0 !important);
+			}
+		}
+
+		.portfolio-boxed-inner {
+			position: relative;
+			overflow: hidden;
+			box-shadow: $bs4-light;
+			//@include transition(all .3s $cb6);
+
+			&:hover {
+				box-shadow: $bs4h-dark;
+
+				.post-like a {
+					opacity: .6;
+					box-shadow: $bs2-light;
+
+					.like-count {
+						margin: 0;
+					}
+				}
+			}
+
+			.portfolio-boxed-media {
+
+				.portfolio-thumb-inner {
+					position: relative;
+
+					.portfolio-thumbnail {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.wtbx_vc_portfolio_grid.wtbx_meta_skin_dark {
+
+	article.portfolio-entry {
+		.portfolio-boxed-inner {
+			//box-shadow: 0 10px 20px -5px rgba(0,0,0,0.6);
+			box-shadow: 0 15px 55px -5px rgba(0,0,0,.2);
+
+			&:hover {
+				//box-shadow:  0 35px 40px -20px rgba(0,0,0,0.8);
+				box-shadow: 0 20px 70px -10px rgba(0,0,0,.4);
+			}
+		}
+	}
+}

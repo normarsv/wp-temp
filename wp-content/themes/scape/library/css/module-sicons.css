@@ -1,0 +1,1447 @@
+/*=====================*/
+/* CUBIC BEZIER CURVES */
+/*=====================*/
+/*
+* Social Icons
+*/
+.wtbx_vc_social_icons .wtbx_vc_el_container {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block;
+  -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg) !important;
+  -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg) !important;
+  -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg) !important;
+  -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg) !important;
+  -webkit-transform: -webkit-translate3d(0, 0, 0) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg) !important;
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotate3d(0, 0, 0, 0deg) !important;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon {
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon:last-child {
+  margin-right: 0;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon a {
+  width: inherit;
+  height: inherit;
+  line-height: inherit;
+  display: block;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon a i {
+  line-height: inherit;
+  padding: 0 1px;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_1 {
+  font-size: 12px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_2 {
+  font-size: 14px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_3 {
+  font-size: 16px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_4 {
+  font-size: 18px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_5 {
+  font-size: 20px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_6 {
+  font-size: 22px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_7 {
+  font-size: 24px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_8 {
+  font-size: 26px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_9 {
+  font-size: 28px;
+}
+
+.wtbx_vc_social_icons .wtbx_social_icons_wrapper .wtbx_social_icon.wtbx_size_10 {
+  font-size: 30px;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-behance,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-behance,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-behance,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-behance,
+.wtbx_vc_social_icons .behance a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .behance a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .behance a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .behance a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .behance a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .behance a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .behance a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-behance,
+.wtbx_vc_social_icons .behance a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-behance,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-behance,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-behance {
+  color: #1769ff;
+}
+
+.wtbx_vc_social_icons .behance a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .behance a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .behance a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .behance a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .behance a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .behance a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .behance a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .behance a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #1769ff;
+}
+
+.wtbx_vc_social_icons .behance a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #0050e3;
+}
+
+.wtbx_vc_social_icons .behance a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #b0ccff;
+}
+
+.wtbx_vc_social_icons .behance a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .behance a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .behance a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #3179ff;
+}
+
+.wtbx_vc_social_icons .behance a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #1769ff;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-codepen,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-codepen,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-codepen,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-codepen,
+.wtbx_vc_social_icons .codepen a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .codepen a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .codepen a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .codepen a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .codepen a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .codepen a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .codepen a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-codepen,
+.wtbx_vc_social_icons .codepen a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-codepen,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-codepen,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-codepen {
+  color: #000;
+}
+
+.wtbx_vc_social_icons .codepen a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .codepen a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .codepen a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .codepen a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .codepen a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .codepen a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .codepen a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .codepen a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #000;
+}
+
+.wtbx_vc_social_icons .codepen a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: black;
+}
+
+.wtbx_vc_social_icons .codepen a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #4d4d4d;
+}
+
+.wtbx_vc_social_icons .codepen a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .codepen a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .codepen a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0d0d0d;
+}
+
+.wtbx_vc_social_icons .codepen a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #000;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-dribbble,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-dribbble,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-dribbble,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-dribbble,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-dribbble,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-dribbble,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-dribbble,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-dribbble {
+  color: #ea4c89;
+}
+
+.wtbx_vc_social_icons .dribbble a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .dribbble a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .dribbble a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #ea4c89;
+}
+
+.wtbx_vc_social_icons .dribbble a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #e51e6b;
+}
+
+.wtbx_vc_social_icons .dribbble a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #fad5e3;
+}
+
+.wtbx_vc_social_icons .dribbble a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .dribbble a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #ed6398;
+}
+
+.wtbx_vc_social_icons .dribbble a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #ea4c89;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-facebook,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-facebook,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-facebook,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-facebook,
+.wtbx_vc_social_icons .facebook a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .facebook a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .facebook a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .facebook a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .facebook a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .facebook a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .facebook a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-facebook,
+.wtbx_vc_social_icons .facebook a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-facebook,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-facebook,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-facebook {
+  color: #3b5998;
+}
+
+.wtbx_vc_social_icons .facebook a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .facebook a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .facebook a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .facebook a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .facebook a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .facebook a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .facebook a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .facebook a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #3b5998;
+}
+
+.wtbx_vc_social_icons .facebook a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #2d4373;
+}
+
+.wtbx_vc_social_icons .facebook a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #96abd6;
+}
+
+.wtbx_vc_social_icons .facebook a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .facebook a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .facebook a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #4264aa;
+}
+
+.wtbx_vc_social_icons .facebook a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #3b5998;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-flickr,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-flickr,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-flickr,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-flickr,
+.wtbx_vc_social_icons .flickr a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .flickr a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .flickr a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .flickr a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .flickr a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .flickr a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .flickr a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-flickr,
+.wtbx_vc_social_icons .flickr a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-flickr,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-flickr,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-flickr {
+  color: #0063dc;
+}
+
+.wtbx_vc_social_icons .flickr a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .flickr a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .flickr a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .flickr a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .flickr a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .flickr a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .flickr a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .flickr a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0063dc;
+}
+
+.wtbx_vc_social_icons .flickr a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #004ca9;
+}
+
+.wtbx_vc_social_icons .flickr a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #76b4ff;
+}
+
+.wtbx_vc_social_icons .flickr a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .flickr a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .flickr a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #006ef6;
+}
+
+.wtbx_vc_social_icons .flickr a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #0063dc;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-foursquare,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-foursquare,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-foursquare,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-foursquare,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-foursquare,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-foursquare,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-foursquare,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-foursquare {
+  color: #f94877;
+}
+
+.wtbx_vc_social_icons .foursquare a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .foursquare a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .foursquare a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #f94877;
+}
+
+.wtbx_vc_social_icons .foursquare a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #f71752;
+}
+
+.wtbx_vc_social_icons .foursquare a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #fedce5;
+}
+
+.wtbx_vc_social_icons .foursquare a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .foursquare a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #fa6189;
+}
+
+.wtbx_vc_social_icons .foursquare a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #f94877;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-github,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-github,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-github,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-github,
+.wtbx_vc_social_icons .github a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .github a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .github a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .github a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .github a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .github a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .github a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-github,
+.wtbx_vc_social_icons .github a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-github,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-github,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-github {
+  color: #4078c0;
+}
+
+.wtbx_vc_social_icons .github a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .github a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .github a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .github a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .github a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .github a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .github a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .github a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #4078c0;
+}
+
+.wtbx_vc_social_icons .github a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #33609a;
+}
+
+.wtbx_vc_social_icons .github a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #b3c9e6;
+}
+
+.wtbx_vc_social_icons .github a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .github a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .github a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #5386c6;
+}
+
+.wtbx_vc_social_icons .github a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #4078c0;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-google-plus,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-google-plus,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-google-plus,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-google-plus,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-google-plus,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-google-plus,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-google-plus,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-google-plus {
+  color: #dd4b39;
+}
+
+.wtbx_vc_social_icons .google-plus a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .google-plus a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .google-plus a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #dd4b39;
+}
+
+.wtbx_vc_social_icons .google-plus a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #c23321;
+}
+
+.wtbx_vc_social_icons .google-plus a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #f3c2bc;
+}
+
+.wtbx_vc_social_icons .google-plus a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .google-plus a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #e15f4f;
+}
+
+.wtbx_vc_social_icons .google-plus a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #dd4b39;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-instagram,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-instagram,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-instagram,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-instagram,
+.wtbx_vc_social_icons .instagram a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .instagram a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .instagram a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .instagram a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .instagram a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .instagram a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .instagram a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-instagram,
+.wtbx_vc_social_icons .instagram a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-instagram,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-instagram,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-instagram {
+  color: #e1306c;
+}
+
+.wtbx_vc_social_icons .instagram a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .instagram a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .instagram a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .instagram a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .instagram a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .instagram a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .instagram a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .instagram a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #e1306c;
+}
+
+.wtbx_vc_social_icons .instagram a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #c21c54;
+}
+
+.wtbx_vc_social_icons .instagram a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #f4b6cb;
+}
+
+.wtbx_vc_social_icons .instagram a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .instagram a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .instagram a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #e4467c;
+}
+
+.wtbx_vc_social_icons .instagram a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #e1306c;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-linkedin,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-linkedin,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-linkedin,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-linkedin,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-linkedin,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-linkedin,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-linkedin,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-linkedin {
+  color: #0077b5;
+}
+
+.wtbx_vc_social_icons .linkedin a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .linkedin a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .linkedin a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0077b5;
+}
+
+.wtbx_vc_social_icons .linkedin a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #005582;
+}
+
+.wtbx_vc_social_icons .linkedin a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #4fc3ff;
+}
+
+.wtbx_vc_social_icons .linkedin a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .linkedin a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0088cf;
+}
+
+.wtbx_vc_social_icons .linkedin a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #0077b5;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-medium,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-medium,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-medium,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-medium,
+.wtbx_vc_social_icons .medium a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .medium a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .medium a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .medium a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .medium a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .medium a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .medium a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-medium,
+.wtbx_vc_social_icons .medium a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-medium,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-medium,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-medium {
+  color: #000;
+}
+
+.wtbx_vc_social_icons .medium a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .medium a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .medium a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .medium a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .medium a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .medium a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .medium a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .medium a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #000;
+}
+
+.wtbx_vc_social_icons .medium a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: black;
+}
+
+.wtbx_vc_social_icons .medium a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #4d4d4d;
+}
+
+.wtbx_vc_social_icons .medium a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .medium a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .medium a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0d0d0d;
+}
+
+.wtbx_vc_social_icons .medium a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #000;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-pinterest,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-pinterest,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-pinterest,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-pinterest,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-pinterest,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-pinterest,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-pinterest,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-pinterest {
+  color: #bd081c;
+}
+
+.wtbx_vc_social_icons .pinterest a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .pinterest a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .pinterest a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #bd081c;
+}
+
+.wtbx_vc_social_icons .pinterest a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #8c0615;
+}
+
+.wtbx_vc_social_icons .pinterest a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #f96576;
+}
+
+.wtbx_vc_social_icons .pinterest a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .pinterest a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #d50920;
+}
+
+.wtbx_vc_social_icons .pinterest a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #bd081c;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-rss,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-rss,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-rss,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-rss,
+.wtbx_vc_social_icons .rss a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .rss a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .rss a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .rss a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .rss a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .rss a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .rss a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-rss,
+.wtbx_vc_social_icons .rss a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-rss,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-rss,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-rss {
+  color: #f26522;
+}
+
+.wtbx_vc_social_icons .rss a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .rss a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .rss a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .rss a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .rss a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .rss a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .rss a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .rss a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #f26522;
+}
+
+.wtbx_vc_social_icons .rss a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #d54d0d;
+}
+
+.wtbx_vc_social_icons .rss a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #fbcab3;
+}
+
+.wtbx_vc_social_icons .rss a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .rss a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .rss a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #f3763a;
+}
+
+.wtbx_vc_social_icons .rss a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #f26522;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-skype,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-skype,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-skype,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-skype,
+.wtbx_vc_social_icons .skype a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .skype a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .skype a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .skype a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .skype a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .skype a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .skype a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-skype,
+.wtbx_vc_social_icons .skype a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-skype,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-skype,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-skype {
+  color: #00aff0;
+}
+
+.wtbx_vc_social_icons .skype a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .skype a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .skype a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .skype a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .skype a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .skype a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .skype a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .skype a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #00aff0;
+}
+
+.wtbx_vc_social_icons .skype a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #008abd;
+}
+
+.wtbx_vc_social_icons .skype a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #8adfff;
+}
+
+.wtbx_vc_social_icons .skype a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .skype a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .skype a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0bbdff;
+}
+
+.wtbx_vc_social_icons .skype a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #00aff0;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-snapchat,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-snapchat,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-snapchat,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-snapchat,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-snapchat,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-snapchat,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-snapchat,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-snapchat {
+  color: #fffc00;
+}
+
+.wtbx_vc_social_icons .snapchat a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .snapchat a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .snapchat a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #fffc00;
+}
+
+.wtbx_vc_social_icons .snapchat a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #ccca00;
+}
+
+.wtbx_vc_social_icons .snapchat a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #fffe99;
+}
+
+.wtbx_vc_social_icons .snapchat a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .snapchat a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #fffc1a;
+}
+
+.wtbx_vc_social_icons .snapchat a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #fffc00;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-soundcloud,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-soundcloud,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-soundcloud,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-soundcloud,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-soundcloud,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-soundcloud,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-soundcloud,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-soundcloud {
+  color: #ff8800;
+}
+
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #ff8800;
+}
+
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #cc6d00;
+}
+
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #ffcf99;
+}
+
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #ff941a;
+}
+
+.wtbx_vc_social_icons .soundcloud a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #ff8800;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-telegram,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-telegram,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-telegram,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-telegram,
+.wtbx_vc_social_icons .telegram a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .telegram a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .telegram a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .telegram a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .telegram a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .telegram a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .telegram a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-telegram,
+.wtbx_vc_social_icons .telegram a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-telegram,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-telegram,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-telegram {
+  color: #0088cc;
+}
+
+.wtbx_vc_social_icons .telegram a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .telegram a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .telegram a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .telegram a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .telegram a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .telegram a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .telegram a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .telegram a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0088cc;
+}
+
+.wtbx_vc_social_icons .telegram a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #006699;
+}
+
+.wtbx_vc_social_icons .telegram a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #66ccff;
+}
+
+.wtbx_vc_social_icons .telegram a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .telegram a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .telegram a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0099e6;
+}
+
+.wtbx_vc_social_icons .telegram a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #0088cc;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-tiktok,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-tiktok,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-tiktok,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-tiktok,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-tiktok,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-tiktok,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-tiktok,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-tiktok {
+  color: #010101;
+}
+
+.wtbx_vc_social_icons .tiktok a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .tiktok a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .tiktok a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #010101;
+}
+
+.wtbx_vc_social_icons .tiktok a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: black;
+}
+
+.wtbx_vc_social_icons .tiktok a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #4e4e4e;
+}
+
+.wtbx_vc_social_icons .tiktok a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tiktok a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #0e0e0e;
+}
+
+.wtbx_vc_social_icons .tiktok a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #010101;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-tumblr,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-tumblr,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-tumblr,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-tumblr,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-tumblr,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-tumblr,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-tumblr,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-tumblr {
+  color: #35465c;
+}
+
+.wtbx_vc_social_icons .tumblr a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .tumblr a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .tumblr a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #35465c;
+}
+
+.wtbx_vc_social_icons .tumblr a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #222d3c;
+}
+
+.wtbx_vc_social_icons .tumblr a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #7891b2;
+}
+
+.wtbx_vc_social_icons .tumblr a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .tumblr a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #3e526c;
+}
+
+.wtbx_vc_social_icons .tumblr a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #35465c;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-twitter,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-twitter,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-twitter,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-twitter,
+.wtbx_vc_social_icons .twitter a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .twitter a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .twitter a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .twitter a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .twitter a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .twitter a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .twitter a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-twitter,
+.wtbx_vc_social_icons .twitter a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-twitter,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-twitter,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-twitter {
+  color: #1da1f2;
+}
+
+.wtbx_vc_social_icons .twitter a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .twitter a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .twitter a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .twitter a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .twitter a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .twitter a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .twitter a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .twitter a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #1da1f2;
+}
+
+.wtbx_vc_social_icons .twitter a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #0c85d0;
+}
+
+.wtbx_vc_social_icons .twitter a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #aeddfa;
+}
+
+.wtbx_vc_social_icons .twitter a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .twitter a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .twitter a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #35abf3;
+}
+
+.wtbx_vc_social_icons .twitter a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #1da1f2;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-vimeo,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-vimeo,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-vimeo,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-vimeo,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-vimeo,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-vimeo,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-vimeo,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-vimeo {
+  color: #1ab7ea;
+}
+
+.wtbx_vc_social_icons .vimeo a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .vimeo a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .vimeo a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #1ab7ea;
+}
+
+.wtbx_vc_social_icons .vimeo a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #1295bf;
+}
+
+.wtbx_vc_social_icons .vimeo a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #a6e3f7;
+}
+
+.wtbx_vc_social_icons .vimeo a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vimeo a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #31beec;
+}
+
+.wtbx_vc_social_icons .vimeo a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #1ab7ea;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-vk,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-vk,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-vk,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-vk,
+.wtbx_vc_social_icons .vk a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .vk a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .vk a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .vk a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .vk a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .vk a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .vk a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-vk,
+.wtbx_vc_social_icons .vk a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-vk,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-vk,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-vk {
+  color: #45668e;
+}
+
+.wtbx_vc_social_icons .vk a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .vk a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vk a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .vk a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vk a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .vk a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .vk a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .vk a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #45668e;
+}
+
+.wtbx_vc_social_icons .vk a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #344d6c;
+}
+
+.wtbx_vc_social_icons .vk a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #9db4cf;
+}
+
+.wtbx_vc_social_icons .vk a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vk a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .vk a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #4d729f;
+}
+
+.wtbx_vc_social_icons .vk a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #45668e;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-yelp,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-yelp,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-yelp,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-yelp,
+.wtbx_vc_social_icons .yelp a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .yelp a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .yelp a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .yelp a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .yelp a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .yelp a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .yelp a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-yelp,
+.wtbx_vc_social_icons .yelp a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-yelp,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-yelp,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-yelp {
+  color: #af0606;
+}
+
+.wtbx_vc_social_icons .yelp a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .yelp a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .yelp a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .yelp a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .yelp a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .yelp a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .yelp a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .yelp a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #af0606;
+}
+
+.wtbx_vc_social_icons .yelp a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #7e0404;
+}
+
+.wtbx_vc_social_icons .yelp a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #f95555;
+}
+
+.wtbx_vc_social_icons .yelp a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .yelp a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .yelp a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #c80707;
+}
+
+.wtbx_vc_social_icons .yelp a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #af0606;
+}
+
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_default_branded:not(:hover) .scape-ui-youtube,
+.wtbx_vc_social_icons a.wtbx_style_1.wtbx_hover_branded:hover .scape-ui-youtube,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_default_branded:not(:hover) .scape-ui-youtube,
+.wtbx_vc_social_icons a.wtbx_style_2.wtbx_hover_branded:hover .scape-ui-youtube,
+.wtbx_vc_social_icons .youtube a.wtbx_style_3.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .youtube a.wtbx_style_3.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .youtube a.wtbx_style_4.wtbx_default_branded:not(:hover) i,
+.wtbx_vc_social_icons .youtube a.wtbx_style_4.wtbx_hover_branded:hover i,
+.wtbx_vc_social_icons .youtube a.wtbx_style_5.wtbx_default_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .youtube a.wtbx_style_5.wtbx_hover_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .youtube a.wtbx_style_6.wtbx_default_branded:not(:hover) .scape-ui-youtube,
+.wtbx_vc_social_icons .youtube a.wtbx_style_6.wtbx_hover_branded:hover .scape-ui-youtube,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_default_branded .wtbx_social_icon_front.scape-ui-youtube,
+.wtbx_vc_social_icons a.wtbx_style_7.wtbx_hover_branded .wtbx_social_icon_back.scape-ui-youtube {
+  color: #cd201f;
+}
+
+.wtbx_vc_social_icons .youtube a.wtbx_style_3.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .youtube a.wtbx_style_3.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .youtube a.wtbx_style_4.wtbx_default_bg_branded:not(:hover),
+.wtbx_vc_social_icons .youtube a.wtbx_style_4.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .youtube a.wtbx_style_5.wtbx_default_bg_branded .wtbx_social_icon_front,
+.wtbx_vc_social_icons .youtube a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back,
+.wtbx_vc_social_icons .youtube a.wtbx_style_6.wtbx_hover_bg_branded:before,
+.wtbx_vc_social_icons .youtube a.wtbx_style_7.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #cd201f;
+}
+
+.wtbx_vc_social_icons .youtube a.wtbx_style_5.wtbx_default_branded.wtbx_default_branded:hover .wtbx_social_icon_front {
+  background-color: #a11918;
+}
+
+.wtbx_vc_social_icons .youtube a.wtbx_style_3.wtbx_hover_bg_branded:hover {
+  box-shadow: 0 10px 45px -5px #ef9696;
+}
+
+.wtbx_vc_social_icons .youtube a.wtbx_style_3.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .youtube a.wtbx_style_4.wtbx_default_bg_branded.wtbx_hover_bg_branded:hover,
+.wtbx_vc_social_icons .youtube a.wtbx_style_5.wtbx_hover_bg_branded .wtbx_social_icon_back {
+  background-color: #de2827;
+}
+
+.wtbx_vc_social_icons .youtube a.wtbx_style_7.wtbx_default_bg_branded {
+  border-color: #cd201f;
+}
+
+.wtbx_vc_social_icons.wtbx_style_1 .wtbx_social_icon {
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+}
+
+.wtbx_vc_social_icons.wtbx_style_2 a {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.wtbx_vc_social_icons.wtbx_style_2 a i {
+  position: relative;
+  top: -1px;
+}
+
+.wtbx_vc_social_icons.wtbx_style_2 a:hover {
+  border-color: transparent;
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.15);
+}
+
+.wtbx_vc_social_icons.wtbx_style_2 .wtbx_size_7 a:hover,
+.wtbx_vc_social_icons.wtbx_style_2 .wtbx_size_8 a:hover,
+.wtbx_vc_social_icons.wtbx_style_2 .wtbx_size_9 a:hover,
+.wtbx_vc_social_icons.wtbx_style_2 .wtbx_size_10 a:hover {
+  box-shadow: 0 15px 60px -10px rgba(9, 31, 67, 0.3);
+}
+
+.wtbx_vc_social_icons.wtbx_style_3 a {
+  border-radius: 50%;
+}
+
+.wtbx_vc_social_icons.wtbx_style_3 a i {
+  color: #fff;
+}
+
+.wtbx_vc_social_icons.wtbx_style_4 a {
+  border-radius: 6px;
+}
+
+.wtbx_vc_social_icons.wtbx_style_4 a i {
+  color: #fff;
+}
+
+.wtbx_vc_social_icons.wtbx_style_4 a:hover {
+  box-shadow: 0 5px 25px -4px rgba(9, 31, 67, 0.15);
+  -moz-transform: translate3d(0, -10%, 0);
+  -o-transform: translate3d(0, -10%, 0);
+  -ms-transform: translate3d(0, -10%, 0);
+  -webkit-transform: translate3d(0, -10%, 0);
+  -webkit-transform: -webkit-translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
+}
+
+.wtbx_vc_social_icons.wtbx_style_4 .wtbx_size_7 a:hover,
+.wtbx_vc_social_icons.wtbx_style_4 .wtbx_size_8 a:hover,
+.wtbx_vc_social_icons.wtbx_style_4 .wtbx_size_9 a:hover,
+.wtbx_vc_social_icons.wtbx_style_4 .wtbx_size_10 a:hover {
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.15);
+}
+
+.wtbx_vc_social_icons.wtbx_style_5 li {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-transform-origin: 1000px;
+  perspective: 1000px;
+}
+
+.wtbx_vc_social_icons.wtbx_style_5 a {
+  transform-style: preserve-3d;
+  z-index: 1;
+  moz-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.wtbx_vc_social_icons.wtbx_style_5 a .wtbx_social_icon_front {
+  moz-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -moz-transform: translate3d(0, 0, 2.5em);
+  -o-transform: translate3d(0, 0, 2.5em);
+  -ms-transform: translate3d(0, 0, 2.5em);
+  -webkit-transform: translate3d(0, 0, 2.5em);
+  -webkit-transform: -webkit-translate3d(0, 0, 2.5em);
+  transform: translate3d(0, 0, 2.5em);
+}
+
+.wtbx_vc_social_icons.wtbx_style_5 a .wtbx_social_icon_back {
+  moz-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -moz-transform: translate3d(0, 0, 0px) rotate3d(1, 0, 0, -90deg);
+  -o-transform: translate3d(0, 0, 0px) rotate3d(1, 0, 0, -90deg);
+  -ms-transform: translate3d(0, 0, 0px) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform: translate3d(0, 0, 0px) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform: -webkit-translate3d(0, 0, 0px) rotate3d(1, 0, 0, -90deg);
+  transform: translate3d(0, 0, 0px) rotate3d(1, 0, 0, -90deg);
+}
+
+.wtbx_vc_social_icons.wtbx_style_5 a:hover {
+  -moz-transform: translate3d(0, 50%, 0px) rotate3d(1, 0, 0, 90deg);
+  -o-transform: translate3d(0, 50%, 0px) rotate3d(1, 0, 0, 90deg);
+  -ms-transform: translate3d(0, 50%, 0px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform: translate3d(0, 50%, 0px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform: -webkit-translate3d(0, 50%, 0px) rotate3d(1, 0, 0, 90deg);
+  transform: translate3d(0, 50%, 0px) rotate3d(1, 0, 0, 90deg);
+}
+
+.wtbx_vc_social_icons.wtbx_style_5 a i {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+.wtbx_vc_social_icons.wtbx_style_6 a {
+  position: relative;
+  border-radius: 50%;
+}
+
+.wtbx_vc_social_icons.wtbx_style_6 a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 50%;
+  -moz-transform: scale3d(1.2, 1.2, 1);
+  -o-transform: scale3d(1.2, 1.2, 1);
+  -ms-transform: scale3d(1.2, 1.2, 1);
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  -webkit-transform: -webkit-scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_social_icons.wtbx_style_6 a i {
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_social_icons.wtbx_style_6 a:hover:before {
+  opacity: 1;
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  -webkit-transform: -webkit-scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.wtbx_vc_social_icons.wtbx_style_6 a:hover i {
+  color: #fff;
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a {
+  position: relative;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a .wtbx_social_icon_front {
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a .wtbx_social_icon_back {
+  color: #fff;
+  -moz-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -webkit-transform: -webkit-translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a:hover {
+  border-color: transparent !important;
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a:hover .wtbx_social_icon_front {
+  -moz-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -webkit-transform: -webkit-translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a:hover .wtbx_social_icon_back {
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wtbx_vc_social_icons.wtbx_style_7 a i {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+}

@@ -1,0 +1,545 @@
+@mixin transition($transition...) {
+	// defining prefixes so we can use them in mixins below
+	$prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-" );
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $transition;
+	}
+}
+
+@mixin transform($transforms...) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin translate3d ($x, $y, $z...) {
+	@include transform(translate3d($x, $y, $z));
+}
+
+@mixin transform-origin ($origin) {
+	moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@mixin scale3d($scale...) {
+	@include transform(scale3d($scale));
+}
+
+@mixin keyframes($animationName)
+{
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName}  {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin animation($animation...) {
+	-o-animation: $animation;
+	-moz-animation: $animation;
+	-webkit-animation: $animation;
+	animation: $animation;
+}
+
+$ease: ease-in-out;
+$height: 32px;
+
+$blue:              #5c4eff;
+$blue:              #786eff;
+$red:               #ff334f;
+$purple:            #7749ff;
+$green:             #28e19c;
+
+$title_grey:        #3a3f47;
+$dark_grey:         #828c9c;
+$light_grey:        #a8b0bc;
+$dark_bg_grey:      #454b54;
+$bg_grey:           #f0f2f5;
+$bg_mid_grey:       #e5e8ec;
+$bg_hover_grey:     #f0f0f0;
+$border_grey:       #e3e7ec;
+
+$br: 3px;
+$br2: 6px;
+
+$box-shadow1:       0 10px 50px -6px rgba(40,70,115,0.25);
+$box-shadow2:       0 2px 13px -3px rgba(40,70,115,0.2);
+$box-shadow3:       0 7px 25px -5px rgba(40,70,115,0.4);
+$box-shadow4:       0 2px 8px -3px rgba(40,70,115,0.2);
+$box-shadow5:       0 2px 15px -3px rgba(40,70,115,0.3);
+$box-shadow6:       0 2px 8px -3px rgba(40,70,115,0.5);
+$box-shadow7:       0 10px 40px -5px rgba(40,70,115,0.5);
+
+$box-shadow11:       0 5px 40px -5px rgba(40,70,115,0.2);
+$box-shadow12:       0 7px 30px -6px rgba(40,70,115,0.15);
+$box-shadow13:       0 4px 20px -3px rgba(40,70,115,0.5);
+$box-shadow14:       0 7px 45px -5px rgba(40,70,115,0.5);
+
+.themes {
+	.theme {
+		cursor: auto !important;
+	}
+}
+
+.importer-description {
+	border-radius: $br;
+	background-color: $bg_grey;
+	padding: 6px 10px;
+
+}
+
+.wbc_importer {
+
+	h3.theme-name {
+		line-height: 20px !important;
+		border: none;
+		height: 20px !important;
+		font-size: 14px !important;
+		color: $title_grey;
+		font-weight: 700 !important;
+		text-align: center;
+		box-shadow: none !important;
+	}
+
+	.theme-browser .theme {
+		border-radius: $br;
+		box-shadow: $box-shadow12;
+		position: relative;
+		overflow: hidden;
+		border: none;
+		@include transition(all .2s $ease);
+
+		.theme-screenshot {
+			img {
+				max-width: none !important;
+				width: 100% !important;
+			}
+
+			&:after {
+				padding-top: 59.459%;
+			}
+		}
+
+		&:focus .more-details, &:hover .more-details {
+			opacity: 1;
+		}
+
+		.spinner {
+			background-position: right center;
+			font-size: 12px;
+			height: 20px;
+			margin-right: 0;
+			padding-right: 25px;
+			padding-top: 5px;
+			width: auto;
+			visibility: visible;
+			display: none;
+		}
+
+		.theme-actions {
+			top: 0;
+			bottom: 50px;
+			left: 0;
+			right: 0;
+			padding: 30px;
+			background-color: rgba(9, 9, 37, 0.7);
+			text-align: center;
+			box-shadow: none;
+			@include translate3d(0,0,0);
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			@include transition(opacity .3s $ease);
+
+			a {
+				display: block;
+				text-align: center;
+				margin-top: 1em;
+				font-weight: 600;
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.wbc-importer-buttons {
+			display: block;
+		}
+
+		.importer-button {
+			white-space: nowrap;
+		}
+
+		&:hover {
+			@include translate3d(0,-3px,0);
+			box-shadow: $box-shadow1;
+
+			.theme-actions {
+				opacity: 1 !important;
+			}
+
+			#wbc-importer-reimport {
+				display: inline-block !important;
+			}
+
+			.imported {
+				display: none !important;
+			}
+		}
+
+		&.active {
+			.theme-name {
+				background: #000;
+				color: $title_grey;
+				box-shadow: none;
+				font-weight: 700;
+				text-align: center;
+				padding: 15px;
+			}
+
+			.theme-actions {
+				background-color: rgba(0,0,0,.7);
+			}
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #fff;
+			opacity: 0;
+			z-index: 10;
+			visibility: hidden;
+			@include transition(opacity .3s $ease, visibility 0s .3s);
+		}
+	}
+
+	.importer-button {
+		display: inline-block;
+		margin-top: 0;
+		line-height: 40px;
+		padding: 0 15px;
+		border-radius: 40px;
+		width: 120px;
+		box-sizing: border-box;
+		color: $dark_grey;
+		background-color: #fff;
+		font-size: 11px;
+		font-weight: 600;
+		text-transform: uppercase;
+		box-shadow: $box-shadow12;
+		cursor: pointer;
+		@include transition(all .3s $ease);
+
+		&:hover {
+			color: $title_grey;
+			box-shadow: $box-shadow3;
+
+			background-color: $blue;
+			color: #fff;
+			box-shadow: 0 5px 35px -5px transparentize($blue, 0.6);
+		}
+	}
+
+	#wbc-importer-reimport {
+		display: none;
+	}
+}
+
+.wbc-importer-info {
+	background-color: #fff;
+	border-left: 4px solid orange;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	padding: 1px 12px;
+}
+
+.theme-browser .importer-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	z-index: 999999;
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(opacity .3s $ease, visibility 0s $ease .3s);
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		@include transition(opacity .3s $ease, visibility 0s $ease 0s);
+	}
+
+	&.progress {
+		.importer-popup-import {
+			display: none;
+		}
+	}
+
+	.importer-popup-backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,.8);
+		z-index: -1;
+	}
+
+	.importer-popup-container {
+		text-align: center;
+		z-index: 1;
+		padding: 60px 0;
+	}
+
+	.importer-popup-frame {
+		display: inline-block;
+		margin: 60px auto;
+		width: 90%;
+		max-width: 440px;
+		background-color: #fff;
+		border-radius: 6px;
+		overflow: hidden;
+		box-shadow: 0 15px 35px -5px rgba(0,0,0,.4);
+
+		.importer-popup-content {
+			.importer-popup-label {
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: 700;
+				margin-top: 20px;
+				margin-bottom: 10px;
+				padding: 0 20px;
+			}
+
+			.importer-popup-hint {
+				display: inline-block;
+				font-size: 11px;
+				font-style: italic;
+				margin-bottom: 10px;
+				color: $dark_grey;
+				padding: 0 20px;
+			}
+
+			.importer-popup-plugins {
+				border-bottom: 1px dashed $border_grey;
+				padding: 0 20px 20px;
+
+				.importer-popup-plugin {
+					margin: 0.3em;
+					display: inline-block;
+					padding: 0 10px;
+					border-radius: 26px;
+					line-height: 24px;
+					background-color: $bg_grey;
+					color: $dark_grey;
+					font-weight: 500;
+					font-size: 11px;
+				}
+			}
+
+			.importer-popup-options {
+				border-bottom: 1px dashed $border_grey;
+				padding: 0 20px 20px;
+
+				.importer-popup-option {
+					position: relative;
+					margin: 0.3em !important;
+					display: inline-block;
+					padding: 0 10px 0 8px;
+					border-radius: 26px;
+					border: 1px solid $border_grey;
+					line-height: 28px;
+					color: $dark_grey;
+					font-weight: 500;
+					font-size: 11px;
+					@include transition(all .2s $ease);
+
+					&:hover {
+						background-color: $bg_grey;
+
+						.importer-content-hint {
+							visibility: visible;
+							opacity: 1;
+						}
+					}
+
+					input {
+						margin-top: -2px;
+					}
+
+					&.disabled {
+						pointer-events: none;
+						opacity: .5;
+					}
+
+					.importer-content-hint {
+						background-color: #fff;
+						border-radius: 10px;
+						box-shadow: $box-shadow5;
+						padding: 15px 10px;
+						text-align: left;
+						position: absolute;
+						bottom: 100%;
+						left: 50%;
+						cursor: auto;
+						@include translate3d(-50%,-5px,0);
+						visibility: hidden;
+						opacity: 0;
+
+						&:before {
+							content: '';
+							background-color: transparent;
+							position: absolute;
+							top: 100%;
+							left: 0;
+							right: 0;
+							height: 5px;
+						}
+
+						.importer-popup-option {
+							line-height: 24px;
+							border: none;
+							border-radius: 0;
+							display: block;
+							white-space: nowrap;
+						}
+					}
+				}
+			}
+
+			.importer-popup-import {
+				margin: 20px 0 20px;
+				padding: 0 20px;
+				width: auto;
+				background-color: $blue;
+				color: #fff;
+
+				&:hover {
+					@include translate3d(0,-2px,0);
+					box-shadow: 0 10px 30px -7px transparentize($blue, 0.3);
+				}
+
+				&.disabled {
+					pointer-events: none;
+					opacity: .5;
+				}
+			}
+		}
+	}
+
+	.wbc-progress-back {
+		background-color: $bg_grey;
+		border-radius: $br2;
+		height: 10px;
+		left: 50%;
+		max-width: 300px;
+		width: 90%;
+		margin: 30px auto 30px;
+		display: inline-block;
+	}
+
+	.wbc-progress-bar {
+		display: block;
+		background-color: $blue;
+		//box-shadow: 0 0 15px -2px #fff;
+		border-radius: $br2;
+		height: 100%;
+		position: relative;
+		width: 0;
+		padding: 0 !important;
+		@include transition(width .3s $ease);
+	}
+
+	.wbc-progress-count {
+		background-color: #1f1f1f;
+		border-radius: $br;
+		color: #fff !important;
+		left: 100%;
+		padding: 5px;
+		position: absolute;
+		text-align: center;
+		top: -40px;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: 40px;
+		font-size: 11px;
+		line-height: 20px;
+
+		&:after {
+			background-color: inherit;
+			bottom: -5px;
+			content: "";
+			height: 10px;
+			left: 50%;
+			margin-left: -5px;
+			position: absolute;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			width: 10px;
+			background-color: inherit;
+			bottom: -5px;
+			content: "";
+			height: 10px;
+			left: 50%;
+			margin-left: -5px;
+			position: absolute;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+			width: 10px;
+		}
+	}
+
+	&.progress {
+		&:before {
+			opacity: 1;
+			visibility: visible;
+			@include transition(opacity .3s $ease, visibility 0s 0s);
+		}
+
+		.wbc-progress-back {
+			background-size: 30px 30px;
+			background-image: linear-gradient(135deg, darken($bg_grey, 5%) 25%, $bg_grey 25%,
+					$bg_grey 50%, darken($bg_grey, 5%) 50%, darken($bg_grey, 5%) 75%,
+					$bg_grey 75%, $bg_grey);
+			@include animation(animate-progress 3s linear infinite)
+		}
+
+		.theme-actions {
+			opacity: 0 !important;
+		}
+
+		@include keyframes(animate-progress) {
+			0% { background-position: 0 0; }
+			100% { background-position: 60px 0; }
+		}
+	}
+}

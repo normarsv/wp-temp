@@ -1,0 +1,424 @@
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName}  {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin transform($transforms...) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin transition($transition...) {
+	$prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-" , "");
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $transition;
+	}
+}
+
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+$cb6: cubic-bezier(0.2, 0, 0.3, 1);
+$br: 3px;
+$br2: 6px;
+
+$bs3-medium: 0 8px 40px -5px rgba(9,31,67,0.15);
+$bs3h-medium: 0 15px 60px -10px rgba(9,31,67,0.3);
+$bs3-dark: 0 8px 40px -5px rgba(9,31,67,0.3);
+$bs3h-dark: 0 15px 60px -10px rgba(9,31,67,0.45);
+
+
+
+html {
+	display: table;
+	width: 100%;
+}
+
+.wp-auth-check {
+	border-radius: $br2;
+	overflow: hidden;
+}
+
+body.login {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+	}
+
+	div#login {
+		position: relative;
+		width: 360px;
+		z-index: 3;
+		padding: 30px 15px;
+
+		h1 {
+			margin-bottom: 0;
+
+			a {
+				box-shadow: none !important;
+			}
+		}
+
+		#login_error {
+			border-radius: $br2;
+			box-shadow: $bs3-medium;
+			padding: 15px 15px 15px 20px;
+			position: relative;
+			border: none;
+			margin: 15px 0;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				bottom: 5px;
+				width: 2px;
+				border-radius: $br;
+				background-color: #ff334f;
+			}
+
+			a {
+				@include transition(all .2s $cb6);
+
+				&:hover {
+					opacity: .7;
+				}
+			}
+		}
+
+		p.message {
+			font-size: 13px;
+			font-weight: 400;
+			text-transform: none;
+			border-radius: $br2;
+			box-shadow: $bs3-medium;
+			padding: 15px 15px 15px 20px;
+			margin: 15px 0;
+			position: relative;
+			border: none;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				bottom: 5px;
+				width: 2px;
+				border-radius: $br2;
+			}
+		}
+
+		form#lostpasswordform {
+			position: relative;
+			z-index: 3;
+			border-radius: $br2;
+			background-color: #fff;
+			padding: 30px;
+			margin-top: 30px;
+
+			p {
+				label {
+					text-transform: uppercase;
+					font-size: 11px;
+					font-weight: 700;
+					display: block;
+					margin-top: 10px;
+				}
+
+				&:first-child label {
+					margin-top: 0;
+				}
+
+				input {
+					font-weight: 400;
+					text-transform: none;
+					margin-top: 10px;
+					font-size: 14px;
+					line-height: 40px;
+					border-radius: $br2;
+					padding: 0 15px;
+					border: none;
+					@include transition(all .3s $cb6);
+
+					&:-webkit-autofill {
+						content: "\feff";
+						-webkit-animation-name: autofill;
+						-webkit-animation-fill-mode: both;
+					}
+				}
+
+				&.submit {
+					margin-top: 10px;
+
+					input#wp-submit {
+						padding: 0;
+						width: 100%;
+						margin: 0;
+						line-height: 40px;
+						height: 40px;
+						border: none;
+						text-shadow: none;
+						font-size: 11px;
+						text-transform: uppercase;
+						font-weight: 600;
+						letter-spacing: .05em;
+						@include transition(all .3s $cb6);
+					}
+				}
+			}
+		}
+
+		form#loginform, form#registerform {
+			border-radius: $br2;
+			background-color: #fff;
+			padding: 30px;
+			margin-top: 30px;
+			box-shadow: $bs3-medium;
+
+			#reg_passmail {
+				text-transform: none;
+				font-size: 13px;
+				font-weight: 400;
+			}
+
+			p {
+				label {
+					text-transform: uppercase;
+					font-size: 11px;
+					font-weight: 700;
+					display: block;
+					margin-top: 10px;
+				}
+
+				&:first-child label {
+					margin-top: 0;
+				}
+			}
+
+			input {
+				font-weight: 400;
+				text-transform: none;
+				margin-top: 10px;
+				font-size: 14px;
+				line-height: 40px;
+				border-radius: $br2;
+				padding: 0 15px;
+				border: none;
+				@include transition(all .3s $cb6);
+
+				&:-webkit-autofill {
+					content: "\feff";
+					-webkit-animation-name: autofill;
+					-webkit-animation-fill-mode: both;
+				}
+
+			}
+
+			p {
+				&.forgetmenot {
+					margin-top: 12px;
+
+					label {
+						margin-top: 10px;
+						line-height: 16px;
+						display: inline-block;
+					}
+
+					input#rememberme {
+						position: relative;
+						width: 16px;
+						height: 16px;
+						background: transparent;
+						border-color: transparent;
+						box-shadow: none;
+						margin: 0 5px 0 0;
+
+						&:before {
+							display: block;
+							width: 15px;
+							height: 15px;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							margin-top: -9px;
+							margin-left: -9px;
+							border-radius: 2px;
+							border-width: 1px;
+							border-style: solid;
+							color: #fff;
+							@include transition(all .3s $cb6);
+
+							content: "\e913";
+							font-size: 12px;
+							font-family:scape-ui!important;
+							speak:none;
+							font-style:normal;
+							font-weight:400;
+							font-variant:normal;
+							text-transform:none;
+							line-height: 16px;
+							-webkit-font-smoothing:antialiased;
+							-moz-osx-font-smoothing:grayscale;
+						}
+					}
+				}
+
+				&.submit {
+					margin-top: 10px;
+
+					input#wp-submit {
+						box-shadow: none;
+						padding: 0 30px;
+						margin: 0;
+						line-height: 40px;
+						height: 40px;
+						border: none;
+						text-shadow: none;
+						font-size: 11px;
+						text-transform: uppercase;
+						font-weight: 600;
+						letter-spacing: .05em;
+						@include transition(all .3s $cb6);
+					}
+				}
+			}
+		}
+
+		p {
+			text-transform: uppercase;
+			font-size: 11px;
+			font-weight: 600;
+
+			&#nav {
+				margin: 15px 0;
+				padding: 0 15px 0 0;
+				color: #fff;
+				display: inline-block;
+				float: right;
+
+				a {
+					color: #fff;
+					box-shadow: none !important;
+					@include transition(all .3s $cb6);
+
+					&:hover {
+						opacity: .6;
+					}
+				}
+
+			}
+
+			&#backtoblog {
+				margin: 15px 0;
+				padding: 0 0 0 15px;
+				color: #fff;
+				display: inline-block;
+				float: left;
+
+				a {
+					color: #fff;
+					box-shadow: none !important;
+					@include transition(all .3s $cb6);
+
+					&:hover {
+						opacity: .6;
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			width: calc(100% - 30px);
+
+			form#loginform {
+				padding: 30px;
+			}
+
+			p.forgetmenot {
+				display: block;
+				float: none;
+				text-align: center;
+				margin-top: 0 !important;
+			}
+
+			p.submit {
+				display: block;
+				text-align: center;
+
+				input#wp-submit {
+					float: none;
+					width: 100%;
+					margin-top: 15px !important;
+				}
+			}
+		}
+	}
+
+	.wp-pwd .button.wp-hide-pw {
+		border: none;
+		width: 40px;
+		height: 40px;
+		top: 10px;
+
+		.dashicons {
+			font-size: 18px;
+			@include transition(color .2s $cb6)
+		}
+	}
+}
+
+#wp-auth-check {
+	border-radius: $br2;
+	padding: 0;
+
+	.wp-auth-check-close {
+		z-index: 2;
+		right: 20px;
+		color: #fff;
+		opacity: .6;
+		@include transition(all .3s $cb6);
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.wp-auth-check-form {
+		overflow: hidden;
+
+		iframe {
+			height: 100%;
+		}
+	}
+}
+
+@include keyframes(autofill) {
+	to {
+		background: transparent;
+	}
+}

@@ -1,0 +1,447 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+
+/*---------------------------------------------------------------*/
+/* 14.  COMMENTS
+/*---------------------------------------------------------------*/
+
+#comments {
+	margin-top: 4em;
+	padding: 1em 0;
+	position: relative;
+	clear: both;
+
+	h3.comments-title {
+		text-align: center;
+		margin: 0;
+		font-size: 1.428571em;
+		font-weight: 600;
+		line-height: 1.5;
+	}
+
+	.comment-list {
+		margin: 3em 0;
+		padding: 0;
+		list-style: none;
+
+		+ .comment-respond {
+			margin-top: 6em;
+		}
+
+		> .comment:first-child > .comment-body:first-child {
+			border: none !important;
+		}
+
+		li article {
+			padding: 40px 0;
+
+		}
+
+		.children {
+			list-style: none;
+			margin: 0;
+			padding-left: 45px;
+			position: relative;
+
+			li {
+				margin:0;
+			}
+
+			.comment-body {
+				.comment-author img {
+					width: 50px;
+					height: 50px;
+					margin-top: 0;
+				}
+
+				footer {
+					margin-bottom: 30px;
+				}
+
+				.comment-container {
+					padding-left: 65px;
+				}
+			}
+		}
+
+		.bypostauthor {
+
+			article {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
+
+	.comment-body {
+		min-height: 60px;
+		padding: 30px 0 0 0;
+		margin: 30px 0 0;
+		display: block;
+		position: relative;
+
+		p:last-child {
+			margin-bottom:0;
+		}
+
+		.comment-content {
+			font-size: 1em;
+			clear: both;
+			line-height: 1.9;
+			display: inline-block;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		footer {
+			margin-bottom: 30px;
+		}
+	}
+
+	.bypostauthor .comment-body {
+		border-radius: 8px;
+		padding: 30px;
+	}
+
+	.product-comment-body {
+		.comment-header {
+			width: auto;
+		}
+
+		.comment-metadata {
+			display: block;
+		}
+
+		time {
+			margin-bottom: 5px;
+		}
+	}
+
+	.comment-author {
+		float: left;
+
+		img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+	}
+
+	.star-rating {
+		float: right;
+		margin: 0;
+		height: 1.818182em;
+		line-height: 1.818182em;
+		display: table-cell;
+		margin-left: 15px;
+	}
+
+	.comment-container {
+		padding-left: 80px;
+
+		.author-name {
+			font-size: 1.071429em;
+			font-weight: 700;
+			font-style: normal;
+			line-height: 1.5em;
+			display: table-cell;
+			vertical-align: middle;
+
+			a {
+				@include transition(color .2s $ease);
+			}
+		}
+
+		.comment-header em {
+			font-size: .928571em;
+			line-height: 1.538472;
+			padding-left: .4em;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.description {
+			p:first-child {
+				margin-top: 5px;
+			}
+		}
+
+		.says {
+			display:none;
+		}
+
+		.author-url {
+			font-size: .785714em;
+			font-weight: 600;
+			font-style: normal;
+		}
+
+		.comment-metadata {
+			font-size: .857143em;
+			line-height: 1.5em;
+			font-weight: 600;
+
+			.comment-edit-link {
+				margin-left: .5em;
+				text-transform: lowercase;
+			}
+		}
+
+		> .reply {
+			float: left;
+			margin-top: 10px;
+			height: auto;
+			display: none;
+		}
+	}
+
+	.comment-header {
+		display: table;
+		width: 100%;
+		margin: 0;
+	}
+
+
+	.reply {
+		display: table-cell;
+		vertical-align: top;
+		float: right;
+		height: 0;
+
+		.comment-reply-link {
+			text-transform:uppercase;
+			font-size: 10px;
+			font-weight: 600;
+			line-height: 30px;
+			white-space: nowrap;
+			padding: 0 15px;
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 30px;
+			display: block;
+			float: right;
+			@include transition(all .2s ease-in-out);
+
+			&:before {
+				margin-right: 5px;
+				content: "\e959";
+				display: inline-block;
+				font-family:scape-ui!important;
+				speak:none;
+				font-style:normal;
+				font-variant:normal;
+				text-transform:none;
+				-webkit-font-smoothing:antialiased;
+				-moz-osx-font-smoothing:grayscale;
+			}
+
+			&:hover {
+				background-color: transparent;
+				border-color: transparent !important;
+			}
+		}
+	}
+
+
+}
+
+/* Pingbacks and trackbacks */
+#comments {
+	.pingback,
+	.trackback {
+		.comment-body {
+			min-height: 0;
+			margin: 0;
+			padding: 15px 0 0;
+
+			&:before {
+				display: none;
+			}
+
+			.comment-container {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+/* Comment form */
+#comments {
+	.comment-form-info-fields {
+		margin-bottom: 15px;
+	}
+
+	.comment-form-author input#author,
+	.comment-form-email input#email,
+	.comment-form-url input#url {
+		width:100%;
+		margin-top: .2em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	p label,
+	.comment-form-author label,
+	.comment-form-email label,
+	.comment-form-url label {
+		font-size: .785714em;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.comment-awaiting-moderation {
+		color: $red;
+	}
+
+	p.comment-form-comment label {
+		//		display:none;
+	}
+
+	p.comment-form-comment textarea#comment {
+		width: 100%;
+		font-size: 1em;
+		margin-top: .2em;
+	}
+
+	p.comment-notes,
+	p.logged-in-as,
+	p.must-log-in {
+		margin-bottom: 2em;
+		margin-top: 0;
+		font-size: .857143em;
+	}
+
+	h3.comment-reply-title {
+		margin-top: 2em;
+		margin-bottom: 0;
+		font-size: 1.428571em;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: normal;
+	}
+
+	h3.comment-reply-title #cancel-comment-reply-link {
+		display: inline-block;
+		float: right;
+		margin: 0;
+		margin-right: 2px;
+		text-transform: uppercase;
+		font-size: .857143em;
+		font-weight: 600;
+		line-height: 20px;
+		@include transition(color .2s $ease);
+	}
+}
+
+/* Comment form columns */
+.col_container:before,
+.col_container:after {
+	content: " ";
+	display: table;
+}
+
+.col_container:after {
+	clear: both;
+}
+
+.col_container .col_3 {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	width: 33.3333%;
+	min-height: 1px;
+	padding: 0 15px;
+
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.col_container .col_3:first-of-type {
+	padding-left: 0;
+}
+
+.col_container .col_3:last-of-type {
+	padding-right: 0;
+}
+
+/* Paragraph that wraps the submit button and hidden comment ID fields. */
+p.form-submit {
+	margin-bottom:0;
+	clear: both;
+}
+
+#commentform {
+	p.form-submit {
+		margin-top: 2em;
+	}
+}
+
+.woocommerce-tabs #commentform {
+	p.form-submit {
+		margin-top: 1em;
+	}
+}
+
+.comment-navigation {
+	margin: 30px 0;
+	display: block;
+
+	.nav-previous,
+	.nav-next {
+		display: inline-block;
+		font-size: .785714em;
+		font-weight: 700;
+		line-height: 1.818182em;
+		letter-spacing: $spacing1;
+		text-transform: uppercase;
+
+		a {
+			@include transition(color .2s $ease);
+		}
+	}
+
+	.nav-next {
+		float: right;
+	}
+}
+
+.comment-respond {
+	margin: 3em 0;
+}
+
+// WooCommerce comments
+#reviews #comments {
+	margin: 0;
+	border: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.comment-list {
+		margin-bottom: 0;
+
+		.comment {
+			&:first-child .comment-body {
+				margin-top: 5px;
+				padding-top: 5px;
+			}
+		}
+	}
+}
+
+#reviews .comment-respond {
+	margin: 0;
+}

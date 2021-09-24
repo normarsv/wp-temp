@@ -1,0 +1,367 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   BOXED LAYOUT
+/*---------------------------------------------------------------*/
+
+.blog-boxed {
+	.wtbx-filter:not(.filter-sidebar) + .wtbx-grid-wrapper {
+		padding-top: 40px;
+	}
+
+	.wtbx-grid-boxed.wtbx_overflow {
+		overflow: visible !important;
+	}
+
+	.wtbx-grid-boxed {
+		max-width: none;
+	}
+}
+
+.wtbx-grid-boxed {
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 40px;
+	grid-row-gap: 40px;
+
+	&.clearfix:before {
+		display: none;
+	}
+
+	&[data-columns="1"] {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	&[data-columns="2"] {
+		grid-template-columns: repeat(2, 1fr);
+
+		@media only screen and (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&[data-columns="3"] {
+		grid-template-columns: repeat(3, 1fr);
+
+		@media only screen and (max-width: 991px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media only screen and (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&[data-columns="4"] {
+		grid-template-columns: repeat(4, 1fr);
+
+		@media only screen and (max-width: 991px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media only screen and (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&[data-columns="5"] {
+		grid-template-columns: repeat(5, 1fr);
+
+		@media only screen and (max-width: 991px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media only screen and (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&[data-columns="6"] {
+		grid-template-columns: repeat(6, 1fr);
+
+		@media only screen and (max-width: 991px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media only screen and (max-width: 767px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media only screen and (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&:before,
+	&:after {
+		display: none;
+	}
+
+	article.post-entry {
+		position: relative;
+		display: inline-block;
+
+		.post-boxed-inner {
+			border-radius: $br2;
+			overflow: hidden;
+			background-color: #fff;
+			height: 100%;
+			box-shadow: $bs3-light;
+			@include transition(all .4s $cb6);
+
+			&:hover {
+				@include translate3d(0, -5px, 0);
+				box-shadow: $bs3h-light;
+
+				.post-boxed-media {
+
+					.wtbx-image-crop img {
+						@include transition(all .5s $cb6 !important);
+						@include scale3d(1.05,1.05,1);
+					}
+
+					.post-boxed-button {
+						opacity: 1;
+						@include scale3d(1,1,1);
+					}
+				}
+			}
+		}
+
+		.post-media {
+			margin: 0 0 20px 0;
+		}
+
+		.entry-title {
+			font-size: 1.142857em;
+			font-weight: 600;
+			line-height: 1.2;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+			padding-right: 50px;
+
+			a {
+				@include transition(color .2s $cb6);
+			}
+		}
+
+		.meta-date + .entry-title {
+			margin-top: 0;
+			padding-right: 0;
+		}
+
+		.post-boxed-media {
+			position: relative;
+			z-index: 1;
+			@include translate3d(0,0,0);
+
+			.wtbx-image-crop {
+				overflow: hidden;
+				@include transform-origin(top center);
+				@include transition(all .4s $cb6);
+
+				img {
+					@include transition(all .4s $cb6 !important);
+				}
+			}
+
+			.meta-categories {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				z-index: 3;
+
+				@media only screen and (max-width: 768px) {
+					display: none;
+				}
+
+				a {
+					display: inline-block;
+					padding: 0 1em;
+					line-height: 2.4;
+					border-radius: 4em;
+					margin: 0 2px 5px 0;
+					font-size: .714286em;
+					font-weight: 600;
+					text-transform: uppercase;
+					background-color: rgba(0,0,0,.3);
+					@include transition(all .3s $cb6);
+
+					&:hover {
+						background-color: #fff;
+					}
+
+					&:not(:hover) {
+						color: #fff;
+					}
+				}
+			}
+
+			.post-boxed-button {
+				display: block;
+				position: absolute;
+				bottom: -25px;
+				right: 30px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: #fff;
+				z-index: 2;
+				box-shadow: $bs2-medium;
+				opacity: 0;
+				@include scale3d(.9,.9,1);
+				@include transition(all .3s $cb6);
+
+				i {
+					font-size: 18px;
+					line-height: 50px;
+					display: block;
+					text-align: center;
+				}
+
+				&:hover {
+					@include scale3d(1,1,1);
+					i {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.post-entry-content {
+			padding: 20px 30px 70px;
+			z-index: 2;
+
+			&.no-comments.no-like.no-author-name.no-author-image {
+				padding-bottom: 20px;
+
+				div:last-child {
+					margin-bottom: .5em;
+				}
+			}
+		}
+
+		.post-entry-header {
+			position: relative;
+			margin-bottom: 1em;
+			font-weight: 600;
+
+			.meta-date {
+				font-weight: 600;
+				font-size: .857143em;
+				line-height: 1.2;
+			}
+		}
+
+		.entry-content {
+			margin-bottom: 1em;
+		}
+
+		.entry-summary, .entry-content {
+			text-align: justify;
+		}
+
+		.meta-author {
+			display: block;
+			text-overflow: clip;
+			text-overflow: ellipsis;
+			text-overflow: "…";
+			white-space: nowrap;
+			overflow: hidden;
+			padding-right: 90px;
+
+			.meta-author-link {
+				display: inline-block;
+			}
+
+			.author-image {
+				float: left;
+				display: inline-block;
+				margin-right: 10px;
+				font-size: 0;
+				line-height: 0;
+
+				img {
+					width: 24px;
+					height: 24px;
+					border-radius: 50%;
+					@include transition(all .3s $cb6);
+				}
+			}
+
+			span {
+				font-size: .857143em;
+				line-height: 24px;
+				font-weight: 600;
+			}
+		}
+
+		.post-entry-footer {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 0 30px 30px;
+			display: block;
+			margin-top: 2em;
+			line-height: 24px;
+			white-space: nowrap;
+			min-height: 60px;
+
+			.post-entry-footer-right {
+				position: absolute;
+				top: 0;
+				right: 30px;
+				width: auto;
+				white-space: nowrap;
+			}
+
+			.post-entry-footer-section {
+				display: inline-block;
+				font-size: .857143em;
+				font-weight: 600;
+				text-transform: lowercase;
+				margin-left: 10px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				i {
+					font-size: 1.230769em;
+					margin-right: 3px;
+					position: relative;
+					top: 2px;
+				}
+			}
+
+			.post-like a {
+				display: block;
+
+				> * {
+					line-height: 20px;
+					font-size: .928571em;
+				}
+
+				> i {
+					font-size: 1.230769em;
+					float: left;
+					position: relative;
+					top: 2px;
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+body.device-mobile .post-boxed-button {
+	opacity: 1 !important;
+	@include transform( scale3d(1,1,1) !important);
+}

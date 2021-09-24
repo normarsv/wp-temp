@@ -1,0 +1,315 @@
+/*=====================*/
+/* CUBIC BEZIER CURVES */
+/*=====================*/
+/*---------------------------------------------------------------*/
+/* 14.  COMMENTS
+/*---------------------------------------------------------------*/
+#comments {
+  margin-top: 4em;
+  padding: 1em 0;
+  position: relative;
+  clear: both; }
+  #comments h3.comments-title {
+    text-align: center;
+    margin: 0;
+    font-size: 1.428571em;
+    font-weight: 600;
+    line-height: 1.5; }
+  #comments .comment-list {
+    margin: 3em 0;
+    padding: 0;
+    list-style: none; }
+    #comments .comment-list + .comment-respond {
+      margin-top: 6em; }
+    #comments .comment-list > .comment:first-child > .comment-body:first-child {
+      border: none !important; }
+    #comments .comment-list li article {
+      padding: 40px 0; }
+    #comments .comment-list .children {
+      list-style: none;
+      margin: 0;
+      padding-left: 45px;
+      position: relative; }
+      #comments .comment-list .children li {
+        margin: 0; }
+      #comments .comment-list .children .comment-body .comment-author img {
+        width: 50px;
+        height: 50px;
+        margin-top: 0; }
+      #comments .comment-list .children .comment-body footer {
+        margin-bottom: 30px; }
+      #comments .comment-list .children .comment-body .comment-container {
+        padding-left: 65px; }
+    #comments .comment-list .bypostauthor article {
+      padding-left: 20px;
+      padding-right: 20px; }
+  #comments .comment-body {
+    min-height: 60px;
+    padding: 30px 0 0 0;
+    margin: 30px 0 0;
+    display: block;
+    position: relative; }
+    #comments .comment-body p:last-child {
+      margin-bottom: 0; }
+    #comments .comment-body .comment-content {
+      font-size: 1em;
+      clear: both;
+      line-height: 1.9;
+      display: inline-block; }
+      #comments .comment-body .comment-content img {
+        width: 100%; }
+    #comments .comment-body footer {
+      margin-bottom: 30px; }
+  #comments .bypostauthor .comment-body {
+    border-radius: 8px;
+    padding: 30px; }
+  #comments .product-comment-body .comment-header {
+    width: auto; }
+  #comments .product-comment-body .comment-metadata {
+    display: block; }
+  #comments .product-comment-body time {
+    margin-bottom: 5px; }
+  #comments .comment-author {
+    float: left; }
+    #comments .comment-author img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%; }
+  #comments .star-rating {
+    float: right;
+    margin: 0;
+    height: 1.818182em;
+    line-height: 1.818182em;
+    display: table-cell;
+    margin-left: 15px; }
+  #comments .comment-container {
+    padding-left: 80px; }
+    #comments .comment-container .author-name {
+      font-size: 1.071429em;
+      font-weight: 700;
+      font-style: normal;
+      line-height: 1.5em;
+      display: table-cell;
+      vertical-align: middle; }
+      #comments .comment-container .author-name a {
+        -webkit-transition: color 0.2s ease-in-out;
+        -moz-transition: color 0.2s ease-in-out;
+        -ms-transition: color 0.2s ease-in-out;
+        -o-transition: color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out; }
+    #comments .comment-container .comment-header em {
+      font-size: .928571em;
+      line-height: 1.538472;
+      padding-left: .4em;
+      display: table-cell;
+      vertical-align: middle; }
+    #comments .comment-container .description p:first-child {
+      margin-top: 5px; }
+    #comments .comment-container .says {
+      display: none; }
+    #comments .comment-container .author-url {
+      font-size: .785714em;
+      font-weight: 600;
+      font-style: normal; }
+    #comments .comment-container .comment-metadata {
+      font-size: .857143em;
+      line-height: 1.5em;
+      font-weight: 600; }
+      #comments .comment-container .comment-metadata .comment-edit-link {
+        margin-left: .5em;
+        text-transform: lowercase; }
+    #comments .comment-container > .reply {
+      float: left;
+      margin-top: 10px;
+      height: auto;
+      display: none; }
+  #comments .comment-header {
+    display: table;
+    width: 100%;
+    margin: 0; }
+  #comments .reply {
+    display: table-cell;
+    vertical-align: top;
+    float: right;
+    height: 0; }
+    #comments .reply .comment-reply-link {
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 30px;
+      white-space: nowrap;
+      padding: 0 15px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 30px;
+      display: block;
+      float: right;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      #comments .reply .comment-reply-link:before {
+        margin-right: 5px;
+        content: "\e959";
+        display: inline-block;
+        font-family: scape-ui !important;
+        speak: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+      #comments .reply .comment-reply-link:hover {
+        background-color: transparent;
+        border-color: transparent !important; }
+
+/* Pingbacks and trackbacks */
+#comments .pingback .comment-body,
+#comments .trackback .comment-body {
+  min-height: 0;
+  margin: 0;
+  padding: 15px 0 0; }
+  #comments .pingback .comment-body:before,
+  #comments .trackback .comment-body:before {
+    display: none; }
+  #comments .pingback .comment-body .comment-container,
+  #comments .trackback .comment-body .comment-container {
+    padding-left: 0; }
+
+/* Comment form */
+#comments .comment-form-info-fields {
+  margin-bottom: 15px; }
+
+#comments .comment-form-author input#author,
+#comments .comment-form-email input#email,
+#comments .comment-form-url input#url {
+  width: 100%;
+  margin-top: .2em; }
+
+#comments p {
+  font-size: 1em; }
+
+#comments p label,
+#comments .comment-form-author label,
+#comments .comment-form-email label,
+#comments .comment-form-url label {
+  font-size: .785714em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+#comments .comment-awaiting-moderation {
+  color: #ff334f; }
+
+#comments p.comment-form-comment textarea#comment {
+  width: 100%;
+  font-size: 1em;
+  margin-top: .2em; }
+
+#comments p.comment-notes,
+#comments p.logged-in-as,
+#comments p.must-log-in {
+  margin-bottom: 2em;
+  margin-top: 0;
+  font-size: .857143em; }
+
+#comments h3.comment-reply-title {
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: 1.428571em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: normal; }
+
+#comments h3.comment-reply-title #cancel-comment-reply-link {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  margin-right: 2px;
+  text-transform: uppercase;
+  font-size: .857143em;
+  font-weight: 600;
+  line-height: 20px;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
+
+/* Comment form columns */
+.col_container:before,
+.col_container:after {
+  content: " ";
+  display: table; }
+
+.col_container:after {
+  clear: both; }
+
+.col_container .col_3 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 33.3333%;
+  min-height: 1px;
+  padding: 0 15px; }
+  @media only screen and (max-width: 768px) {
+    .col_container .col_3 {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0; } }
+.col_container .col_3:first-of-type {
+  padding-left: 0; }
+
+.col_container .col_3:last-of-type {
+  padding-right: 0; }
+
+/* Paragraph that wraps the submit button and hidden comment ID fields. */
+p.form-submit {
+  margin-bottom: 0;
+  clear: both; }
+
+#commentform p.form-submit {
+  margin-top: 2em; }
+
+.woocommerce-tabs #commentform p.form-submit {
+  margin-top: 1em; }
+
+.comment-navigation {
+  margin: 30px 0;
+  display: block; }
+  .comment-navigation .nav-previous,
+  .comment-navigation .nav-next {
+    display: inline-block;
+    font-size: .785714em;
+    font-weight: 700;
+    line-height: 1.818182em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
+    .comment-navigation .nav-previous a,
+    .comment-navigation .nav-next a {
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out; }
+  .comment-navigation .nav-next {
+    float: right; }
+
+.comment-respond {
+  margin: 3em 0; }
+
+#reviews #comments {
+  margin: 0;
+  border: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+  #reviews #comments .comment-list {
+    margin-bottom: 0; }
+    #reviews #comments .comment-list .comment:first-child .comment-body {
+      margin-top: 5px;
+      padding-top: 5px; }
+
+#reviews .comment-respond {
+  margin: 0; }

@@ -1,0 +1,464 @@
+
+/*---------------------------------------------------------------*/
+/* 12.  ARCHIVES AND UTILITY PAGES
+/*---------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------*/
+/* --   SEARCH PAGE
+/*---------------------------------------------------------------*/
+
+.search-results, .search-no-results {
+	.wtbx-search-query {
+		font-weight: 600;
+	}
+
+	#wtbx-search-page-searchform {
+		margin: 30px -15px 90px;
+		clear: both;
+
+		.wtbx-button {
+			display: none;
+		}
+	}
+
+	.wtbx-search-page-label {
+		margin: 30px 0;
+		font-size: 1.214286em;
+		font-weight: 400;
+		letter-spacing: normal;
+		text-transform: none;
+		line-height: 1.764706;
+		border-width: 1px 0 1px 0;
+		border-style : solid;
+		border-color: transparent;
+		display: inline-block;
+		float: left;
+	}
+
+	.wtbx-search-page-count {
+		margin: 30px 0;
+		font-size: .857143em;
+		font-weight: 600;
+		text-transform: uppercase;
+		line-height: 3;
+		display: inline-block;
+		float: right;
+		padding: 0 1.5em;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 4em;
+	}
+
+	@media only screen and (max-width: 767px) {
+		.wtbx-search-page-count {
+			float: none;
+			display: block;
+			text-align: center;
+		}
+
+		.wtbx-search-page-label {
+			float: none;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.results-container {
+		margin: 0;
+		display: grid;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+		grid-template-columns: repeat(3, 1fr);
+
+		@media only screen and (max-width: 991px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media only screen and (max-width: 640px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.wtbx-search-result {
+		display: inline-block;
+		vertical-align: top;
+
+		.wtbx-search-result-inner {
+			border-radius: $br2;
+			background-color: #fff;
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+			border-style: solid;
+			border-width: 1px;
+			height: 100%;
+			@include transition(all .3s $cb6);
+
+			&:hover {
+				box-shadow: $bs3-light;
+				border-color: transparent;
+				@include translate3d(0,-3px,0);
+			}
+		}
+
+		.entry-thumbnail {
+
+			+ .entry-content {
+				padding: 20px 20px 20px;
+				border-radius: 0 0 $br2 $br2;
+				border-top-color: transparent;
+				display: block;
+			}
+		}
+
+		.entry-content {
+			padding: 60px 20px 20px;
+			border-radius: $br2;
+			height: 100%;
+			//display: block;
+			display: flex;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			white-space: nowrap;
+			-webkit-box-pack: end;
+			-webkit-justify-content: flex-end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+			cursor: pointer;
+			@include transition(all .4s $cb6);
+
+			.entry-title {
+				font-size: 1.142857em;
+				font-weight: 600;
+				line-height: 1.5;
+				text-transform: none;
+				margin: 0;
+				white-space: normal;
+			}
+
+			.meta-date {
+				font-size: .857143em;
+				line-height: 1.5;
+				font-weight: 500;
+
+				i {
+					line-height: inherit;
+					float: left;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.entry-post-type {
+			display: inline-block;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			color: #fff;
+			font-size: .714286em;
+			font-weight: 600;
+			//letter-spacing: $spacing1;
+			text-transform: uppercase;
+			line-height: 2.5;
+			border-radius: 4em;
+			padding: 0 1.2em;
+			z-index: 10;
+			@include transition(all .4s $cb6);
+		}
+	}
+}
+
+// search form
+.wtbx_search_form_wrapper {
+
+	.wtbx_search_in {
+		font-size: 1.428571em;
+		//font-size: 2em;
+		height: 2.5em;
+		line-height: 2.5;
+		font-weight: 400;
+		text-align: center;
+		display: block;
+	}
+
+	.wtbx_search_field_wrapper {
+		font-size: 1.428571em;
+		//font-size: 2em;
+		font-weight: 400;
+		height: 2.5em;
+		line-height: 2.5;
+		position: relative;
+
+	}
+
+	.wtbx_search_field {
+		font-size: 1em;
+		font-weight: 500;
+		height: 2.5em;
+		line-height: 2.5;
+		padding: 0;
+		margin: 0;
+		background-color: transparent;
+		border-radius: 0;
+		width: 100%;
+		display: block;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		box-shadow: none !important;
+
+		&:after {
+			display: none;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: transparent !important;
+		}
+	}
+
+	.wtbx_search_input_wrapper {
+		position: relative;
+
+		i {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			font-size: .9em;
+			margin-top: .2em;
+			line-height: inherit;
+			display: block;
+			cursor: pointer;
+			@include translate3d(0,-50%,0);
+			@include transition(all .3s $cb6);
+
+			&:before {
+				position: relative;
+				top: -2px;
+			}
+		}
+
+		.wtbx_search_input {
+			padding-right: 2.25em;
+			z-index: 1;
+		}
+	}
+
+	.wtbx_search_select_wrapper {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			width: 5px;
+			height: 5px;
+			display: block;
+			border-top-style: solid;
+			border-right-style: solid;
+			border-top-width: 2px;
+			border-right-width: 2px;
+			@include transition(all .2s $cb6);
+			@include transform( translate3d(0,-50%,0) rotate3d(0,0,1,135deg) );
+		}
+
+		.wtbx_search_select {
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			//border: none;
+			cursor: pointer;
+			padding: 0 15px;
+		}
+	}
+
+	.wtbx-button {
+		display: none;
+		margin-top: 30px;
+	}
+
+}
+
+#wtbx_header_search_wrapper {
+	.wtbx_search_field_wrapper {
+		//border-bottom-style: solid;
+		//border-bottom-width: 1px;
+	}
+
+	.wtbx_search_input_wrapper {
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			height: 1px;
+			z-index: 2;
+			@include scaleX(0);
+		}
+	}
+
+	&.search_active {
+		.wtbx_search_input_wrapper:after {
+			@include animation(searchBarActive .8s $cb6 .8s forwards);
+		}
+	}
+
+	&.wtbx_skin_dark {
+		.wtbx_search_input_wrapper {
+			&:after {
+				background-color: #fff !important;
+			}
+		}
+	}
+}
+
+@include keyframes(searchBarActive) {
+	0% {
+		@include scaleX(0);
+		@include transform-origin(0 50%);
+	}
+	45% {
+		@include scaleX(1);
+		@include transform-origin(0 50%);
+	}
+	55% {
+		@include scaleX(1);
+		@include transform-origin(100% 50%);
+	}
+	100% {
+		@include scaleX(0);
+		@include transform-origin(100% 50%);
+	}
+}
+
+
+/*---------------------------------------------------------------*/
+/* --   404 PAGE
+/*---------------------------------------------------------------*/
+
+article.error404 {
+
+	.error-content {
+		min-height: 100vh;
+		width: 100%;
+		display: table;
+
+		.row-inner {
+			padding: 90px 0;
+			text-align:center;
+			display: table-cell;
+			width: 100%;
+			vertical-align: middle;
+
+			h1 {
+				margin: 0;
+				font-size: 125px;
+				line-height: 1;
+				font-weight: 900;
+				letter-spacing: normal;
+				text-transform: uppercase;
+				color: #fff;
+			}
+
+			h2 {
+				margin: 0;
+				font-size: 26px;
+				font-weight: 900;
+				line-height: 1;
+				letter-spacing: normal;
+				text-transform: uppercase;
+				color: #fff;
+			}
+
+			p {
+				max-width: 500px;
+				margin: 60px auto 0 auto;
+				font-size: 16px;
+				font-weight: 400;
+				color: rgba(255,255,255,.5);
+			}
+
+			a {
+				margin-top: 60px;
+				border-radius: 4em;
+			}
+
+			@media only screen and (max-width: 768px) {
+				h1 {
+					font-size: 100px;
+				}
+
+				h2 {
+					font-size: 21px;
+				}
+			}
+		}
+	}
+}
+
+
+
+/*---------------------------------------------------------------*/
+/* --   MAINTENANCE PAGE
+/*---------------------------------------------------------------*/
+
+.maintenance-page {
+	#page-wrap {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+.wtbx-maintenance-wrapper {
+	display: table;
+	width: 100%;
+	height: 100vh;
+
+	.wtbx-maintenance-inner {
+		display: table-cell;
+		width: 100%;
+		vertical-align: middle;
+
+		article {
+			max-width: 600px;
+			margin: 0 auto;
+
+			h1 {
+				margin: 0;
+				font-size: 34px;
+				font-weight: 300;
+				letter-spacing: normal;
+				text-transform: none;
+				line-height: 1.5;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			i {
+				display: block;
+				text-align: right;
+				font-size: 70px;
+
+				@media only screen and (max-width: 767px) {
+					display: none;
+				}
+			}
+
+			.maintenance-team {
+				font-size: 12px;
+			}
+		}
+	}
+}

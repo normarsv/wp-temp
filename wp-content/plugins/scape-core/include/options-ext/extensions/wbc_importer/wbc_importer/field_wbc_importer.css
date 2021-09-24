@@ -1,0 +1,403 @@
+.themes .theme {
+  cursor: auto !important; }
+
+.importer-description {
+  border-radius: 3px;
+  background-color: #f0f2f5;
+  padding: 6px 10px; }
+
+.wbc_importer h3.theme-name {
+  line-height: 20px !important;
+  border: none;
+  height: 20px !important;
+  font-size: 14px !important;
+  color: #3a3f47;
+  font-weight: 700 !important;
+  text-align: center;
+  box-shadow: none !important; }
+
+.wbc_importer .theme-browser .theme {
+  border-radius: 3px;
+  box-shadow: 0 7px 30px -6px rgba(40, 70, 115, 0.15);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out; }
+  .wbc_importer .theme-browser .theme .theme-screenshot img {
+    max-width: none !important;
+    width: 100% !important; }
+  .wbc_importer .theme-browser .theme .theme-screenshot:after {
+    padding-top: 59.459%; }
+  .wbc_importer .theme-browser .theme:focus .more-details, .wbc_importer .theme-browser .theme:hover .more-details {
+    opacity: 1; }
+  .wbc_importer .theme-browser .theme .spinner {
+    background-position: right center;
+    font-size: 12px;
+    height: 20px;
+    margin-right: 0;
+    padding-right: 25px;
+    padding-top: 5px;
+    width: auto;
+    visibility: visible;
+    display: none; }
+  .wbc_importer .theme-browser .theme .theme-actions {
+    top: 0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: rgba(9, 9, 37, 0.7);
+    text-align: center;
+    box-shadow: none;
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out; }
+    .wbc_importer .theme-browser .theme .theme-actions a {
+      display: block;
+      text-align: center;
+      margin-top: 1em;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none; }
+      .wbc_importer .theme-browser .theme .theme-actions a:hover {
+        text-decoration: underline; }
+  .wbc_importer .theme-browser .theme .wbc-importer-buttons {
+    display: block; }
+  .wbc_importer .theme-browser .theme .importer-button {
+    white-space: nowrap; }
+  .wbc_importer .theme-browser .theme:hover {
+    -moz-transform: translate3d(0, -3px, 0);
+    -o-transform: translate3d(0, -3px, 0);
+    -ms-transform: translate3d(0, -3px, 0);
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+    box-shadow: 0 10px 50px -6px rgba(40, 70, 115, 0.25); }
+    .wbc_importer .theme-browser .theme:hover .theme-actions {
+      opacity: 1 !important; }
+    .wbc_importer .theme-browser .theme:hover #wbc-importer-reimport {
+      display: inline-block !important; }
+    .wbc_importer .theme-browser .theme:hover .imported {
+      display: none !important; }
+  .wbc_importer .theme-browser .theme.active .theme-name {
+    background: #000;
+    color: #3a3f47;
+    box-shadow: none;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px; }
+  .wbc_importer .theme-browser .theme.active .theme-actions {
+    background-color: rgba(0, 0, 0, 0.7); }
+  .wbc_importer .theme-browser .theme:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 10;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+    -ms-transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; }
+
+.wbc_importer .importer-button {
+  display: inline-block;
+  margin-top: 0;
+  line-height: 40px;
+  padding: 0 15px;
+  border-radius: 40px;
+  width: 120px;
+  box-sizing: border-box;
+  color: #828c9c;
+  background-color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 7px 30px -6px rgba(40, 70, 115, 0.15);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+  .wbc_importer .importer-button:hover {
+    color: #3a3f47;
+    box-shadow: 0 7px 25px -5px rgba(40, 70, 115, 0.4);
+    background-color: #786eff;
+    color: #fff;
+    box-shadow: 0 5px 35px -5px rgba(120, 110, 255, 0.4); }
+
+.wbc_importer #wbc-importer-reimport {
+  display: none; }
+
+.wbc-importer-info {
+  background-color: #fff;
+  border-left: 4px solid orange;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  padding: 1px 12px; }
+
+.theme-browser .importer-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  z-index: 999999;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0.3s;
+  -moz-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0.3s;
+  -ms-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0.3s;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0.3s; }
+  .theme-browser .importer-popup.active {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0s;
+    -moz-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0s;
+    -ms-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0s;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0s ease-in-out 0s; }
+  .theme-browser .importer-popup.progress .importer-popup-import {
+    display: none; }
+  .theme-browser .importer-popup .importer-popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1; }
+  .theme-browser .importer-popup .importer-popup-container {
+    text-align: center;
+    z-index: 1;
+    padding: 60px 0; }
+  .theme-browser .importer-popup .importer-popup-frame {
+    display: inline-block;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 440px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.4); }
+    .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding: 0 20px; }
+    .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-hint {
+      display: inline-block;
+      font-size: 11px;
+      font-style: italic;
+      margin-bottom: 10px;
+      color: #828c9c;
+      padding: 0 20px; }
+    .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-plugins {
+      border-bottom: 1px dashed #e3e7ec;
+      padding: 0 20px 20px; }
+      .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-plugins .importer-popup-plugin {
+        margin: 0.3em;
+        display: inline-block;
+        padding: 0 10px;
+        border-radius: 26px;
+        line-height: 24px;
+        background-color: #f0f2f5;
+        color: #828c9c;
+        font-weight: 500;
+        font-size: 11px; }
+    .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options {
+      border-bottom: 1px dashed #e3e7ec;
+      padding: 0 20px 20px; }
+      .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option {
+        position: relative;
+        margin: 0.3em !important;
+        display: inline-block;
+        padding: 0 10px 0 8px;
+        border-radius: 26px;
+        border: 1px solid #e3e7ec;
+        line-height: 28px;
+        color: #828c9c;
+        font-weight: 500;
+        font-size: 11px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out; }
+        .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option:hover {
+          background-color: #f0f2f5; }
+          .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option:hover .importer-content-hint {
+            visibility: visible;
+            opacity: 1; }
+        .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option input {
+          margin-top: -2px; }
+        .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option.disabled {
+          pointer-events: none;
+          opacity: .5; }
+        .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option .importer-content-hint {
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 2px 15px -3px rgba(40, 70, 115, 0.3);
+          padding: 15px 10px;
+          text-align: left;
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          cursor: auto;
+          -moz-transform: translate3d(-50%, -5px, 0);
+          -o-transform: translate3d(-50%, -5px, 0);
+          -ms-transform: translate3d(-50%, -5px, 0);
+          -webkit-transform: translate3d(-50%, -5px, 0);
+          transform: translate3d(-50%, -5px, 0);
+          visibility: hidden;
+          opacity: 0; }
+          .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option .importer-content-hint:before {
+            content: '';
+            background-color: transparent;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 5px; }
+          .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-options .importer-popup-option .importer-content-hint .importer-popup-option {
+            line-height: 24px;
+            border: none;
+            border-radius: 0;
+            display: block;
+            white-space: nowrap; }
+    .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-import {
+      margin: 20px 0 20px;
+      padding: 0 20px;
+      width: auto;
+      background-color: #786eff;
+      color: #fff; }
+      .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-import:hover {
+        -moz-transform: translate3d(0, -2px, 0);
+        -o-transform: translate3d(0, -2px, 0);
+        -ms-transform: translate3d(0, -2px, 0);
+        -webkit-transform: translate3d(0, -2px, 0);
+        transform: translate3d(0, -2px, 0);
+        box-shadow: 0 10px 30px -7px rgba(120, 110, 255, 0.7); }
+      .theme-browser .importer-popup .importer-popup-frame .importer-popup-content .importer-popup-import.disabled {
+        pointer-events: none;
+        opacity: .5; }
+  .theme-browser .importer-popup .wbc-progress-back {
+    background-color: #f0f2f5;
+    border-radius: 6px;
+    height: 10px;
+    left: 50%;
+    max-width: 300px;
+    width: 90%;
+    margin: 30px auto 30px;
+    display: inline-block; }
+  .theme-browser .importer-popup .wbc-progress-bar {
+    display: block;
+    background-color: #786eff;
+    border-radius: 6px;
+    height: 100%;
+    position: relative;
+    width: 0;
+    padding: 0 !important;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -ms-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out; }
+  .theme-browser .importer-popup .wbc-progress-count {
+    background-color: #1f1f1f;
+    border-radius: 3px;
+    color: #fff !important;
+    left: 100%;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    top: -40px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 40px;
+    font-size: 11px;
+    line-height: 20px; }
+    .theme-browser .importer-popup .wbc-progress-count:after {
+      background-color: inherit;
+      bottom: -5px;
+      content: "";
+      height: 10px;
+      left: 50%;
+      margin-left: -5px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 10px;
+      background-color: inherit;
+      bottom: -5px;
+      content: "";
+      height: 10px;
+      left: 50%;
+      margin-left: -5px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 10px; }
+  .theme-browser .importer-popup.progress:before {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s ease-in-out, visibility 0s 0s;
+    -moz-transition: opacity 0.3s ease-in-out, visibility 0s 0s;
+    -ms-transition: opacity 0.3s ease-in-out, visibility 0s 0s;
+    -o-transition: opacity 0.3s ease-in-out, visibility 0s 0s; }
+  .theme-browser .importer-popup.progress .wbc-progress-back {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, #e1e5eb 25%, #f0f2f5 25%, #f0f2f5 50%, #e1e5eb 50%, #e1e5eb 75%, #f0f2f5 75%, #f0f2f5);
+    -o-animation: animate-progress 3s linear infinite;
+    -moz-animation: animate-progress 3s linear infinite;
+    -webkit-animation: animate-progress 3s linear infinite;
+    animation: animate-progress 3s linear infinite; }
+  .theme-browser .importer-popup.progress .theme-actions {
+    opacity: 0 !important; }
+
+@-webkit-keyframes animate-progress {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 60px 0; } }
+
+@-moz-keyframes animate-progress {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 60px 0; } }
+
+@-o-keyframes animate-progress {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 60px 0; } }
+
+@keyframes animate-progress {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 60px 0; } }

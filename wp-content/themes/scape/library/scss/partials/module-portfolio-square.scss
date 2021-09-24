@@ -1,0 +1,283 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   SQUARE LAYOUT
+/*---------------------------------------------------------------*/
+
+.portfolio-square {
+	padding: 0;
+
+	.wtbx-grid-square {
+		max-width: none;
+	}
+
+	article.portfolio-entry {
+		margin: 0;
+		z-index: 1;
+
+		.portfolio-square-inner {
+
+			.meta-link:hover {
+				opacity: 1;
+			}
+
+			.portfolio-square-box {
+				position: relative;
+				overflow: hidden;
+				z-index: 2;
+				box-shadow: $bs4-light;
+				@include transition(all .3s $cb6);
+
+				&:hover {
+					@include translate3d(0,-5px,0);
+					box-shadow: $bs4h-medium;
+
+					.portfolio-square-overlay {
+						//opacity: 1;
+
+						i {
+							@include transform( translate3d(-50%,-50%,0) scale3d(1,1,1) );
+						}
+					}
+				}
+			}
+
+			.portfolio-square-media {
+				.portfolio-thumb-inner {
+					position: relative;
+
+					.portfolio-thumbnail {
+						border-radius: inherit;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+					}
+				}
+			}
+
+			.portfolio-square-overlay {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 1;
+				//opacity: 0;
+				cursor: pointer;
+				@include translate3d(0,0,0);
+				@include transition(opacity .3s $cb6);
+				border-radius: inherit;
+
+				.portfolio-square-bg {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+				}
+
+				i {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					color: #fff;
+					font-size: 14px;
+					width: 60px;
+					height: 60px;
+					line-height: 60px;
+					border-radius: 50%;
+					background-color: rgba(0,0,0,.2);
+					text-align: center;
+					@include transform( translate3d(-50%,-50%,0) scale3d(.7,.7,1) );
+					@include transition(all .5s $cb6);
+				}
+			}
+		}
+
+		.post-like {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			z-index: 10;
+			@include translate3d(0,-50%,0);
+
+			a {
+				display: block;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				background-color: #fff;
+				border-radius: 50%;
+				border-radius: 4px;
+				border-style: solid;
+				border-width: 1px;
+				text-shadow: none;
+				opacity: 1;
+				@include scale3d(1,1,1);
+				@include transition(all .3s $cb6, transform .3s $elastic1);
+
+				i {
+					display: block;
+					font-size: 14px;
+					line-height: 30px;
+					@include transition(transform .3s $elastic1, opacity .3s $cb6);
+				}
+
+				.like-count {
+					line-height: 30px;
+					font-size: 10px;
+					position: absolute;
+					margin: 0;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					opacity: 0;
+					@include transition(opacity .3s $ease);
+				}
+
+				&:hover {
+					@include scale3d(1.1,1.1,1);
+
+					i {
+						@include scale(.5);
+						opacity: 0;
+					}
+
+					span {
+						opacity: 1;
+					}
+				}
+
+				&.loading {
+					pointer-events: none;
+
+					i {
+						opacity: 1;
+					}
+
+					span {
+						opacity: 0;
+					}
+
+					i {
+						animation: pulse .7s $cb6 infinite;
+						-webkit-animation: pulse .7s $cb6 infinite;
+					}
+				}
+			}
+		}
+
+		.portfolio-entry-meta {
+			display: block;
+			padding: 0;
+			margin-top: 1.5em;
+			position: relative;
+			z-index: 2;
+
+			&.like-enabled {
+				padding-right: 60px;
+			}
+		}
+	}
+
+	.portfolio-meta-primary {
+		margin: 0;
+		font-size: inherit;
+		line-height: 1.5;
+		font-weight: 600;
+		//text-transform: uppercase;
+		//letter-spacing: normal;
+		font-size: 1.214286em;
+		display: block;
+		text-overflow: clip;
+		text-overflow: ellipsis;
+		text-overflow: "…";
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.portfolio-meta-secondary {
+		margin: 0;
+		font-size: .928571em;
+		line-height: 1.5;
+		//letter-spacing: normal;
+		min-height: 18px;
+		display: block;
+		text-overflow: clip;
+		text-overflow: ellipsis;
+		text-overflow: "…";
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+.wtbx_vc_portfolio_grid.wtbx_meta_left {
+	.portfolio-square-inner {
+		.portfolio-meta-primary,
+		.portfolio-meta-secondary {
+			text-align: left;
+		}
+	}
+}
+
+.wtbx_vc_portfolio_grid.wtbx_meta_center {
+	.portfolio-square-inner {
+		.portfolio-meta-primary,
+		.portfolio-meta-secondary {
+			text-align: center;
+		}
+	}
+}
+
+.wtbx_vc_portfolio_grid.wtbx_meta_right {
+	.portfolio-square-inner {
+		.portfolio-meta-primary,
+		.portfolio-meta-secondary {
+			text-align: right;
+		}
+	}
+}
+
+.wtbx_vc_portfolio_grid.wtbx_meta_skin_dark {
+	.portfolio-square-inner {
+		.portfolio-meta-primary {
+			color: #fff;
+
+			* {
+				color: #fff;
+			}
+		}
+
+		.portfolio-meta-secondary {
+			color: rgba(255,255,255,.6);
+
+			* {
+				color: rgba(255,255,255,.6);
+			}
+		}
+	}
+
+	article.portfolio-entry {
+		.portfolio-square-inner {
+			.portfolio-square-box {
+				//box-shadow: 0 10px 20px -5px rgba(0,0,0,0.6);
+				box-shadow: 0 15px 55px -5px rgba(0,0,0,.2);
+
+				&:hover {
+					//box-shadow:  0 35px 40px -20px rgba(0,0,0,0.8);
+					box-shadow: 0 20px 70px -10px rgba(0,0,0,.4);
+				}
+			}
+		}
+	}
+}

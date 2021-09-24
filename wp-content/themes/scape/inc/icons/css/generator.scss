@@ -1,0 +1,364 @@
+/* Generator button */
+
+@mixin transition($transition...) {
+	// defining prefixes so we can use them in mixins below
+	$prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-" );
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $transition;
+	}
+}
+
+a {
+	outline: 0;
+	&:hover, &:active, &:focus {
+		outline: 0;
+	}
+}
+
+#wtbx-generator-button {
+	padding-left: 3px;
+}
+
+.wtbx-button-icon {
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	margin: 0px 5px 0px 2px;
+	background: url('../inc/images/wtbx-icon-button.png') no-repeat;
+	vertical-align: middle;
+}
+
+/* Generator box */
+
+#wtbx-generator-overlay {
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	z-index: 159900;
+	display: none;
+}
+
+.wtbx-overlay-bg {
+	background-color: #000000;
+	opacity: 0.75;
+}
+
+#wtbx-generator-wrap {
+	top: 30px;
+	right: 30px;
+	left: 30px;
+	bottom: 30px;
+	display: none;
+	position: fixed;
+	background: #fff;
+	min-width: 660px;
+	min-height: 600px;
+	z-index: 160000;
+}
+
+#wtbx-generator {
+	margin: 0;
+	padding: 20px;
+	overflow: auto;
+}
+
+#wtbx-generator-shell {
+	padding: 15px;
+}
+
+#wtbx-generator-close {
+	height: 13px;
+	width: 13px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 1000;
+}
+
+#wtbx-generator-close-html {
+	height: 13px;
+	width: 13px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1010;
+}
+
+#wtbx-generator-close span, #wtbx-generator-close-html span {
+	display: block;
+	width: 13px;
+	height: 13px;
+}
+
+#wtbx-generator-close .wtbx-close-icon, #wtbx-generator-close-html .wtbx-close-icon {
+	background: url('../inc/images/wtbx-close.png') no-repeat;
+}
+
+#wtbx-generator-shell {
+	table tr td {
+		padding: 10px 0;
+	}
+	.generator-title {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #444;
+		font-weight: bold;
+	}
+	table tr td {
+		&.generator-title {
+			padding-right: 5px;
+			width: 90px;
+		}
+		&.size-info {
+			padding-left: 20px;
+			width: 61px;
+			input {
+				border: 0;
+				color: #222;
+				font-weight: bold;
+				width: 61px !important;
+				color: #9F9F9F !important;
+			}
+		}
+	}
+	.wtbx-generator-select-color input[type="text"] {
+		padding: 5px 8px;
+		width: 100%;
+	}
+
+	.wtbx-library-select-wrapper {
+		padding: 15px 0;
+
+		#wtbx-library-select {
+			min-width: 260px;
+			line-height: 35px;
+			height: 35px;
+		}
+	}
+
+	.wtbx-font-preview-title {
+		font-weight: 600;
+		margin: 10px 0;
+	}
+
+	.wtbx-icon-list {
+		display: none;
+
+		&.fontawesome, &.linea {
+			overflow: auto;
+			max-height: 350px;
+			padding: 15px;
+			margin-top: 15px;
+			border: 1px solid #ededed;
+			border-radius: 4px;
+		}
+
+		&:not(.fontawesome):not(.linea) {
+			padding: 0;
+
+			ul {
+				max-height: 350px;
+				overflow: auto;
+				padding: 4px;
+				margin-top: 15px;
+				border: 1px solid #ededed;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	.wtbx_vc_icon_font_category {
+		margin: 20px 0 10px;
+		font-weight: 600;
+	}
+}
+
+.wtbx-generator-select-pack, .wtbx-generator-select-style, .wtbx-generator-select-hover {
+	width: 100%;
+}
+
+.wtbx-generator-note {
+	font-size: 11px;
+	color: #9A9A9A;
+	display: block;
+	padding-top: 10px;
+}
+
+#wtbx-generator-insert {
+	float: right;
+}
+
+#wtbx-generator-show-html {
+	float: left;
+}
+
+.wtbx-clear {
+	clear: both;
+}
+
+/* Get HTML */
+
+#wtbx-shortcode-html {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -200px;
+	background: #fff;
+	width: 400px;
+	min-height: 200px;
+	padding: 30px 20px 20px;
+	border: 10px solid #2B2B2B;
+	textarea {
+		width: 100%;
+		min-height: 100px;
+	}
+}
+
+/* Color picker */
+
+.wtbx-generator-select-color {
+	position: relative;
+}
+
+.wtbx-generator-select-color-wheel {
+	position: absolute;
+	left: 0;
+	top: 23px;
+	display: none;
+	background: #fff;
+	border: 1px solid #aaa;
+	z-index: 99999;
+	box-shadow: 0 2px 5px #ccc;
+	-moz-box-shadow: 0 2px 5px #ccc;
+	-webkit-box-shadow: 0 2px 5px #ccc;
+}
+
+/* Icons list */
+
+.wtbx-generator-icon-select {
+	ul {
+		width: 100%;
+//		min-height: 250px;
+//		max-height: 350px;
+		overflow: auto;
+		display: block;
+		font-size: 0;
+		border: 1px solid #ededed;
+		border-radius: 2px;
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+
+		label {
+			display: inline-block;
+			list-style: none;
+			padding: 4px 4px;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 24px;
+			text-align: center;
+			border: 1px solid #ededed;
+			border-radius: 2px;
+			margin: 4px;
+			@include transition(all .2s ease-in-out);
+		}
+		input[type="radio"]:checked + label {
+			background-color: #4970ff;
+			border: 1px solid #4970ff !important;
+
+			i {
+				color: #fff;
+			}
+		}
+	}
+	input {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-size: 0;
+//		visibility: hidden;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
+//		width: 1px;
+//		height: 1px;
+		filter: alpha(opacity = 0);
+		-moz-opacity: 0;
+		-khtml-opacity: 0;
+		opacity: 0;
+		cursor: pointer;
+
+		&:hover + label {
+			background-color: #ededed;
+//			box-shadow: 0 2px 8px -1px rgba(0,0,0,.1);
+		}
+	}
+	li {
+		&[title="no-icon"] input {
+			min-width: 13px;
+		}
+		.no-icon {
+			width: 23px !important;
+			height: 23px;
+		}
+	}
+}
+
+/* Retina */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+	.wtbx-button-icon {
+		background: url('../inc/images/wtbx-icon-button@2x.png') no-repeat;
+		background-size: 14px 12px;
+	}
+	#wtbx-generator-close .wtbx-close-icon, #wtbx-generator-close-html .wtbx-close-icon {
+		background: url('../inc/images/wtbx-close@2x.png') no-repeat;
+		background-size: 13px 13px;
+	}
+}
+
+/* Icon preview */
+
+.wtbx-menu-icon-wrapper {
+	display: block;
+	cursor: default;
+
+	.wtbx-selected-icon {
+		width: 28px;
+		height: 27px;
+		line-height: 27px;
+		font-size: 14px;
+		border: 1px solid #ededed;
+		border-radius: 2px;
+		display: inline-block;
+		float: left;
+		margin-right: 10px;
+		text-align: center;
+	}
+
+	> * {
+		float: left;
+	}
+}
+
+// Delete icon
+
+.wtbx-delete-icon {
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+	border: 1px solid #ededed;
+	border-radius: 2px;
+	display: inline-block;
+//	float: right;
+	margin-left: 10px !important;
+}

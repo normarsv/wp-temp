@@ -1,0 +1,68 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+@import "mpopup/mpopup";
+
+/*---------------------------------------------------------------*/
+/* --   LIGHTBOX NAVIGATION
+/*---------------------------------------------------------------*/
+
+.mfp-container .wtbx-page-links {
+	padding:0;
+	background-color: transparent;
+	height: 0;
+
+	.wtbx-nav-button {
+		position: fixed;
+		top: 50%;
+		float: none;
+		@include translate3d(0,-50%,0);
+
+		&.no-label {
+			span {
+				display: none;
+			}
+		}
+	}
+
+	.wtbx-nav-prev {
+		left: 15px;
+	}
+
+	.wtbx-nav-next {
+		right: 15px;
+	}
+}
+
+.mfp-close {
+	@include transition(opacity .3s $cb6, transform .3s $cb6);
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 2px;
+		height: 18px;
+		border-radius: 2px;
+		background-color: #fff;
+		@include transition(all .3s $cb6);
+	}
+
+	&:before {
+		@include transform( translate3d(-50%,-50%,0) rotate3d(0,0,1,45deg) );
+	}
+
+	&:after {
+		@include transform( translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) );
+	}
+
+	&:hover {
+		@include scale3d(1.1,1.1,1);
+	}
+}

@@ -1,0 +1,514 @@
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   GRID FILTER
+/*---------------------------------------------------------------*/
+
+.wtbx-filter {
+	.wtbx-filter-inner {
+		.wtbx-filter-select {
+			display: none;
+		}
+
+		.wtbx-filter-buttons {
+			display: block;
+		}
+	}
+
+	&.filter-multi {
+		.wtbx-filter-button:hover:before {
+			@include scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+.wtbx-filter {
+	display: block;
+	padding: 30px 0 0;
+
+	&.filter-init .wtbx-filter-inner {
+		opacity: 1;
+		visibility: visible;
+		@include transition(opacity .3s $cb6 .3s, visibility 0s $cb6 .3s);
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	.wtbx-filter-inner {
+		opacity: 0;
+		visibility: hidden;
+
+		.wtbx-filter-buttons {
+			list-style: none;
+			padding: 0 15px;
+
+			.knob {
+				display: none;
+				font-size: .857143em;
+			}
+
+			.wtbx-filter-button {
+				display: inline-block;
+				font-size: .857143em;
+				font-weight: 600;
+				text-transform: uppercase;
+				cursor: pointer;
+				height: 3.6em;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				line-height: 3.6em;
+				@include transition(all .3s $cb6);
+
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				span {
+					display: inline-block;
+					line-height: 3.6em;
+				}
+			}
+		}
+	}
+
+	&.filter-minimal {
+		.wtbx-filter-buttons {
+			display: block;
+			margin: 0 -10px;
+
+			.wtbx-filter-button {
+				padding: 0 1em;
+			}
+		}
+
+		&.wtbx-skin-dark {
+			.wtbx-filter-button {
+				color: #fff;
+				opacity: .6;
+
+				&.active, &:hover {
+					opacity: 1;
+					color: #fff;
+				}
+			}
+
+			&.wtbx-scheme-colorful {
+				.wtbx-filter-button {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.filter-slider {
+		padding-bottom: 15px;
+
+		.wtbx-filter-buttons {
+			border-radius: 50px;
+			position: relative;
+			z-index: 1;
+
+			.knob {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				height: 3.6em;
+				border-radius: 3.6em;
+				z-index: -1;
+				@include transition(transform .5s $cb6, width .5s $cb6, box-shadow .5s $cb6, opacity .3s $cb6);
+
+				&.hidden {
+					opacity: 0;
+					@include transition(all 0s);
+				}
+			}
+
+			.wtbx-filter-button {
+				padding: 0 2em;
+				margin-right: 0;
+				border-radius: 3.6em;
+			}
+		}
+
+		&.wtbx-scheme-colorful {
+			.wtbx-filter-button {
+				&.active {
+					color: #fff;
+				}
+			}
+		}
+
+		&.wtbx-skin-dark {
+			.wtbx-filter-button {
+				opacity: .6;
+
+				&:hover {
+					color: #fff;
+				}
+
+				&.active, &:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.filter-multi {
+		padding-bottom: 15px;
+
+		.wtbx-filter-buttons {
+			border-radius: 50px;
+			position: relative;
+			z-index: 1;
+
+			.knob {
+				position: absolute;
+				top: 2px;
+				display: block;
+				height: 3.6em;
+				border-radius: 3.6em;
+				z-index: -1;
+				@include transition(left .4s $cb6, width .4s $cb6);
+
+				&.hidden {
+					opacity: 0;
+				}
+			}
+
+			.wtbx-filter-button {
+				padding: 0 2em;
+				margin-right: 10px;
+				border-radius: 3.6em;
+				position: relative;
+				z-index: 1;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					border-radius: 3.6em;
+					opacity: 0;
+					z-index: -1;
+					@include scale(.8);
+					@include transition(transform .2s $cb6, opacity .2s $cb6, box-shadow .2s $cb6);
+				}
+
+				&:after {
+					position: absolute;
+					top: 50%;
+					right: 1.2em;
+					width: 16px;
+					height: 16px;
+					margin-top: -10px;
+					border-radius: 50%;
+					border-width: 2px;
+					border-style: solid;
+					opacity: 0;
+					content: '\e92e';
+					display: inline-block;
+					font-family:scape-ui!important;
+					speak:none;
+					font-style:normal;
+					font-variant:normal;
+					text-transform:none;
+					-webkit-font-smoothing:antialiased;
+					-moz-osx-font-smoothing:grayscale;
+					line-height: 16px;
+					font-size: 12px;
+					text-align: center;
+					@include transition(all .1s $cb6 0s);
+				}
+
+				&:hover {
+					&:before {
+						@include scale(1);
+						opacity: 1;
+					}
+				}
+
+				&.active {
+					padding: 0 3.6em 0 2em;
+
+					&:before {
+						@include scale(1);
+						opacity: 1;
+					}
+
+					&:after {
+						opacity: 1;
+						@include transition(all .2s $cb6 0s);
+					}
+
+				}
+			}
+		}
+
+		&.wtbx-scheme-colorful {
+			.wtbx-filter-button {
+				&.active, &:hover {
+					color: #fff;
+
+					&:after {
+						color: #fff;
+						border-color: #fff;
+					}
+				}
+
+				&.active {
+					&:after {
+						opacity: .5;
+					}
+
+					&:hover:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&.filter-shadow .wtbx-filter-button:before {
+			box-shadow: $bs3-medium;
+		}
+	}
+
+	&.filter-sidebar {
+		display: table-cell;
+		vertical-align: top;
+		min-width: 160px;
+		padding-right: 5em;
+		padding-top: 0;
+
+		.wtbx-filter-inner {
+			.wtbx-filter-buttons {
+				display: block;
+
+				.wtbx-filter-button {
+					display: block;
+					padding: 0;
+					margin: 0;
+					text-transform: none;
+					font-size: 1em;
+					line-height: 3.2em;
+					height: 3.2em;
+					position: relative;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 50%;
+						height: 1px;
+						width: 1em;
+						@include scale3d(0,1,1);
+						@include transition(transform .3s $cb6);
+					}
+
+					span {
+						line-height: 3.2em;
+					}
+
+					&.active {
+						&:before {
+							@include scale3d(1,1,1);
+						}
+					}
+				}
+			}
+		}
+
+		+ .wtbx-grid-wrapper {
+			display: table-cell;
+			vertical-align: top;
+			width: 100%;
+		}
+
+		@media only screen and (max-width: 767px) {
+			display: block;
+			padding: 30px !important;
+
+			.wtbx-filter-button {
+				text-align: center;
+
+				&:before {
+					display: none;
+				}
+
+				&.active {
+					@include transform( scale3d(1,1,1) !important);
+				}
+			}
+
+			+ .wtbx-grid-wrapper {
+				display: block;
+			}
+		}
+
+		&.wtbx-skin-dark.wtbx-scheme-default {
+			.wtbx-filter-button {
+				color: #fff;
+				opacity: .6;
+
+				&:before {
+					background-color: #fff;
+				}
+
+				&.active, &:hover {
+					opacity: 1;
+					color: #fff;
+				}
+			}
+
+			&.wtbx-scheme-colorful {
+				.wtbx-filter-button {
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+
+	&.filter-layout-center {
+		text-align: center;
+
+		&.filter-sidebar {
+			.wtbx-filter-button {
+				@include transform-origin(center center);
+
+				&:before {
+					display: none;
+				}
+
+				&.active {
+					@include scale3d(1.1,1.1,1);
+				}
+			}
+		}
+	}
+
+	&.filter-layout-left {
+		text-align: left;
+
+		&.filter-sidebar {
+			.wtbx-filter-button {
+				@include transform-origin(left center);
+
+				&:before {
+					left: -25px;
+					@include transform-origin(right center);
+				}
+
+				&.active {
+					@include transform( translate3d(2em,0,0) scale3d(1.1,1.1,1) );
+				}
+			}
+		}
+	}
+
+	&.filter-layout-left-separated {
+		text-align: left;
+
+		.show-all {
+			margin: 0;
+			float: right;
+		}
+	}
+
+	&.filter-layout-right {
+		text-align: right;
+
+		&.filter-sidebar {
+			.wtbx-filter-button {
+				@include transform-origin(right center);
+
+				&:before {
+					right: -25px;
+					@include transform-origin(left center);
+				}
+
+				&.active {
+					@include transform( translate3d(-2em,0,0) scale3d(1.1,1.1,1) );
+				}
+			}
+		}
+	}
+
+	&.filter-layout-right-separated {
+		text-align: right;
+
+		.show-all {
+			margin: 0;
+			float: left;
+		}
+	}
+
+	&.wtbx-skin-dark {
+		.wtbx-filter-button {
+			color: #fff;
+		}
+	}
+}
+
+.wtbx_item_grid_wrapper.filter-sidebar {
+	display: table;
+	width: 100%;
+}
+
+#container.full-width {
+	.wtbx-grid-wrapper {
+		max-width: none;
+	}
+}
+
+.wtbx-grid-wrapper {
+	position: relative;
+}
+
+@media only screen and (max-width: 700px) {
+	.wtbx-filter {
+		&.filter-layout-left-separated {
+			text-align: center;
+		}
+
+		&.filter-layout-right-separated {
+			text-align: center;
+		}
+
+		.wtbx-filter-button {
+			float: none !important;
+		}
+	}
+}
+@media only screen and (max-width: 550px) {
+	.wtbx-filter {
+		margin-bottom: 2em;
+
+		&.filter-minimal .wtbx-filter-buttons .wtbx-filter-button {
+			height: 2em;
+			line-height: 2em;
+			margin-top: 0;
+
+			span {
+				line-height: 2em;
+			}
+		}
+
+		.wtbx-filter-buttons {
+
+			.wtbx-filter-button {
+				width: 100%;
+				float: none !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>

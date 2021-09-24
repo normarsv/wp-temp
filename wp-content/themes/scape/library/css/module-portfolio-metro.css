@@ -1,0 +1,93 @@
+/*=====================*/
+/* CUBIC BEZIER CURVES */
+/*=====================*/
+/*---------------------------------------------------------------*/
+/* --   METRO LAYOUT
+/*---------------------------------------------------------------*/
+.portfolio-metro {
+  padding: 0; }
+  .portfolio-metro #content {
+    z-index: 1; }
+    .portfolio-metro #content .portfolio-grid {
+      margin: 0 auto; }
+  .portfolio-metro .wtbx-grid-metro {
+    max-width: none; }
+  .portfolio-metro article.portfolio-entry {
+    margin: 0;
+    z-index: 1; }
+    .portfolio-metro article.portfolio-entry .wtbx-entry-media {
+      -webkit-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+      -moz-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+      -ms-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+      -o-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+      transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1); }
+    .portfolio-metro article.portfolio-entry:hover .portfolio-metro-overlay {
+      opacity: 1; }
+    .portfolio-metro article.portfolio-entry:hover .wtbx-entry-media {
+      -moz-transform: scale3d(1.05, 1.05, 1);
+      -o-transform: scale3d(1.05, 1.05, 1);
+      -ms-transform: scale3d(1.05, 1.05, 1);
+      -webkit-transform: scale3d(1.05, 1.05, 1);
+      -webkit-transform: -webkit-scale3d(1.05, 1.05, 1);
+      transform: scale3d(1.05, 1.05, 1); }
+    .portfolio-metro article.portfolio-entry .portfolio-metro-inner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden; }
+      .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-media {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
+        .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-media .wtbx-bg-image, .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-media .wtbx-bg-image-inner {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0; }
+      .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        cursor: pointer; }
+        .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-overlay .portfolio-metro-bg {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 1; }
+        .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-overlay .portfolio-metro-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          display: block;
+          padding: 30px;
+          z-index: 2;
+          text-align: center;
+          -moz-transform: translate3d(-50%, -50%, 0);
+          -o-transform: translate3d(-50%, -50%, 0);
+          -ms-transform: translate3d(-50%, -50%, 0);
+          -webkit-transform: translate3d(-50%, -50%, 0);
+          -webkit-transform: -webkit-translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0); }
+          .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-overlay .portfolio-metro-content i {
+            color: #fff;
+            font-size: 16px; }
+          .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-overlay .portfolio-metro-content .portfolio-meta-primary {
+            color: #fff;
+            font-size: 1.428571em;
+            line-height: 1.2;
+            font-weight: 600; }
+          .portfolio-metro article.portfolio-entry .portfolio-metro-inner .portfolio-metro-overlay .portfolio-metro-content .portfolio-meta-secondary {
+            margin-top: 5px;
+            color: #fff;
+            line-height: 1.2; }

@@ -1,0 +1,394 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+#wtbx_scape-custom_fonts {
+  padding: 0;
+  color: #828c9c; }
+  #wtbx_scape-custom_fonts a {
+    color: #4970ff; }
+  #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper {
+    position: relative; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_loading {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 100;
+      opacity: .5;
+      display: none; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper.loading .wtbx_font_pool_loading {
+      display: block; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container {
+      border: 1px solid #f0f2f5;
+      border-radius: 6px;
+      margin: 15px 0;
+      overflow: hidden; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_family {
+        color: #3a3f47; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_fonts_nav_item {
+        color: #3a3f47; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_container_header {
+        display: table;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 6px 6px 0 0;
+        background-color: #f0f2f5;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_container_header:hover {
+          background-color: #fbfbfb; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_container_header .wtbx_font_container_title {
+          display: table-cell;
+          width: 100%;
+          vertical-align: middle;
+          padding: 5px 10px;
+          font-weight: 600;
+          color: #3a3f47; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_container_header .wtbx_font_toggle_container {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 5px 10px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_container_header .wtbx_font_toggle_container .wtbx_font_toggle {
+            width: 30px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            font-size: 24px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_container_header .wtbx_font_toggle_container > .dashicons {
+            font-size: 18px; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container .wtbx_font_block {
+        border-top: 1px solid #e3e7ec;
+        display: none; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_container.active .wtbx_font_block {
+        display: block; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool {
+      margin-bottom: 60px;
+      border: 1px solid #e3e7ec;
+      position: relative;
+      overflow: visible; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -33px;
+        height: 0;
+        display: block;
+        border-bottom: 1px dashed #e3e7ec; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_font_container_header {
+        border-bottom: 1px solid #e3e7ec;
+        display: block;
+        width: auto;
+        cursor: auto;
+        padding: 15px 10px; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_font_container_header:hover {
+          background-color: #f0f2f5; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_font_container_header .wtbx_fontpool_title {
+          font-weight: 600;
+          display: inline-block;
+          color: #3a3f47; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_font_container_header .wtbx_fontpool_descr {
+          font-size: 13px;
+          text-align: right;
+          color: #a8b0bc;
+          font-style: italic;
+          display: inline-block;
+          margin-left: 10px; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_font_family {
+        color: #3a3f47; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool [data-type="typekit"] .wtbx_remove_from_pool {
+        visibility: hidden !important; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select .wtbx_remove_from_pool {
+        display: inline-block;
+        line-height: 20px;
+        padding: 0 8px;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: #828c9c;
+        font-size: 9px;
+        text-transform: uppercase;
+        font-weight: 500;
+        cursor: pointer;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select .wtbx_remove_from_pool:hover {
+          background-color: #ff334f; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select .wtbx_remove_from_pool:before {
+          content: 'Remove'; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_fontpool .wtbx_fonts_tab .wtbx_font_row.wtbx_font_row_hidden {
+        display: none; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_font_container_header {
+      border-bottom: none; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_custom_font_footer {
+      padding: 15px 10px;
+      border-top: 1px solid #e3e7ec; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper {
+      padding: 15px 10px; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_title {
+        display: block;
+        font-weight: 600;
+        line-height: 1.8; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_descr {
+        font-size: 12px;
+        color: #a8b0bc;
+        font-style: italic;
+        margin: 0 0 25px; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        margin: 15px 0; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_custom_font_th {
+          display: table-cell;
+          vertical-align: middle;
+          width: 120px; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td {
+          display: table-cell;
+          vertical-align: middle; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td .wtbx_custom_font_family {
+            border: 1px solid #e3e7ec;
+            border-radius: 4px;
+            line-height: 36px;
+            width: 100%;
+            max-width: 425px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td .wtbx_font_file_uploaded {
+            display: inline-block;
+            width: 20px;
+            padding-right: 5px;
+            margin-left: 15px;
+            margin-top: 2px; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td .wtbx_font_file_uploaded:first-child {
+              margin-left: 0; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td .wtbx_font_file_uploaded span {
+              visibility: hidden;
+              font-size: 22px;
+              line-height: 38px;
+              color: #4970ff; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td .wtbx_font_file_uploaded.added span {
+              visibility: visible; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_customfonts .wtbx_upload_fonts_wrapper .wtbx_upload_fonts_container .wtbx_custom_font_detail .wtbx_upload_font_td .media_upload_button {
+            display: inline-block; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_font_container_header {
+      border-bottom: none !important; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_googlefonts_key_wrapper {
+      display: table;
+      width: 100%;
+      background-color: #454b54; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_googlefonts_key_wrapper .wtbx_googlefonts_key_header {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 15px 10px;
+        width: 100%;
+        color: #fff; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_googlefonts_key_wrapper .wtbx_googlefonts_key_header label {
+          line-height: 1.2; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_googlefonts_key_wrapper .wtbx_googlefonts_key_header .wtbx_googlefonts_hint {
+          font-size: 12px;
+          color: #828c9c;
+          line-height: 1.2; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_googlefonts_key_wrapper .wtbx_googlefonts_key_container {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_googlefonts_key_wrapper .wtbx_googlefonts_key_container #wtbx_googlefonts_key {
+          height: 41px;
+          width: 380px;
+          border-radius: 4px;
+          border: none;
+          font-size: 15px;
+          padding: 0 10px; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_font_family {
+      color: #3a3f47; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_googlefonts .wtbx_fonts_nav_item {
+      color: #3a3f47; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_hint {
+      float: left;
+      padding: 0 10px 10px;
+      width: 70%;
+      display: inline-block;
+      box-sizing: border-box;
+      font-size: 12px;
+      color: #a8b0bc;
+      font-style: italic;
+      margin: 0 0 10px; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_save {
+      padding: 10px;
+      width: 20%;
+      display: table-cell;
+      vertical-align: bottom; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_save span {
+        width: 100%;
+        line-height: 35px;
+        height: 35px;
+        border: none;
+        text-align: center;
+        margin: 0; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row {
+      display: table;
+      width: 100%; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col {
+        width: 40%;
+        display: table-cell;
+        vertical-align: bottom;
+        padding: 10px; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col:nth-child(1) {
+          width: 35%; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col:nth-child(2) {
+          width: 25%; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col span {
+          line-height: 20px;
+          display: inline-block; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col span:first-child {
+            font-weight: 600;
+            font-size: 13px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col span:last-child {
+            width: 100%;
+            margin-top: 5px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .wtbx_typekit_col span input {
+            width: 100%;
+            line-height: 35px;
+            height: 35px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 0 10px;
+            max-width: none; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .button {
+        display: inline-block;
+        width: calc(50% - 5px); }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .button:last-child {
+          margin-left: 10px;
+          float: right; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_typekitfonts .wtbx_typekit_header .wtbx_typekit_row .button:last-child:hover {
+            background-color: #ff334f !important;
+            color: #fff !important; }
+    #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper {
+      display: block; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_nav {
+        padding: 10px 10px;
+        border-bottom: 1px solid #e3e7ec; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_nav .wtbx_fonts_nav_inner .wtbx_fonts_nav_item {
+          display: inline-block;
+          width: 100%;
+          max-width: 3.5%;
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: 700;
+          padding: 0;
+          margin: 0 0.25%;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 4px;
+          text-align: center;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_nav .wtbx_fonts_nav_inner .wtbx_fonts_nav_item:hover, #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_nav .wtbx_fonts_nav_inner .wtbx_fonts_nav_item.active {
+            color: #fff;
+            background-color: #4970ff; }
+      #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab {
+        display: none;
+        max-height: 300px;
+        overflow: auto;
+        border-radius: 0 0 8px 8px; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row {
+          display: table;
+          table-layout: fixed;
+          width: 100%;
+          font-size: 13px;
+          line-height: 1.3em; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row:nth-child(2n-1) {
+            background-color: #f9f9f9; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row.added {
+            background-color: #d9ffca !important; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row.added .wtbx_font_select .wtbx_add_to_pool {
+              cursor: auto;
+              background-color: #4ad015 !important;
+              -webkit-transition: all 0s ease-in-out;
+              -moz-transition: all 0s ease-in-out;
+              -ms-transition: all 0s ease-in-out;
+              -o-transition: all 0s ease-in-out; }
+              #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row.added .wtbx_font_select .wtbx_add_to_pool:before {
+                content: 'Added'; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_cell {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10px 10px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_family {
+            font-weight: 600; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_source {
+            width: 90px; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_source span {
+              display: inline-block;
+              line-height: 20px;
+              font-size: 9px;
+              text-transform: uppercase;
+              font-weight: 500;
+              color: #fff;
+              padding: 0 7px;
+              border-radius: 20px; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_source.wtbx_font_google span {
+              background-color: #dd4b39; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_source.wtbx_font_fontsquirrel span {
+              background-color: #61456a; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_source.wtbx_font_custom span {
+              background-color: #4970ff; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_source.wtbx_font_typekit span {
+              background-color: #87ec00;
+              color: #152600; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_variants {
+            width: 50%;
+            font-size: 12px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_subsets {
+            font-size: 12px; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_link {
+            width: 20px; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_link a {
+              color: #333333;
+              font-size: 18px;
+              line-height: 20px;
+              display: block;
+              cursor: pointer;
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -ms-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out; }
+              #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_link a:hover {
+                color: #ff334f; }
+          #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select {
+            width: 60px;
+            text-align: center; }
+            #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select .wtbx_add_to_pool {
+              display: inline-block;
+              line-height: 20px;
+              padding: 0 8px;
+              border-radius: 20px;
+              text-align: center;
+              color: #fff;
+              background-color: #808080;
+              font-size: 9px;
+              text-transform: uppercase;
+              font-weight: 500;
+              cursor: pointer;
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -ms-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out; }
+              #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select .wtbx_add_to_pool:before {
+                content: 'Add'; }
+              #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab .wtbx_font_row .wtbx_font_select .wtbx_add_to_pool:hover {
+                background-color: #ff334f; }
+        #wtbx_scape-custom_fonts .wtbx_font_pool_wrapper .wtbx_font_pool_container .wtbx_font_wrapper .wtbx_fonts_tab.active {
+          display: block; }

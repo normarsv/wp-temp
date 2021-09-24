@@ -1,0 +1,291 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+
+/*
+* Ratings
+*/
+
+$star_width: 20;
+
+.wtbx_vc_rating {
+
+	&.wtbx_skin_dark {
+		.wtbx_rating_star {
+			color: #fff;
+		}
+	}
+
+	.wtbx_rating_reason {
+		display: inline-block;
+		font-weight: 600;
+		margin-bottom: 1em;
+		line-height: 1.714286;
+	}
+
+	.wtbx_rating_stars {
+		display: block;
+		position: relative;
+		font-size: 1em;
+
+		i {
+			text-align: center;
+			padding: 0 2px;
+			width: #{$star_width}px;
+			display: inline-block;
+		}
+
+		.wtbx_rating_stars_fcont {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			overflow: hidden;
+
+			.wtbx_rating_stars_f {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: #{$star_width*5}px;
+			}
+		}
+
+		&.wtbx_stars_0_5 .wtbx_rating_stars_fcont {
+			width: #{$star_width*0.5}px;
+		}
+		&.wtbx_stars_1 .wtbx_rating_stars_fcont {
+			width: #{$star_width}px;
+		}
+		&.wtbx_stars_1_5 .wtbx_rating_stars_fcont {
+			width: #{$star_width*1.5}px;
+		}
+		&.wtbx_stars_2 .wtbx_rating_stars_fcont {
+			width: #{$star_width*2}px;
+		}
+		&.wtbx_stars_2_5 .wtbx_rating_stars_fcont {
+			width: #{$star_width*2.5}px;
+		}
+		&.wtbx_stars_3 .wtbx_rating_stars_fcont {
+			width: #{$star_width*3}px;
+		}
+		&.wtbx_stars_3_5 .wtbx_rating_stars_fcont {
+			width: #{$star_width*3.5}px;
+		}
+		&.wtbx_stars_4 .wtbx_rating_stars_fcont {
+			width: #{$star_width*4}px;
+		}
+		&.wtbx_stars_4_5 .wtbx_rating_stars_fcont {
+			width: #{$star_width*4.5}px;
+		}
+		&.wtbx_stars_5 .wtbx_rating_stars_fcont {
+			width: #{$star_width*5}px;
+		}
+	}
+
+	.wtbx_rating_stars_compact {
+		display: inline-block;
+		font-size: 0.857143em;
+		font-weight: 700;
+		color: #fff;
+		padding: 0 10px;
+		border-radius: 2em;
+		line-height: 2;
+
+		.wtbx_rating_icon {
+			display: inline-block;
+		}
+
+		.wtbx_rating_number {
+			margin-right: .5em;
+			display: inline-block;
+		}
+	}
+
+	.wtbx_rating_credentials {
+		position: relative;
+
+		.wtbx_rating_details {
+
+			.wtbx_rating_author_name {
+				display: block;
+				font-weight: 600;
+			}
+
+			.wtbx_rating_author_occupation {
+				display: inline;
+				margin-right: .3em;
+				font-weight: 600;
+
+				+ .wtbx_rating_author_company {
+
+					&:before {
+						content: '|';
+						margin-right: .3em;
+					}
+				}
+			}
+
+			.wtbx_rating_author_company {
+				display: inline;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&.wtbx_skin_dark {
+
+		.wtbx_rating_author_occupation,
+		.wtbx_rating_author_company {
+			color: rgba(255,255,255,.4);
+		}
+
+		.wtbx_rating_author_name,
+		.wtbx_rating_reason,
+		.wtbx_rating_content {
+			color: #fff;
+		}
+	}
+
+	&.wtbx_style_1 {
+
+		.wtbx_rating_credentials {
+
+			.wtbx_rating_stars {
+				+ .wtbx_rating_details {
+					margin-top: 1em;
+				}
+			}
+
+			.wtbx_rating_stars_compact {
+				margin-bottom: 1em;
+			}
+
+			.wtbx_rating_details {
+				line-height: 1.5;
+
+				.wtbx_rating_author_name {
+					font-size: 1.142857em;
+				}
+
+				.wtbx_rating_author_occupation,
+				.wtbx_rating_author_company {
+					font-size: .928571em;
+				}
+			}
+
+			.wtbx_rating_logo {
+				height: 40px;
+
+				img {
+					max-width: none;
+					height: 40px;
+					width: auto;
+				}
+			}
+		}
+
+		.wtbx_rating_content {
+			padding-bottom: 2em;
+		}
+	}
+
+	&.wtbx_style_2 {
+
+		.wtbx_rating_stars,
+		.wtbx_rating_stars_compact {
+			display: inline-block;
+			float: right;
+			line-height: 2;
+		}
+
+		.wtbx_rating_reason {
+			float: left;
+		}
+
+		.wtbx_rating_credentials {
+
+			.wtbx_rating_details {
+				line-height: 1.5;
+
+				.wtbx_rating_author_name {
+					font-size: 1.142857em;
+				}
+
+				.wtbx_rating_author_occupation,
+				.wtbx_rating_author_company {
+					font-size: .928571em;
+				}
+			}
+
+			.wtbx_rating_logo {
+				height: 40px;
+
+				img {
+					max-width: none;
+					height: 40px;
+					width: auto;
+				}
+			}
+		}
+
+		.wtbx_rating_content {
+			padding-bottom: 2em;
+			clear: both;
+		}
+	}
+
+	&.wtbx_style_3 {
+		text-align: center;
+
+		.wtbx_rating_stars,
+		.wtbx_rating_stars_compact {
+			display: inline-block;
+			line-height: 2em;
+			margin: 0 auto 1em;
+
+			+ .wtbx_rating_details {
+				margin-top: 1em;
+			}
+		}
+
+		.wtbx_rating_reason {
+			display: block;
+		}
+
+		.wtbx_rating_credentials {
+			padding-top: 1em;
+
+			.wtbx_rating_details {
+				line-height: 1.5;
+
+				.wtbx_rating_author_name {
+					font-size: 1.142857em;
+				}
+
+				.wtbx_rating_author_occupation,
+				.wtbx_rating_author_company {
+					font-size: .928571em;
+				}
+			}
+
+			.wtbx_rating_logo {
+				height: 40px;
+
+				img {
+					max-width: none;
+					height: 40px;
+					width: auto;
+				}
+			}
+		}
+
+		.wtbx_rating_content {
+			padding-bottom: 1em;
+		}
+	}
+}

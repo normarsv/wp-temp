@@ -1,0 +1,627 @@
+/*=====================*/
+/* CUBIC BEZIER CURVES */
+/*=====================*/
+/*
+* Team member
+*/
+.wtbx_vc_team_member {
+  text-align: center;
+}
+
+.wtbx_vc_team_member .wtbx_vc_team_member_inner {
+  position: relative;
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_photo {
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_content .wtbx_team_member_details {
+  line-height: 1.7;
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_content .wtbx_team_member_details .wtbx_team_member_name {
+  font-size: 1.214286em;
+  font-weight: 600;
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_content .wtbx_team_member_details .wtbx_team_member_position {
+  font-size: 1em;
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_content .wtbx_team_member_description {
+  margin-top: 1em;
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_social ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.wtbx_vc_team_member figure .wtbx_team_member_social ul a i {
+  -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_1 .wtbx_vc_team_member_inner {
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_1 .wtbx_vc_team_member_inner:hover {
+  box-shadow: 0 20px 70px -10px rgba(9, 31, 67, 0.15);
+}
+
+.wtbx_vc_team_member.wtbx_style_1.with_social_icons figure {
+  padding-bottom: 50px;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_photo {
+  position: relative;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 30px;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure svg path {
+  fill: #fff;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_content {
+  padding: 30px;
+  position: relative;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_content:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: -webkit-translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  width: 60px;
+  height: 1px;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_social ul {
+  margin: 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_social ul li {
+  display: inline-block;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_social ul li a {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.wtbx_vc_team_member.wtbx_style_1 figure .wtbx_team_member_social ul li:last-child a {
+  border-right: none;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 .wtbx_vc_team_member_inner {
+  border-radius: 9px;
+  background-color: #fff;
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_2 .wtbx_vc_team_member_inner:hover {
+  box-shadow: 0 20px 70px -10px rgba(9, 31, 67, 0.15);
+}
+
+.wtbx_vc_team_member.wtbx_style_2.with_social_icons figure {
+  padding: 30px 30px 90px;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure {
+  text-align: center;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 30px 30px 30px;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_photo {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_content {
+  padding: 2em 0 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_social {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: -webkit-translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_social ul {
+  margin: 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_social ul li {
+  width: 30px;
+  display: inline-block;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_social ul li a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+.wtbx_vc_team_member.wtbx_style_2 figure .wtbx_team_member_social ul li:last-child a {
+  border-right: none;
+}
+
+.wtbx_vc_team_member.wtbx_style_3.with_social_icons figure {
+  padding-bottom: 50px;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_photo {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_content {
+  padding: 1em 0 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_content .wtbx_team_member_details {
+  line-height: 1.5;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_social ul {
+  margin: 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_social ul li {
+  width: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_social ul li a {
+  display: block;
+  text-align: left;
+  line-height: 25px;
+  font-size: 1em;
+}
+
+.wtbx_vc_team_member.wtbx_style_3 figure .wtbx_team_member_social ul li:last-child a {
+  border-right: none;
+}
+
+.wtbx_vc_team_member.wtbx_style_3.wtbx_skin_dark .wtbx_team_member_name {
+  color: #fff;
+}
+
+.wtbx_vc_team_member.wtbx_style_3.wtbx_skin_dark .wtbx_team_member_position {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.wtbx_vc_team_member.wtbx_style_3.wtbx_skin_dark .wtbx_team_member_description {
+  color: #fff;
+}
+
+.wtbx_vc_team_member.wtbx_style_3.wtbx_skin_dark .wtbx_team_member_social a:not(:hover) i {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.wtbx_vc_team_member.wtbx_align_center figure {
+  text-align: center;
+}
+
+.wtbx_vc_team_member.wtbx_align_left figure {
+  text-align: left;
+}
+
+.wtbx_vc_team_member.wtbx_align_right figure {
+  text-align: right;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure {
+  position: relative;
+  text-align: start;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_photo:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.8s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.8s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.8s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.8s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_photo .wtbx_team_member_photo_inner {
+  font-size: 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 45px;
+  z-index: 1;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_name {
+  opacity: 0;
+  -moz-transform: translate3d(0, 15px, 0);
+  -o-transform: translate3d(0, 15px, 0);
+  -ms-transform: translate3d(0, 15px, 0);
+  -webkit-transform: translate3d(0, 15px, 0);
+  -webkit-transform: -webkit-translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+  -webkit-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_position {
+  opacity: 0;
+  -moz-transform: translate3d(0, 15px, 0);
+  -o-transform: translate3d(0, 15px, 0);
+  -ms-transform: translate3d(0, 15px, 0);
+  -webkit-transform: translate3d(0, 15px, 0);
+  -webkit-transform: -webkit-translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+  -webkit-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_description {
+  opacity: 0;
+  -moz-transform: translate3d(0, 15px, 0);
+  -o-transform: translate3d(0, 15px, 0);
+  -ms-transform: translate3d(0, 15px, 0);
+  -webkit-transform: translate3d(0, 15px, 0);
+  -webkit-transform: -webkit-translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social {
+  padding: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul {
+  margin: 0;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li {
+  width: 30px;
+  display: inline-block;
+  opacity: 0;
+  -moz-transform: scale3d(0.5, 0.5, 1);
+  -o-transform: scale3d(0.5, 0.5, 1);
+  -ms-transform: scale3d(0.5, 0.5, 1);
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+  -webkit-transform: -webkit-scale3d(0.5, 0.5, 1);
+  transform: scale3d(0.5, 0.5, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:nth-child(2) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:nth-child(3) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:nth-child(4) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:nth-child(5) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:nth-child(6) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:nth-child(7) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li a {
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  font-size: 1em;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li a i {
+  -webkit-transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li a:hover {
+  opacity: 1;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li a:hover i {
+  -moz-transform: scale3d(1.2, 1.2, 1);
+  -o-transform: scale3d(1.2, 1.2, 1);
+  -ms-transform: scale3d(1.2, 1.2, 1);
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  -webkit-transform: -webkit-scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure .wtbx_team_member_social ul li:last-child a {
+  border-right: none;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_photo:before {
+  opacity: 1;
+  -webkit-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  -moz-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  -ms-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  -o-transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_name {
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_position {
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.7s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_description {
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: -webkit-translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 1s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li {
+  opacity: 1;
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  -webkit-transform: -webkit-scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li:nth-child(2) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.05s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li:nth-child(3) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.1s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li:nth-child(4) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.15s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li:nth-child(5) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.2s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li:nth-child(6) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.25s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4 figure.hover .wtbx_team_member_social ul li:nth-child(7) {
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0.3s;
+}
+
+.wtbx_vc_team_member.wtbx_style_4.wtbx_skin_dark .wtbx_team_member_name {
+  color: #fff;
+}
+
+.wtbx_vc_team_member.wtbx_style_4.wtbx_skin_dark .wtbx_team_member_position {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wtbx_vc_team_member.wtbx_style_4.wtbx_skin_dark .wtbx_team_member_description {
+  color: #fff;
+}
+
+.wtbx_vc_team_member.wtbx_style_4.wtbx_skin_dark .wtbx_team_member_social ul li a i {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wtbx_vc_team_member.wtbx_style_4.wtbx_skin_dark .wtbx_team_member_social ul li a i:hover {
+  color: #fff;
+}

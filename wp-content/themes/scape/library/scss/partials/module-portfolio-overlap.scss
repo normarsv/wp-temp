@@ -1,0 +1,237 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   OVERLAP LAYOUT
+/*---------------------------------------------------------------*/
+
+.portfolio-overlap {
+	article.portfolio-entry {
+		margin: 0;
+		z-index: 1;
+		margin-bottom: 8em;
+
+		&:last-child {
+			margin-bottom: 4em;
+		}
+
+		.portfolio-overlap-inner {
+			position: relative;
+
+			.portfolio-overlap-media {
+				width: 66.666667%;
+				float: left;
+
+				&:hover {
+					.wtbx-rollhover-layer {
+						@include scale3d(1.05,1.05,1);
+						@include transition(all .3s $cb6);
+					}
+				}
+
+				.portfolio-overlap-media-link {
+					display: block;
+					overflow: hidden;
+					//border-radius: $br;
+					@include transition(all .5s $cb6);
+					@include transform-origin(center left);
+
+					.wtbx-bg-image {
+						@include transition(all .5s $cb6);
+						@include transform-origin(center left);
+					}
+				}
+			}
+
+			&:hover {
+				.portfolio-overlap-media-link {
+					@include scale3d(.95,.95,1);
+
+					.wtbx-bg-image {
+						@include scale3d(1.052,1.052,1);
+					}
+				}
+			}
+
+			.portfolio-overlap-meta {
+				width: 30%;
+				position: absolute;
+				left: 60%;
+				right: auto;
+
+				top: 50%;
+				@include translate3d(0,-50%,0);
+
+				a:not(.portfolio-overlap-button) {
+					display: inline-block;
+					color: inherit;
+					opacity: 1;
+
+					&:hover,
+					&:hover * {
+						text-decoration: underline;
+					}
+				}
+
+				.portfolio-entry-meta {
+
+					> * {
+						margin-bottom: 1em;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.portfolio-meta-primary {
+			display: inline-block;
+			font-size: 2.5em;
+			line-height: 1.2;
+			font-weight: 600;
+			margin: 0;
+			opacity: 1;
+			@include transition(all .5s $cb6);
+		}
+
+		.portfolio-meta-secondary {
+			max-width: 70%;
+			margin: 0;
+			line-height: 1.2;
+			opacity: 1;
+			text-transform: uppercase;
+			font-size: .785714em;
+			@include transition(all .5s $cb6);
+		}
+
+		.portfolio-overlap-excerpt {
+			margin-top: 2em;
+			font-weight: 500;
+		}
+
+		.portfolio-meta-button {
+			margin-top: 2em;
+			@include transition(all .5s $cb6);
+		}
+
+		.portfolio-overlap-button {
+			position: relative;
+			display: inline-block;
+			font-size: .857143em;
+			//font-weight: 600;
+			line-height: 3;
+			padding: 0 1.2em;
+			color: #fff;
+			@include transition(all .2s $cb6);
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				border-radius: $br;
+				box-shadow: $bs3-medium;
+				z-index: -1;
+				@include transition(all .2s $cb6);
+			}
+
+			&:hover {
+				&:before {
+					@include scale3d(1.05,1.15,1);
+					box-shadow: $bs3h-dark;
+				}
+			}
+		}
+
+		&:nth-child(2n) {
+			.portfolio-overlap-inner {
+				-webkit-flex-direction: row-reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+
+				.portfolio-overlap-media {
+					float: right;
+				}
+
+				.portfolio-overlap-meta {
+					left: auto;
+					right: 55%;
+					//@include translate3d(30%,0,0);
+				}
+
+				.portfolio-overlap-media-link {
+					@include transform-origin(center right);
+
+					.wtbx-bg-image {
+						@include transform-origin(center right);
+					}
+				}
+			}
+		}
+
+		@media only screen and (max-width: 991px) {
+			margin-bottom: 6em;
+
+			.portfolio-overlap-inner {
+				.portfolio-overlap-media {
+					width: 100%;
+					float: none !important;
+
+					.portfolio-overlap-media-link,
+					.wtbx-bg-image {
+						@include transform( scale3d(1,1,1) !important);
+					}
+				}
+
+				.portfolio-overlap-meta {
+					position: relative;
+					top: auto;
+					left: auto !important;
+					right: auto !important;
+					width: 100%;
+					margin-top: 2em;
+					@include translate3d(0,0,0);
+
+					//.portfolio-entry-meta > *:nth-child(1) {
+					//	margin-bottom: .5em !important;
+					//}
+
+					.portfolio-meta-primary {
+						font-size: 1.857143em !important;
+					}
+
+					.portfolio-meta-secondary {
+						font-size: .785714em !important;
+					}
+
+					.portfolio-overlap-button {
+						//margin-top: 1em !important;
+
+						&:before {
+							@include translate3d(0,0,0);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.wtbx_overlap.wtbx_meta_skin_dark {
+	.portfolio-entry-meta *,
+	.portfolio-overlap-excerpt {
+		color: #fff;
+	}
+
+	.portfolio-overlap-button:before {
+		background-color: #fff;
+	}
+}

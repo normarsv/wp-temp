@@ -1,0 +1,203 @@
+@mixin transition($transition...) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-" , "");
+  @each $prefix in $prefixes {
+    #{$prefix}transition: $transition;
+  }
+}
+
+@mixin keyframes($animationName)
+{
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+	@-moz-keyframes #{$animationName}  {
+		@content;
+	}
+	@-o-keyframes #{$animationName} {
+		@content;
+	}
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin animation($animation...) {
+	-o-animation: $animation;
+	-moz-animation: $animation;
+	-webkit-animation: $animation;
+	animation: $animation;
+}
+
+@mixin animation-name($name) {
+	-webkit-animation-name: $name;
+	animation-name: $name;
+}
+
+@mixin animation-duration($duration) {
+	-webkit-animation-duration: $duration;
+	animation-duration: $duration;
+}
+
+@mixin animation-timing-function($timing-function) {
+	-webkit-animation-timing-function: $timing-function;
+	animation-timing-function: $timing-function;
+}
+
+@mixin animation-direction($direction) {
+	-webkit-animation-direction: $direction;
+	animation-direction: $direction;
+}
+
+@mixin animation-delay($delay...) {
+	-o-animation-delay: $delay;
+	-moz-animation-delay: $delay;
+	-webkit-animation-delay: $delay;
+	animation-delay: $delay;
+}
+
+@mixin animation-iteration-count($iteration-count) {
+	-webkit-animation-iteration-count: $iteration-count;
+	animation-iteration-count: $iteration-count;
+}
+
+@mixin backface-visibility($visibility) {
+	-webkit-backface-visibility: $visibility;
+	-moz-backface-visibility: $visibility;
+	backface-visibility: $visibility;
+}
+
+@mixin filter($value) {
+	-webkit-filter: $value;
+	-moz-filter: $value;
+	filter: $value;
+}
+
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+
+@mixin box-sizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing:    $type;
+	-ms-box-sizing:     $type;
+	box-sizing:         $type;
+}
+
+@mixin transform($transforms...) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	-webkit-transform: -webkit-+$transforms;
+	transform: $transforms;
+}
+
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+@mixin rotateX ($deg) {
+	@include transform(rotateX(#{$deg}deg));
+}
+
+@mixin rotateY ($deg) {
+	@include transform(rotateY(#{$deg}deg));
+}
+
+@mixin rotateZ ($deg...) {
+	@include transform(rotateZ(#{$deg}deg));
+}
+
+@mixin scale($scale...) {
+	@include transform(scale($scale));
+}
+
+@mixin scaleX($scale...) {
+	@include transform(scaleX($scale));
+}
+
+@mixin scaleY($scale...) {
+	@include transform(scaleY($scale));
+}
+
+@mixin scale3d($scale...) {
+	@include transform(scale3d($scale));
+}
+
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+@mixin translate3d ($x, $y, $z...) {
+	@include transform(translate3d($x, $y, $z));
+}
+
+@mixin translateY ($y...) {
+	@include transform(translateY($y));
+}
+
+@mixin rotate3d ($x, $y, $z, $a) {
+	@include transform(rotate3d(#{$x}, #{$y}, #{$z}, #{$a}deg));
+}
+
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin perspective($perspective) {
+	-webkit-perspective: $perspective;
+	-moz-perspective: $perspective;
+	-ms-transform-origin: $perspective;
+	perspective: $perspective;
+}
+
+@mixin perspective-origin($perspective) {
+	-webkit-perspective-origin: $perspective;
+	-moz-perspective-origin: $perspective;
+	-ms-perspective-origin: $perspective;
+	-o-perspective-origin: $perspective;
+	perspective-origin: $perspective;
+}
+
+@mixin transform-origin ($origin) {
+	moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+@mixin transition-property($transition-property...) {
+	-webkit-transition-property: $transition-property;
+	transition-property: $transition-property;
+}
+
+@mixin transition-duration($transition-duration...) {
+	-webkit-transition-duration: $transition-duration;
+	transition-duration: $transition-duration;
+}
+
+@mixin transition-timing-function($timing-function) {
+	-webkit-transition-timing-function: $timing-function;
+	transition-timing-function: $timing-function;
+}
+
+@mixin transition-delay ($delay) {
+	moz-transition-delay: $delay;
+	-o-transition-delay: $delay;
+	-ms-transition-delay: $delay;
+	-webkit-transition-delay: $delay;
+	transition-delay: $delay;
+}
+
+@mixin clip-path-polygon ($path) {
+	-webkit-clip-path: polygon($path);
+	clip-path: polygon($path);
+	clip: rect($path);
+}

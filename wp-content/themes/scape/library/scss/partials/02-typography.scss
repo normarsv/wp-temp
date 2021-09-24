@@ -1,0 +1,25 @@
+
+/*---------------------------------------------------------------*/
+/* 02.  BASIC TYPOGRAPHY
+/*---------------------------------------------------------------*/
+
+body {
+	line-height: 1.9;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+// H1, H2, H3, H4, H5 STYLES
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	text-rendering: optimizelegibility;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-transform: none;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+
+	a {
+		text-decoration: none;
+	}
+}

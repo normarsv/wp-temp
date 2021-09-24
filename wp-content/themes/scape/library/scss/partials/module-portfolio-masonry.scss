@@ -1,0 +1,84 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   MASONRY LAYOUT
+/*---------------------------------------------------------------*/
+
+.portfolio-masonry {
+	padding: 0;
+
+	#content {
+		z-index: 1;
+
+		.portfolio-grid {
+			margin: 0 auto;
+		}
+	}
+
+	.wtbx-grid-masonry {
+		max-width: none;
+	}
+
+	article.portfolio-entry {
+		margin: 0;
+		z-index: 1;
+
+		.wtbx-entry-media {
+			@include transition(all .3s $cb6);
+		}
+
+		&:hover {
+			.portfolio-masonry-overlay {
+				opacity: 1;
+			}
+
+			.wtbx-entry-media {
+				@include scale3d(1.05,1.05,1);
+			}
+		}
+
+		.portfolio-masonry-inner {
+			position: relative;
+			overflow: hidden;
+
+			.portfolio-masonry-media {
+
+				.portfolio-thumb-inner {
+					position: relative;
+
+					.portfolio-thumbnail {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+					}
+				}
+			}
+
+			.portfolio-masonry-overlay {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 1;
+				cursor: pointer;
+
+				.portfolio-masonry-bg {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}

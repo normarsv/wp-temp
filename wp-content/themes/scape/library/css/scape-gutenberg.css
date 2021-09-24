@@ -1,0 +1,150 @@
+.wp-block {
+	max-width: 1200px;
+}
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1200px;
+}
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+.editor-styles-wrapper .wp-block,
+.editor-styles-wrapper .editor-post-title__block .editor-post-title__input { font-family: 'soleil', Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.9; text-transform: none; letter-spacing: -0.03px; }
+.editor-styles-wrapper .wp-block h1,
+.editor-styles-wrapper .wp-block h2,
+.editor-styles-wrapper .wp-block h3,
+.editor-styles-wrapper .wp-block h4,
+.editor-styles-wrapper .wp-block h5,
+.editor-styles-wrapper .wp-block h6,
+.editor-styles-wrapper .editor-post-title__block .editor-post-title__input { font-weight: 500; letter-spacing: -0.04em; }
+.editor-styles-wrapper .wp-block h1,
+.editor-styles-wrapper .editor-post-title__block .editor-post-title__input { font-size: 40px; line-height: 1.5; }
+.editor-styles-wrapper .wp-block h2 { font-size: 32px; line-height: 1.5; }
+.editor-styles-wrapper .wp-block h3 { font-size: 26px; line-height: 1.5; }
+.editor-styles-wrapper .wp-block h4 { font-size: 22px; line-height: 1.5; }
+.editor-styles-wrapper .wp-block h5 { font-size: 18px; line-height: 1.5; }
+.editor-styles-wrapper .wp-block h6 { font-size: 15px; line-height: 1.5; }
+.editor-styles-wrapper .wp-block {
+	color: #687188;
+}
+.wp-block-heading h1,
+.wp-block-heading h2,
+.wp-block-heading h3,
+.wp-block-heading h4,
+.wp-block-heading h5,
+.wp-block-heading h6,
+.editor-styles-wrapper blockquote,
+.editor-styles-wrapper .wp-caption figcaption,
+.wp-block-pullquote,
+.wp-block-latest-comments__comment-meta, .wp-block-latest-comments__comment-meta a:not(:hover),
+.wp-block-latest-posts a:not(:hover),
+.wp-block-categories a:not(:hover) {
+	color: #151221;
+}
+.wp-block-latest-comments__comment-date,
+.wp-block-latest-posts__post-date {
+	color: #bbc2ce;
+}
+.editor-styles-wrapper .wp-block-quote.is-style-default {
+	border-color: #8571ea;
+}
+.editor-styles-wrapper a {
+	color: #8571ea;
+}
+
+.editor-styles-wrapper blockquote {
+	margin: 3em 3em;
+	position: relative;
+	text-align: center;
+}
+
+.editor-styles-wrapper.editor-block-preview__content blockquote {
+	margin: 0;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border-left-style: none;
+	border-left-width: 0;
+	padding-left: 0;
+}
+
+.editor-styles-wrapper .wp-block-quote.is-style-default {
+	border-left-style: solid;
+	border-left-width: 2px;
+	padding-left: 1em;
+	text-align: start;
+}
+
+.editor-styles-wrapper blockquote p,
+.editor-styles-wrapper .wp-block-quote.is-style-large p {
+	font-style: italic;
+	font-size: 1.285714em;
+	font-weight: 500;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce blockquote {
+	border-left: none;
+	padding-left: 0;
+}
+
+.editor-styles-wrapper .wp-block-button__link {
+	font-weight: 600;
+}
+
+.editor-styles-wrapper a {
+	text-decoration: none;
+	outline: none !important;
+}
+
+.editor-styles-wrapper .wp-block-latest-comments__comment {
+	margin-bottom: 2em;
+}
+
+.editor-styles-wrapper .wp-block-latest-comments__comment-meta {
+	font-weight: 600;
+}
+
+.block-editor .editor-styles-wrapper .wp-block-latest-posts {
+	list-style: none;
+	padding-left: 0;
+}
+
+.editor-styles-wrapper .wp-block-latest-posts li {
+	margin-bottom: 1em;
+}
+
+.editor-styles-wrapper .wp-block-latest-posts li:last-child {
+	margin-bottom: 0;
+}
+
+.editor-styles-wrapper .wp-block-latest-posts a {
+	font-weight: 600;
+}
+
+.block-editor .editor-styles-wrapper .wp-block-categories__list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.editor-styles-wrapper .wp-block-categories__list li {
+	margin-bottom: 10px;
+}
+
+.editor-styles-wrapper .wp-block-categories__list li:last-child {
+	margin-bottom: 0;
+}
+
+.editor-styles-wrapper .wp-block-categories__list a {
+	font-weight: 600;
+}
+
+.editor-styles-wrapper .wp-block-categories__dropdown {
+	display: block;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 15px;
+	margin: 0;
+	border-radius: 6px;
+	vertical-align: middle;
+}

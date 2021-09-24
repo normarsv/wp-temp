@@ -1,0 +1,426 @@
+html {
+  display: table;
+  width: 100%;
+}
+
+.wp-auth-check {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+body.login {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+body.login:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+body.login div#login {
+  position: relative;
+  width: 360px;
+  z-index: 3;
+  padding: 30px 15px;
+}
+
+body.login div#login h1 {
+  margin-bottom: 0;
+}
+
+body.login div#login h1 a {
+  box-shadow: none !important;
+}
+
+body.login div#login #login_error {
+  border-radius: 6px;
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.15);
+  padding: 15px 15px 15px 20px;
+  position: relative;
+  border: none;
+  margin: 15px 0;
+}
+
+body.login div#login #login_error:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  border-radius: 3px;
+  background-color: #ff334f;
+}
+
+body.login div#login #login_error a {
+  -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login #login_error a:hover {
+  opacity: .7;
+}
+
+body.login div#login p.message {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none;
+  border-radius: 6px;
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.15);
+  padding: 15px 15px 15px 20px;
+  margin: 15px 0;
+  position: relative;
+  border: none;
+}
+
+body.login div#login p.message:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  border-radius: 6px;
+}
+
+body.login div#login form#lostpasswordform {
+  position: relative;
+  z-index: 3;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+body.login div#login form#lostpasswordform p label {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  display: block;
+  margin-top: 10px;
+}
+
+body.login div#login form#lostpasswordform p:first-child label {
+  margin-top: 0;
+}
+
+body.login div#login form#lostpasswordform p input {
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 15px;
+  border: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login form#lostpasswordform p input:-webkit-autofill {
+  content: "\feff";
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+body.login div#login form#lostpasswordform p.submit {
+  margin-top: 10px;
+}
+
+body.login div#login form#lostpasswordform p.submit input#wp-submit {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  line-height: 40px;
+  height: 40px;
+  border: none;
+  text-shadow: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05em;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login form#loginform, body.login div#login form#registerform {
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.15);
+}
+
+body.login div#login form#loginform #reg_passmail, body.login div#login form#registerform #reg_passmail {
+  text-transform: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+body.login div#login form#loginform p label, body.login div#login form#registerform p label {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  display: block;
+  margin-top: 10px;
+}
+
+body.login div#login form#loginform p:first-child label, body.login div#login form#registerform p:first-child label {
+  margin-top: 0;
+}
+
+body.login div#login form#loginform input, body.login div#login form#registerform input {
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 15px;
+  border: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login form#loginform input:-webkit-autofill, body.login div#login form#registerform input:-webkit-autofill {
+  content: "\feff";
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+body.login div#login form#loginform p.forgetmenot, body.login div#login form#registerform p.forgetmenot {
+  margin-top: 12px;
+}
+
+body.login div#login form#loginform p.forgetmenot label, body.login div#login form#registerform p.forgetmenot label {
+  margin-top: 10px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+body.login div#login form#loginform p.forgetmenot input#rememberme, body.login div#login form#registerform p.forgetmenot input#rememberme {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  margin: 0 5px 0 0;
+}
+
+body.login div#login form#loginform p.forgetmenot input#rememberme:before, body.login div#login form#registerform p.forgetmenot input#rememberme:before {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -9px;
+  margin-left: -9px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  content: "\e913";
+  font-size: 12px;
+  font-family: scape-ui !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.login div#login form#loginform p.submit, body.login div#login form#registerform p.submit {
+  margin-top: 10px;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit, body.login div#login form#registerform p.submit input#wp-submit {
+  box-shadow: none;
+  padding: 0 30px;
+  margin: 0;
+  line-height: 40px;
+  height: 40px;
+  border: none;
+  text-shadow: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05em;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login p {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+body.login div#login p#nav {
+  margin: 15px 0;
+  padding: 0 15px 0 0;
+  color: #fff;
+  display: inline-block;
+  float: right;
+}
+
+body.login div#login p#nav a {
+  color: #fff;
+  box-shadow: none !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login p#nav a:hover {
+  opacity: .6;
+}
+
+body.login div#login p#backtoblog {
+  margin: 15px 0;
+  padding: 0 0 0 15px;
+  color: #fff;
+  display: inline-block;
+  float: left;
+}
+
+body.login div#login p#backtoblog a {
+  color: #fff;
+  box-shadow: none !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+body.login div#login p#backtoblog a:hover {
+  opacity: .6;
+}
+
+@media only screen and (max-width: 400px) {
+  body.login div#login {
+    width: calc(100% - 30px);
+  }
+  body.login div#login form#loginform {
+    padding: 30px;
+  }
+  body.login div#login p.forgetmenot {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-top: 0 !important;
+  }
+  body.login div#login p.submit {
+    display: block;
+    text-align: center;
+  }
+  body.login div#login p.submit input#wp-submit {
+    float: none;
+    width: 100%;
+    margin-top: 15px !important;
+  }
+}
+
+body.login .wp-pwd .button.wp-hide-pw {
+  border: none;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+}
+
+body.login .wp-pwd .button.wp-hide-pw .dashicons {
+  font-size: 18px;
+  -webkit-transition: color 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: color 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: color 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: color 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: color 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+#wp-auth-check {
+  border-radius: 6px;
+  padding: 0;
+}
+
+#wp-auth-check .wp-auth-check-close {
+  z-index: 2;
+  right: 20px;
+  color: #fff;
+  opacity: .6;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+#wp-auth-check .wp-auth-check-close:hover {
+  opacity: 1;
+}
+
+#wp-auth-check .wp-auth-check-form {
+  overflow: hidden;
+}
+
+#wp-auth-check .wp-auth-check-form iframe {
+  height: 100%;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    background: transparent;
+  }
+}
+
+@-moz-keyframes autofill {
+  to {
+    background: transparent;
+  }
+}
+
+@-o-keyframes autofill {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes autofill {
+  to {
+    background: transparent;
+  }
+}

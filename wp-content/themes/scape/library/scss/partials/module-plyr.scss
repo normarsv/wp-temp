@@ -1,0 +1,228 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+@import "plyr/plyr";
+
+.plyr--video {
+
+	.plyr__video-wrapper:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(39, 39, 39, 0.40);
+		opacity: 0;
+		@include transition(opacity .3s $cb6);
+	}
+
+	&.plyr--stopped .plyr__video-wrapper:before {
+		opacity: 1;
+	}
+}
+
+
+/*---------------------------------------------------------------*/
+/* --   EMBEDDED AND SELF-HOSTED MEDIA
+/*---------------------------------------------------------------*/
+
+.audio-embed {
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 0;
+	line-height: 0;
+	box-shadow: $bs3-medium;
+}
+
+.wtbx-media-selfhosted {
+	position: relative;
+}
+
+.wtbx-audio-selfhosted {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 400px;
+	opacity: 0;
+	visibility: hidden;
+
+	&.audio-noposter {
+		padding-top: 80px;
+
+		.audio-title {
+			top: 50%;
+			bottom: auto;
+			margin-top: -40px;
+			@include translate3d(0,-50%,0);
+		}
+
+		.plyr {
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				right: 0;
+				height: 80px;
+				border-radius: 4px;
+				background-color: #fff;
+				box-shadow: $bs3-medium;
+			}
+		}
+	}
+
+	&.wtbx-media-init {
+		opacity: 1;
+		visibility: visible;
+		@include transition(opacity .3s $cb6, visibility 0s);
+	}
+
+	.audio-poster {
+		position: relative;
+		border-radius: $br2;
+		overflow: hidden;
+		box-shadow: none;
+		z-index: 1;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 90px;
+			z-index: 2;
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+		}
+	}
+
+	.audio-title {
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 600;
+		z-index: 3;
+		color: #fff;
+	}
+
+	.plyr--audio {
+		z-index: 2;
+	}
+
+	.plyr--audio .plyr__controls {
+		height: 60px;
+		border: none;
+		padding: 15px 0;
+		box-shadow: none;
+		border-radius: $br2;
+		background-color: transparent;
+
+		text-align: center;
+
+		.plyr__progress {
+			margin: -30px 0 0 0;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 30px;
+			right: 30px;
+		}
+
+		.plyr__time {
+			margin-left: 5px;
+
+			&:before {
+				margin-right: 5px;
+			}
+		}
+
+		.plyr__volume {
+			position: absolute;
+			top: 50%;
+			width: calc(50% - 80px);
+			right: 40px;
+			@include translate3d(0,-50%,0);
+		}
+
+		.plyr__tooltip {
+			z-index: 3;
+			font-weight: 600;
+			margin-bottom: 10px;
+			background-color: rgba(0,0,0,.8);
+
+			&:before {
+				border-top-color: rgba(0,0,0,.8);
+			}
+		}
+
+		button[data-plyr="play"],
+		button[data-plyr="pause"] {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include translate3d(-50%,-50%,0);
+
+			svg {
+				width: 25px;
+				height: 25px;
+			}
+		}
+
+		button[data-plyr="mute"] {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			@include translate3d(0,-50%,0);
+
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+		}
+
+		button {
+			opacity: 1;
+			@include transition(all .3s $cb6);
+
+			&:hover {
+				opacity: 1;
+				background-color: transparent;
+				@include transform( translate3d(-50%,-50%,0) scale3d(1.1,1.1,1) );
+			}
+		}
+
+		button[data-plyr="mute"]:hover {
+			@include transform( translate3d(0,-50%,0) scale3d(1.1,1.1,1) );
+		}
+	}
+}
+
+.wtbx-video-selfhosted {
+	display: block;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: $br2;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	line-height: 0;
+	box-shadow: $bs3-medium;
+
+	&.wtbx-media-init {
+		opacity: 1;
+		visibility: visible;
+		@include transition(opacity .3s $cb6, visibility 0s);
+	}
+}

@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/*=====================*/
+/* CUBIC BEZIER CURVES */
+/*=====================*/
+/*---------------------------------------------------------------*/
+/* --   MASONRY LAYOUT
+/*---------------------------------------------------------------*/
+.blog-masonry {
+  padding: 0; }
+  .blog-masonry #content {
+    z-index: 1; }
+    .blog-masonry #content .blog-grid {
+      padding: 15px 0; }
+  .blog-masonry .blog-grid {
+    overflow: visible;
+    padding: 15px 0; }
+  .blog-masonry .wtbx-grid-masonry {
+    margin: 0 -15px 0 -15px;
+    max-width: none; }
+  .blog-masonry article.post-entry {
+    padding: 15px;
+    margin: 0;
+    z-index: 1; }
+    .blog-masonry article.post-entry:hover {
+      z-index: 2; }
+    .blog-masonry article.post-entry .entry-content {
+      font-size: 1em;
+      line-height: 1.7;
+      margin-top: 10px; }
+    .blog-masonry article.post-entry.sticky .post-masonry-inner {
+      border-style: solid;
+      border-width: 1px; }
+    .blog-masonry article.post-entry .post-masonry-inner {
+      border-radius: 9px;
+      background-color: #fff;
+      box-shadow: 0 8px 40px -5px rgba(9, 31, 67, 0.1);
+      overflow: hidden;
+      position: relative;
+      z-index: 1; }
+      .blog-masonry article.post-entry .post-masonry-inner:hover {
+        box-shadow: 0 15px 60px -10px rgba(9, 31, 67, 0.15); }
+      .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header {
+        position: relative; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta {
+          position: relative;
+          margin: 0;
+          height: 70px;
+          width: 100%; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .author-image {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            -moz-transform: translate3d(0, -50%, 0);
+            -o-transform: translate3d(0, -50%, 0);
+            -ms-transform: translate3d(0, -50%, 0);
+            -webkit-transform: translate3d(0, -50%, 0);
+            -webkit-transform: -webkit-translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+            width: 30px;
+            height: 30px;
+            padding: 2px;
+            border-radius: 50%; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .author-image img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .meta-wrapper {
+            position: absolute;
+            left: 75px;
+            right: 70px;
+            top: 50%;
+            -moz-transform: translate3d(0, -50%, 0);
+            -o-transform: translate3d(0, -50%, 0);
+            -ms-transform: translate3d(0, -50%, 0);
+            -webkit-transform: translate3d(0, -50%, 0);
+            -webkit-transform: -webkit-translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .meta-wrapper .meta-author-link {
+              display: block;
+              font-size: .928571em;
+              font-weight: 600;
+              padding: 0;
+              line-height: 15px;
+              text-overflow: clip;
+              text-overflow: ellipsis;
+              text-overflow: "…";
+              white-space: nowrap;
+              overflow: hidden;
+              max-width: 100%; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .meta-wrapper .meta-date {
+              display: block;
+              margin: 0;
+              font-weight: 600;
+              font-size: .857143em;
+              line-height: 15px;
+              float: none;
+              text-overflow: clip;
+              text-overflow: ellipsis;
+              text-overflow: "…";
+              white-space: nowrap;
+              overflow: hidden;
+              max-width: 100%; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .post-masonry-comments {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            -moz-transform: translate3d(0, -50%, 0);
+            -o-transform: translate3d(0, -50%, 0);
+            -ms-transform: translate3d(0, -50%, 0);
+            -webkit-transform: translate3d(0, -50%, 0);
+            -webkit-transform: -webkit-translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+            font-style: normal;
+            font-weight: 600;
+            font-size: .857143em;
+            line-height: 30px; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header .entry-meta .post-masonry-comments i {
+              font-size: 1.142857em;
+              width: 20px;
+              text-align: center;
+              position: relative;
+              top: 1px; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header.no-author-image .meta-wrapper {
+          left: 30px; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header.no-author-image.no-author-name .entry-meta, .blog-masonry article.post-entry .post-masonry-inner .post-masonry-header.no-author-image.no-date .entry-meta {
+          height: 50px; }
+      .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media {
+        margin: 0 0 1.5em; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media {
+          margin: 0;
+          position: relative; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-inner {
+            border-radius: 0;
+            box-shadow: none; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-overlay {
+            display: block;
+            z-index: 1;
+            cursor: pointer;
+            -webkit-transition: background-color 0.3s cubic-bezier(0.2, 0, 0.3, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+            -moz-transition: background-color 0.3s cubic-bezier(0.2, 0, 0.3, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+            -ms-transition: background-color 0.3s cubic-bezier(0.2, 0, 0.3, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+            -o-transition: background-color 0.3s cubic-bezier(0.2, 0, 0.3, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+            transition: background-color 0.3s cubic-bezier(0.2, 0, 0.3, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0.3, 1); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-overlay:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              opacity: 0;
+              -moz-transform: translate3d(0, 0, 0);
+              -o-transform: translate3d(0, 0, 0);
+              -ms-transform: translate3d(0, 0, 0);
+              -webkit-transform: translate3d(0, 0, 0);
+              -webkit-transform: -webkit-translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+              -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-overlay .proceed-arrow {
+              background-color: #fff;
+              position: absolute;
+              width: 20px;
+              height: 2px;
+              display: block;
+              left: 50%;
+              top: 50%;
+              opacity: 0;
+              z-index: 1;
+              -moz-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -o-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -ms-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -webkit-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -webkit-transform: -webkit-translate3d(-50%, -50%, 0) scale(0.8);
+              transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -webkit-transition: transform 0.5s cubic-bezier(0.2, 0, 0.3, 1), width 0.3s cubic-bezier(0.2, 0, 0.3, 1), opacity 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-transition: transform 0.5s cubic-bezier(0.2, 0, 0.3, 1), width 0.3s cubic-bezier(0.2, 0, 0.3, 1), opacity 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+              -ms-transition: transform 0.5s cubic-bezier(0.2, 0, 0.3, 1), width 0.3s cubic-bezier(0.2, 0, 0.3, 1), opacity 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+              -o-transition: transform 0.5s cubic-bezier(0.2, 0, 0.3, 1), width 0.3s cubic-bezier(0.2, 0, 0.3, 1), opacity 0.5s cubic-bezier(0.2, 0, 0.3, 1);
+              transition: transform 0.5s cubic-bezier(0.2, 0, 0.3, 1), width 0.3s cubic-bezier(0.2, 0, 0.3, 1), opacity 0.5s cubic-bezier(0.2, 0, 0.3, 1); }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-overlay .proceed-arrow:after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 8px;
+                height: 8px;
+                top: 50%;
+                right: 0;
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                moz-transform-origin: center;
+                -o-transform-origin: center;
+                -ms-transform-origin: center;
+                -webkit-transform-origin: center;
+                transform-origin: center;
+                -moz-transform: translate3d(0, -50%, 0) rotate(45deg);
+                -o-transform: translate3d(0, -50%, 0) rotate(45deg);
+                -ms-transform: translate3d(0, -50%, 0) rotate(45deg);
+                -webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
+                -webkit-transform: -webkit-translate3d(0, -50%, 0) rotate(45deg);
+                transform: translate3d(0, -50%, 0) rotate(45deg);
+                -webkit-transition: border-color 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+                -moz-transition: border-color 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+                -ms-transition: border-color 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+                -o-transition: border-color 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+                transition: border-color 0.3s cubic-bezier(0.2, 0, 0.3, 1); }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-overlay .proceed-arrow:before {
+                position: absolute;
+                display: block;
+                width: 70px;
+                height: 70px;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                border-radius: 70px;
+                background-color: rgba(0, 0, 0, 0.2);
+                -moz-transform: translate3d(-50%, -50%, 0);
+                -o-transform: translate3d(-50%, -50%, 0);
+                -ms-transform: translate3d(-50%, -50%, 0);
+                -webkit-transform: translate3d(-50%, -50%, 0);
+                -webkit-transform: -webkit-translate3d(-50%, -50%, 0);
+                transform: translate3d(-50%, -50%, 0); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-overlay:hover .proceed-arrow {
+              -o-animation: proceed 1.5s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-animation: proceed 1.5s cubic-bezier(0.2, 0, 0.3, 1);
+              -webkit-animation: proceed 1.5s cubic-bezier(0.2, 0, 0.3, 1);
+              animation: proceed 1.5s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -o-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -ms-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -webkit-transform: translate3d(-50%, -50%, 0) scale(0.8);
+              -webkit-transform: -webkit-translate3d(-50%, -50%, 0) scale(0.8);
+              transform: translate3d(-50%, -50%, 0) scale(0.8); }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media:hover .post-media-overlay:before {
+            opacity: .3; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media:hover .post-media-overlay .proceed-arrow {
+            opacity: 1; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media:hover .post-media-wrapper .post-media-button {
+            opacity: 1; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-wrapper {
+            display: block;
+            position: relative;
+            font-size: 0;
+            line-height: 0; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-wrapper .post-media-button {
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              max-width: 80%;
+              max-height: 80%;
+              border-radius: 50%;
+              background-color: #fff;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              font-size: 14px;
+              -moz-transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+              -o-transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+              -ms-transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+              -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+              -webkit-transform: -webkit-translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+              transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+              text-align: center;
+              padding-left: .2em;
+              opacity: .4;
+              z-index: 10;
+              -webkit-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              -ms-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              -o-transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+              transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-media-wrapper:hover .post-media-button {
+              -moz-transform: translate3d(-50%, -50%, 0) scale3d(1.1, 1.1, 1);
+              -o-transform: translate3d(-50%, -50%, 0) scale3d(1.1, 1.1, 1);
+              -ms-transform: translate3d(-50%, -50%, 0) scale3d(1.1, 1.1, 1);
+              -webkit-transform: translate3d(-50%, -50%, 0) scale3d(1.1, 1.1, 1);
+              -webkit-transform: -webkit-translate3d(-50%, -50%, 0) scale3d(1.1, 1.1, 1);
+              transform: translate3d(-50%, -50%, 0) scale3d(1.1, 1.1, 1); }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-wrapper {
+            box-shadow: none;
+            border-radius: 0; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner {
+            padding: 2em;
+            box-shadow: none;
+            text-align: center;
+            border-radius: 0; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner:before, .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner:after {
+              display: none; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner .post-quote-icon {
+              margin-top: 0;
+              font-size: 26px; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner .post-quote-text {
+              font-size: 1.285714em;
+              line-height: 1.6; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner .post-quote-author {
+              font-size: 1em; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-quote-inner .wtbx-image-crop:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              z-index: 1; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery {
+            border-radius: 0;
+            box-shadow: none; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .wtbx-arrow {
+              width: 30px;
+              height: 30px; }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .wtbx-arrow.wtbx-prev {
+                left: 10px; }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .wtbx-arrow.wtbx-next {
+                right: 10px; }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .wtbx-arrow:before {
+                width: 10px;
+                height: 10px; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .slick-dots {
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 0 15px; }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .slick-dots li {
+                width: 12px;
+                height: 12px;
+                margin: 0 2px; }
+                .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .slick-dots li:before {
+                  left: 3px;
+                  right: 3px;
+                  top: 3px;
+                  bottom: 3px; }
+                .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .slick-dots li:hover:before {
+                  -moz-transform: scale3d(1.3, 1.3, 1);
+                  -o-transform: scale3d(1.3, 1.3, 1);
+                  -ms-transform: scale3d(1.3, 1.3, 1);
+                  -webkit-transform: scale3d(1.3, 1.3, 1);
+                  -webkit-transform: -webkit-scale3d(1.3, 1.3, 1);
+                  transform: scale3d(1.3, 1.3, 1); }
+                .blog-masonry article.post-entry .post-masonry-inner .post-masonry-media .post-media .post-gallery .slick-dots li.slick-active:before {
+                  -moz-transform: scale3d(1.7, 1.7, 1);
+                  -o-transform: scale3d(1.7, 1.7, 1);
+                  -ms-transform: scale3d(1.7, 1.7, 1);
+                  -webkit-transform: scale3d(1.7, 1.7, 1);
+                  -webkit-transform: -webkit-scale3d(1.7, 1.7, 1);
+                  transform: scale3d(1.7, 1.7, 1); }
+      .blog-masonry article.post-entry .post-masonry-inner .post-masonry-content {
+        margin-top: 1.5em;
+        padding: 0 30px 15px; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-content.no-footer {
+          padding-bottom: 30px; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-content .entry-title {
+          font-size: 1.214286em;
+          font-weight: 600;
+          text-transform: none;
+          line-height: 1.5; }
+      .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer {
+        padding: 15px 30px 20px;
+        font-size: 13px;
+        position: relative; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer > span:first-child {
+          text-transform: capitalize; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .meta-category {
+          display: block;
+          text-overflow: clip;
+          text-overflow: ellipsis;
+          text-overflow: "…";
+          white-space: nowrap;
+          overflow: hidden;
+          padding-right: 45px; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .category-list {
+          display: inline;
+          font-weight: 600;
+          line-height: 20px;
+          margin-left: .3em; }
+        .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like {
+          position: absolute;
+          right: 30px;
+          top: 15px; }
+          .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a {
+            height: 26px;
+            line-height: 26px;
+            display: block;
+            background-color: transparent; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a > * {
+              -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+              -ms-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+              -o-transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1);
+              transition: all 0.3s cubic-bezier(0.2, 0, 0.3, 1); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a.loading {
+              pointer-events: none; }
+              .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a.loading i {
+                -o-animation: pulse 0.7s infinite;
+                -moz-animation: pulse 0.7s infinite;
+                -webkit-animation: pulse 0.7s infinite;
+                animation: pulse 0.7s infinite; }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a i {
+              font-size: 16px;
+              width: 25px;
+              line-height: 26px;
+              height: 26px;
+              text-align: center;
+              -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+              -moz-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+              -ms-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+              -o-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1);
+              transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a:hover i {
+              -moz-transform: scale3d(1.1, 1.1, 1);
+              -o-transform: scale3d(1.1, 1.1, 1);
+              -ms-transform: scale3d(1.1, 1.1, 1);
+              -webkit-transform: scale3d(1.1, 1.1, 1);
+              -webkit-transform: -webkit-scale3d(1.1, 1.1, 1);
+              transform: scale3d(1.1, 1.1, 1); }
+            .blog-masonry article.post-entry .post-masonry-inner .post-masonry-footer .post-like a span {
+              font-size: 1em;
+              font-weight: 600;
+              line-height: 26px;
+              float: right; }

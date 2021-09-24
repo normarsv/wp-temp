@@ -1,0 +1,617 @@
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+
+/*---------------------------------------------------------------*/
+/* --   SHARE MODULE
+/*---------------------------------------------------------------*/
+
+.post-share {
+	display: inline-block;
+	position: relative;
+
+	a {
+		margin: 0;
+	}
+	.wtbx-share {
+		width: auto;
+		padding: 0;
+		text-align: center;
+		display: inline-block;
+		border-radius: 4px;
+		overflow: hidden;
+		margin: 5px;
+
+		i {
+			float: left;
+			font-size: 16px;
+			display: inline-block;
+			width: 40px;
+			line-height: 40px;
+			margin: 0;
+			background-color: rgba(0,0,0,.1);
+		}
+
+		span {
+			padding: 0 20px;
+			color: #fff;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 40px;
+			text-transform: none;
+			letter-spacing: normal;
+			float: right;
+		}
+
+		&:hover {
+			span {
+				color: #fff;
+			}
+		}
+	}
+
+	.post-share-container {
+		position: absolute;
+		right: 100%;
+		top: 0;
+		display: block;
+		white-space: nowrap;
+		width: 350px;
+		visibility: hidden;
+
+		.post-social-item {
+			float: left;
+			visibility: hidden;
+			opacity: 0;
+			@include translate3d(-55px,0,0);
+		}
+	}
+}
+
+.post-social-title {
+	display: block;
+	font-size: 0.857143em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: $spacing2;
+}
+
+.post-social-link {
+	border-radius: 40px;
+	padding: 0 20px;
+	margin-left: 10px;
+	line-height: 40px;
+	height: 40px;
+	cursor: pointer;
+	box-shadow: $bs3-light;
+	@include transition(all .3s $cb6);
+
+	&:hover {
+		i {
+			color: #fff;
+		}
+	}
+
+	& > * {
+		display: inline-block;
+		line-height: 38px;
+	}
+
+	i {
+		display: inline-block;
+		float: left;
+		font-size: 20px;
+		margin-right: 5px;
+		color: #fff;
+	}
+
+	span {
+		float: right;
+		font-size: 10px;
+		font-weight: 600;
+		letter-spacing: $spacing2;
+		text-transform: uppercase;
+		@include transition(color .2s $cb6);
+	}
+
+	&[data-share="facebook"] {
+		background-color: #3b5998;
+
+		&:hover {
+			background-color: lighten(#3b5998, 10%);
+			box-shadow: 0 3px 15px -1px lighten(#3b5998, 10%);
+		}
+	}
+
+	&[data-share="googleplus"] {
+		background-color: #dd4b39;
+
+		&:hover {
+			background-color: lighten(#dd4b39, 10%);
+			box-shadow: 0 3px 15px -1px lighten(#dd4b39, 10%);
+		}
+	}
+
+	&[data-share="linkedin"] {
+		background-color: #0077b5;
+
+		&:hover {
+			background-color: lighten(#0077b5, 10%);
+			box-shadow: 0 3px 15px -1px lighten(#0077b5, 10%);
+		}
+	}
+
+	&[data-share="pinterest"] {
+		background-color: #bd081c;
+
+		&:hover {
+			background-color: lighten(#bd081c, 10%);
+			box-shadow: 0 3px 15px -1px lighten(#bd081c, 10%);
+		}
+	}
+
+	&[data-share="twitter"] {
+		background-color: #1da1f2;
+
+		&:hover {
+			background-color: lighten(#1da1f2, 10%);
+			box-shadow: 0 3px 15px -1px lighten(#1da1f2, 10%);
+		}
+	}
+
+	&[data-share="vk"] {
+		background-color: #45668e;
+
+		&:hover {
+			background-color: lighten(#45668e, 10%);
+			box-shadow: 0 3px 15px -1px lighten(#45668e, 10%);
+		}
+	}
+}
+
+.post-social-button {
+	display: inline-block;
+}
+
+.wtbx-social-wrapper {
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	z-index: 988;
+
+	@media only screen and (max-width: 400px) {
+		display: none;
+	}
+
+	.wtbx-social-trigger {
+		position: relative;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 2;
+		@include transition(transform .3s $cb6 .5s, opacity .3s $cb6 .5s, visibility 0s 0s, box-shadow .3s $cb6);
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-radius: 50%;
+			box-shadow: $bs2-medium;
+			z-index: -1;
+			@include transition(all .3s $cb6);
+		}
+
+		i {
+			line-height: 16px;
+			font-size: 16px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			color: #fff;
+			@include translate3d(-50%,-50%,0);
+			@include transition(all .5s $cb6);
+
+			&.scape-ui-x {
+				opacity: 0;
+			}
+		}
+
+		&:hover:after {
+			@include scale3d(.95,.95,1);
+		}
+
+		~ .wtbx_bottom_navigation {
+			margin-top: 15px;
+		}
+	}
+
+	&.shifted {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin-bottom: 0 !important;
+	}
+
+	.wtbx-social-container {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 44px;
+		height: 44px;
+		background-color: #fff;
+		border-radius: 22px;
+		//overflow: hidden;
+		opacity: 0;
+		z-index: 1;
+		box-shadow: $bs4-medium;
+		@include transition(all .5s $cb6 .2s, opacity .1s $cb6 .8s, border-radius .5s $cb6 0s);
+
+		.wtbx-social-inner {
+			position: relative;
+			display: inline-block;
+			min-width: 100%;
+			opacity: 0;
+			visibility: hidden;
+			text-align: center;
+			@include transition(all .2s $cb6 0s);
+
+			.wtbx-social-close {
+				position: absolute;
+				top: -17px;
+				right: -17px;
+				width: 34px;
+				height: 34px;
+				border-radius: 50%;
+				box-shadow: $bs3-dark;
+				color: #fff;
+				text-align: center;
+				cursor: pointer;
+				@include transition(all .2s $cb6);
+
+				&:hover {
+					@include scale3d(1.1,1.1,1);
+					box-shadow: $bs4-dark;
+				}
+
+				i {
+					line-height: 34px;
+					font-size: 16px;
+				}
+			}
+
+			.wtbx-share-buttons {
+				display: inline-block;
+				width: auto;
+				white-space: nowrap;
+				padding: 15px 25px 0;
+			}
+
+			.wtbx-share {
+				display: inline-block;
+				margin: 0 5px;
+				border-radius: 36px;
+				color: #fff;
+				box-shadow: none;
+				cursor: pointer;
+				@include transition(all .2s $cb6);
+
+				&:hover {
+					@include scale3d(1.05,1.05,1);
+				}
+
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+
+				i {
+					width: 36px;
+					height: 36px;
+					line-height: 36px;
+					border-radius: 36px;
+					font-size: 14px;
+				}
+			}
+
+			.wtbx-like {
+				display: block;
+				cursor: default;
+
+				a {
+					font-size: .785714em;
+					font-weight: 600;
+					//font-size: 14px;
+					text-transform: uppercase;
+					//letter-spacing: $spacing2;
+
+					*, i {
+						display: inline-block;
+						line-height: 20px;
+						height: 20px;
+						margin-bottom: 15px;
+					}
+
+					i {
+						width: auto;
+						margin-right: 5px;
+						font-size: 15px;
+						position: relative;
+						top: 2px;
+					}
+				}
+
+				&:hover {
+					@include scale3d(1, 1, 1);
+				}
+			}
+
+			form {
+				position: relative;
+				margin: 15px 0 0;
+				padding: 15px 25px;
+				background-color: #f9f9f9;
+
+				input {
+					font-size: 12px;
+					font-weight: 500;
+					line-height: 34px;
+					height: 34px;
+					border-radius: $br2;
+					padding-right: 75px;
+					background-color: #fff;
+					//border-style: solid;
+					//border-width: 1px;
+				}
+
+				a {
+					position: absolute;
+					top: 50%;
+					right: 27px;
+					margin-top: -15px;
+					background: #4970ff;
+					color: #fff;
+					border-radius: $br2 * .75;
+					text-align: center;
+					width: 60px;
+					height: 30px;
+					padding: 0;
+					font-size: 11px;
+					text-transform: uppercase;
+					letter-spacing: normal;
+					font-weight: 600;
+					line-height: 30px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	&.active {
+		.wtbx-social-trigger {
+			opacity: 0;
+			visibility: hidden;
+			@include scale3d(.5,.5,1);
+			@include transition(transform .3s $cb6 0s, opacity .3s $cb6, visibility 0s .3s, box-shadow .3s $cb6);
+
+			i {
+				&.scape-ui-back {
+					opacity: 0;
+				}
+
+				&.scape-ui-x {
+					opacity: 1;
+				}
+			}
+		}
+
+		.wtbx-social-container {
+			border-radius: $br2*2;
+			opacity: 1;
+			visibility: visible;
+			@include transition(all .5s $cb6, opacity .1s $cb6, border-radius .3s $cb6 .2s);
+
+			.wtbx-social-inner {
+				opacity: 1;
+				visibility: visible;
+				@include transition(all .4s $cb6 .5s);
+			}
+		}
+	}
+}
+
+.wtbx-social-container {
+	position: absolute;
+}
+
+.wtbx-like-wrapper {
+	margin: 4em auto;
+	text-align: center;
+
+	.wtbx-like-inner {
+		display: inline-block;
+		margin: 0 auto;
+
+		.wtbx-like-label {
+			font-size: .785714em;
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-top: 2em;
+		}
+
+		.wtbx-like-button {
+			position: relative;
+			margin: 0 auto;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			display: flex;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			-webkit-box-flex: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			display: flex;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			@include transition(all .2s $cb6);
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				border-radius: 50%;
+				z-index: -1;
+				@include transition(all .2s $cb6);
+			}
+
+			i {
+				line-height: 30px;
+				font-size: 20px;
+				@include transition(all .2s $cb6);
+			}
+
+			span {
+				//display: none;
+				line-height: 15px;
+				font-size: 10px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+
+			&:hover {
+				&:before {
+					background-color: #fff;
+					box-shadow: $bs4h-light;
+					@include scale3d(1.05,1.05,1);
+				}
+			}
+
+			.wtbx-like-anim {
+				position: absolute;
+				width: 75px;
+				height: 75px;
+				top: 50%;
+				left: 50%;
+				@include translate3d(-50%,-50%,0);
+
+				span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					height: 100%;
+					display: block;
+					opacity: 0;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						margin-left: -1.5px;
+						width: 3px;
+						height: 10px;
+						border-radius: 10px;
+						@include transform-origin(top center);
+					}
+
+					@for $i from 1 through 10 {
+						&:nth-child(#{$i}) {
+							@include transform( translate3d(-50%,-50%,0) rotate3d(0,0,1,#{$i*36}deg) );
+						}
+					}
+				}
+			}
+
+			&.loading {
+				&:before {
+					@include animation(likeButtonLoading 1s infinite $cb6);
+				}
+
+				&.liked {
+					.wtbx-like-anim {
+						span {
+							opacity: 0;
+						}
+					}
+				}
+			}
+
+			&.liked {
+				i, span {
+					color: #fff;
+				}
+
+				@include animation(likeButton .7s forwards ease-out);
+
+				&:before {
+					box-shadow: none;
+				}
+
+				.wtbx-like-anim {
+					@include animation(likeButtonRotate .7s forwards ease-out);
+
+					span {
+						opacity: 1;
+
+						&:before {
+							@include animation(likeButtonBeam .7s forwards ease-out);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include keyframes(likeButtonLoading) {
+	0% { @include scale3d(1,1,1); }
+	50% { @include scale3d(1.1,1.1,1); }
+	100% { @include scale3d(1,1,1); }
+}
+
+@include keyframes(likeButton) {
+	0% { @include scale3d(1,1,1); }
+	50% { @include scale3d(1.1,1.1,1); }
+	100% { @include scale3d(1,1,1); }
+}
+
+@include keyframes(likeButtonRotate) {
+	0% { @include transform( translate3d(-50%,-50%,0) rotate3d(0,0,1,0) ); }
+	100% { @include transform( translate3d(-50%,-50%,0) rotate3d(0,0,1,0deg) scale3d(1.3,1.3,1) ); }
+}
+
+@include keyframes(likeButtonBeam) {
+	0% {
+		opacity: 0;
+		@include scale3d(1,1,1);
+	}
+	99% {
+		opacity: 1;
+		@include scale3d(0,0,1);
+	}
+	100% {
+		opacity: 0;
+		@include scale3d(0,0,1);
+	}
+}

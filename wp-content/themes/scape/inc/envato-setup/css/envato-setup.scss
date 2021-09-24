@@ -1,0 +1,948 @@
+$box-shadow1:       0 5px 40px -5px rgba(40,70,115,0.2);
+$box-shadow2:       0 4px 20px -3px rgba(40,70,115,0.25);
+$box-shadow3:       0 4px 20px -3px rgba(40,70,115,0.5);
+$box-shadow4:       0 10px 45px -5px rgba(40,70,115,0.5);
+
+$blue:      #506bff;
+$blue:      #5c4eff;
+$blue:      #786eff;
+$purple:    #7749ff;
+
+
+$dark_text:     #3a3f47;
+$text:          #828c9c;
+$light_text:    #b3bdcc;
+$border:        #e3e7ec;
+
+$new_bg_grey:       #f5f7fa;
+$new_bg_grey_h:     #e5e8ec;
+
+$bs2: 0 5px 25px -4px rgba(9,31,67,0.05);
+$bs2h: 0 12px 35px -7px rgba(9,31,67,0.1);
+$bs2-light: 0 5px 25px -4px rgba(9,31,67,0.1);
+$bs2h-light: 0 12px 35px -7px rgba(9,31,67,0.15);
+$bs2-medium: 0 5px 25px -4px rgba(9,31,67,0.15);
+$bs2h-medium: 0 12px 35px -7px rgba(9,31,67,0.3);
+$bs2-dark: 0 5px 25px -4px rgba(9,31,67,0.3);
+$bs2h-dark: 0 12px 35px -7px rgba(9,31,67,0.45);
+
+$bs3: 0 8px 40px -5px rgba(9,31,67,0.05);
+$bs3h: 0 15px 60px -10px rgba(9,31,67,0.1);
+$bs3-light: 0 8px 40px -5px rgba(9,31,67,0.1);
+$bs3h-light: 0 15px 60px -10px rgba(9,31,67,0.15);
+$bs3-medium: 0 8px 40px -5px rgba(9,31,67,0.15);
+$bs3h-medium: 0 15px 60px -10px rgba(9,31,67,0.3);
+$bs3-dark: 0 8px 40px -5px rgba(9,31,67,0.3);
+$bs3h-dark: 0 15px 60px -10px rgba(9,31,67,0.45);
+
+$bs4: 0 15px 55px -5px rgba(9,31,67,0.05);
+$bs4h: 0 20px 70px -10px rgba(9,31,67,0.1);
+$bs4-light: 0 15px 55px -5px rgba(9,31,67,0.1);
+$bs4h-light: 0 20px 70px -10px rgba(9,31,67,0.15);
+$bs4-medium: 0 15px 55px -5px rgba(9,31,67,0.15);
+$bs4h-medium: 0 20px 70px -10px rgba(9,31,67,0.3);
+$bs4-dark: 0 15px 55px -5px rgba(9,31,67,0.3);
+$bs4h-dark: 0 20px 70px -10px rgba(9,31,67,0.45);
+
+/*=====================*/
+/* CUBIC BEZIER CURVES */
+/*=====================*/
+
+$ease:      ease-in-out;
+$elastic1:  cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$elastic2:  cubic-bezier(0.68, -0.55, 0.465, 3);
+
+$easeScroll:cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$parallax:  cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+$cb1:       cubic-bezier(0.9, 0, 0.1, 1);
+$cb2:       cubic-bezier(0.8, 0, 0.2, 1);
+$cb3:       cubic-bezier(0.7, 0, 0.3, 1);
+$cb4:       cubic-bezier(0.6, 0, 0.4, 1);
+$cb5:       cubic-bezier(0.5, 0, 0.5, 1);
+
+$cb6:       cubic-bezier(0.2, 0, 0.3, 1);
+$cb7:       cubic-bezier(0.2, 1, 0.3, 1);
+$cb8:       cubic-bezier(0.82, 0.01, 0.77, 0.78);
+$cb9:       cubic-bezier(0.5, 0, 0.35, 1);
+
+$spacing1:   .05em;
+$spacing2:   .1em;
+$spacing3:   .2em;
+
+@mixin transition($transition...) {
+	// defining prefixes so we can use them in mixins below
+	$prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-" , "");
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $transition;
+	}
+}
+
+@mixin transform($transforms...) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+@mixin scale($scale...) {
+	@include transform(scale($scale));
+}
+
+@mixin scale3d($scale...) {
+	@include transform(scale3d($scale));
+}
+
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+@mixin translate3d ($x, $y, $z...) {
+	@include transform(translate3d($x, $y, $z));
+}
+
+
+/*
+*
+*
+*
+*/
+
+html {
+	background-color: $new_bg_grey;
+}
+
+
+.envato-setup-content {
+	box-shadow: $bs4-light;
+	padding: 60px;
+	margin: 0 0 30px;
+	border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+	zoom: 1;
+	color: $text;
+
+	.wtbx-dash-widget {
+		overflow: visible;
+	}
+
+	p {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.9;
+		margin: 1em 0;
+
+		strong {
+			color: $dark_text;
+		}
+	}
+
+	table {
+		font-size: 1em;
+		line-height: 1.75em;
+		border: 0;
+		padding: 0;
+		clear: none;
+		margin: 0;
+	}
+
+	h1, h2, h3 {
+		margin: 0 0 45px 0;
+		border: 0;
+		padding: 0;
+		color: $dark_text;
+		clear: none;
+		text-align: center;
+		font-weight: 200;
+		font-size: 34px;
+		line-height: 1.5;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	a {
+		color: $blue;
+		text-decoration: none;
+		outline: none;
+		box-shadow: none;
+		box-sizing: border-box;
+		@include transition(all .3s $cb6);
+
+		&:focus {
+			color: $dark_text;
+		}
+
+		&:hover {
+			color: $dark_text;
+		}
+	}
+
+	em {
+		font-size: 14px;
+		line-height: 1.9;
+	}
+
+	.info {
+		background-color: $new_bg_grey;
+		border: 1px solid $border;
+		border-radius: 8px;
+		display: block;
+		padding: 15px 30px;
+
+		strong {
+			display: inline-block;
+			padding: 0 8px;
+			border-radius: 4px;
+			font-size: 14px;
+		}
+
+		&.large {
+			padding: 30px;
+		}
+
+		&.positive {
+
+			* {
+				color: $dark_text;
+			}
+
+			strong {
+				background-color: #00d286;
+				color: #fff;
+			}
+		}
+
+		&.negative {
+
+			* {
+				color: $dark_text;
+			}
+
+			strong {
+				background-color: #ff1d49;
+				color: #fff;
+			}
+		}
+	}
+
+	.align-left {
+		text-align: left;
+	}
+
+	ul {
+		list-style: circle;
+	}
+
+	input {
+		border-radius: 50px !important;
+	}
+
+	.form-table {
+		th {
+			width: 35%;
+			vertical-align: top;
+			font-weight: 400;
+			padding: 12px 0;
+			margin: 0;
+			border: 0;
+
+			&:first-child {
+				padding-right: 1em;
+			}
+		}
+
+		td {
+			vertical-align: top;
+			padding: 12px 0;
+			margin: 0;
+			border: 0;
+
+			input {
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			select {
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			input[size] {
+				width: auto;
+			}
+
+			.description {
+				line-height: 1.5em;
+				display: block;
+				margin-top: .25em;
+				color: $light_text;
+				font-style: italic;
+			}
+
+			.input-checkbox {
+				width: auto;
+				box-sizing: inherit;
+				padding: inherit;
+				margin: 0 .5em 0 0;
+				box-shadow: none;
+			}
+
+			.input-radio {
+				width: auto;
+				box-sizing: inherit;
+				padding: inherit;
+				margin: 0 .5em 0 0;
+				box-shadow: none;
+			}
+
+			&:first-child {
+				padding-right: 1em;
+			}
+		}
+		.section_title {
+			td {
+				padding: 0;
+
+				h2 {
+					margin: 12px 0 0;
+				}
+
+				p {
+					margin: 12px 0 0;
+				}
+			}
+		}
+		table.tax-rates {
+			width: 100%;
+			font-size: .92em;
+
+			th {
+				padding: 0;
+				text-align: center;
+				width: auto;
+				vertical-align: middle;
+			}
+
+			td {
+				border: 1px solid $border;
+				padding: 6px;
+				text-align: center;
+				vertical-align: middle;
+
+				input {
+					outline: 0;
+					border: 0;
+					padding: 0;
+					box-shadow: none;
+					text-align: center;
+				}
+			}
+
+			td.sort {
+				cursor: move;
+				color: $light_text;
+
+				&:before {
+					content: "\f333";
+					font-family: dashicons;
+				}
+			}
+
+			.add {
+				padding: 1em 0 0 1em;
+				line-height: 1em;
+				font-size: 1em;
+				width: 0;
+				margin: 6px 0 0;
+				height: 0;
+				overflow: hidden;
+				position: relative;
+				display: inline-block;
+				&:before {
+					content: "\f502";
+					font-family: dashicons;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+
+			.remove {
+				padding: 1em 0 0 1em;
+				line-height: 1em;
+				font-size: 1em;
+				width: 0;
+				margin: 0;
+				height: 0;
+				overflow: hidden;
+				position: relative;
+				display: inline-block;
+
+				&:before {
+					content: "\f182";
+					font-family: dashicons;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+	.envato-setup-plugins {
+		width: 100%;
+		border-top: 1px solid $border;
+
+		thead {
+			th {
+				display: none;
+			}
+		}
+		.plugin-name {
+			width: 30%;
+			font-weight: 700;
+		}
+
+		td {
+			padding: 14px 0;
+			border-bottom: 1px solid $border;
+			&:first-child {
+				padding-right: 9px;
+			}
+		}
+
+		th {
+			padding: 14px 0;
+			border-bottom: 1px solid $border;
+			padding-top: 0;
+
+			&:first-child {
+				padding-right: 9px;
+			}
+		}
+
+		.page-options {
+
+			p {
+				color: $text;
+				margin: 6px 0 0 24px;
+				line-height: 1.75em;
+
+				input {
+					vertical-align: middle;
+					margin: 1px 0 0;
+					height: 1.75em;
+					width: 1.75em;
+					line-height: 1.75em;
+				}
+
+				label {
+					line-height: 1;
+				}
+			}
+		}
+	}
+	.twitter-share-button {
+		float: right;
+	}
+
+	.envato-setup-next-steps {
+
+		h2 {
+			margin: 15px;
+			font-weight: 600;
+			font-size: 14px;
+		}
+
+		.envato-setup-next-steps-first {
+			float: left;
+			width: 50%;
+			box-sizing: border-box;
+			margin: 45px 0 15px;
+
+			a {
+				box-shadow: $bs2-medium;
+			}
+		}
+
+		.envato-setup-next-steps-last {
+			float: right;
+			width: 50%;
+			box-sizing: border-box;
+			margin: 45px 0 30px;
+
+			ul {
+				padding: 0;
+			}
+
+			li {
+				a {
+					font-size: 12px;
+					padding: 11px 2.5em;
+					line-height: 22px;
+					border-radius: 50px;
+					background-color: #fff;
+					border: 1px solid $border;
+					color: $dark_text;
+					font-style: normal;
+					text-align: left;
+					@include transition(all .3s $cb6);
+
+					&:hover {
+						border-color: transparent;
+						background-color: $new_bg_grey;
+					}
+				}
+			}
+		}
+
+		ul {
+			padding: 0 30px 0 0;
+			list-style: none;
+			margin: 0;
+
+			li {
+				display: block;
+				padding: 0;
+				margin-bottom: 15px;
+
+				a {
+					display: block;
+					float: none !important;
+
+					&:before {
+						color: $light_text;
+						font: 400 20px/1 dashicons;
+						speak: none;
+						display: inline-block;
+						padding: 0 10px 0 0;
+						top: 1px;
+						position: relative;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						text-decoration: none !important;
+						vertical-align: top;
+					}
+				}
+			}
+			.documentation {
+				a {
+					&:before {
+						content: "\f331";
+					}
+				}
+			}
+			.howto {
+				a {
+					&:before {
+						content: "\f223";
+					}
+				}
+			}
+			.rating {
+				a {
+					&:before {
+						content: "\f155";
+					}
+				}
+			}
+			.support {
+				a {
+					&:before {
+						content: "\f307";
+					}
+				}
+			}
+		}
+	}
+
+	.updated {
+		padding: 24px 24px 0;
+		margin: 0 0 24px;
+		overflow: hidden;
+		background: $new_bg_grey;
+
+		p {
+			padding: 0;
+			margin: 0 0 12px;
+			&:last-child {
+				margin: 0 0 24px;
+			}
+		}
+	}
+}
+
+body {
+	margin: 30px auto 24px;
+	box-shadow: none;
+	background: $new_bg_grey;
+	padding: 0;
+}
+
+#wc-logo {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	a {
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.wtbx-dash-activated .wtbx-validation-wrapper {
+	.wtbx-dash-message {
+		display: block;
+		text-align: center;
+	}
+}
+
+.wtbx-dash-not-activated .wtbx-validation-wrapper {
+	.wtbx-dash-message {
+		display: none;
+		text-align: center;
+	}
+}
+
+.envato-setup-actions .wtbx-wizard-continue {
+	display: none;
+}
+
+.envato-setup-steps {
+	padding: 30px 0 45px;
+	margin: 0;
+	list-style: none;
+	overflow: hidden;
+	color: $light_text;
+	width: 100%;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+
+	li {
+		width: 25%;
+		float: left;
+		padding: 0 0 2em;
+		margin: 0;
+		text-align: center;
+		position: relative;
+		line-height: 1.4em;
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			background: $border;
+			border-radius: 2px;
+		}
+
+		&:after {
+			content: "";
+			border: 2px solid $border;
+			border-radius: 100%;
+			width: 14px;
+			height: 14px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -7px;
+			margin-bottom: -8px;
+			background: $border;
+		}
+
+		&:last-child {
+			&:before {
+				display: none;
+			}
+		}
+
+		a {
+			font-weight: 500;
+			text-decoration: none;
+			outline: none !important;
+			box-shadow: none;
+			@include transition(all .3s $cb6);
+
+			&:hover {
+				text-shadow: 0 0 10px transparentize($blue, 0.7);
+			}
+		}
+	}
+
+	li.active {
+		color: $blue;
+
+		a {
+			color: $blue;
+		}
+
+		&:after {
+			background-color: $new_bg_grey;
+			border-color: $blue;
+		}
+	}
+
+	li.done {
+		color: $blue;
+
+		a {
+			color: $blue;
+		}
+
+		&:before {
+			background-color: $blue;
+		}
+
+		&:after {
+			background-color: $blue;
+			border-color: $blue;
+		}
+	}
+
+}
+.envato-setup {
+	text-align: center;
+
+	.envato-setup-actions {
+		display: inline-block;
+		margin: 30px auto 0;
+	}
+
+	.envato-setup-content {
+		.button {
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: $spacing1;
+			margin-right: 15px;
+			height: auto;
+			border-radius: 50px;
+			box-shadow: $bs3-medium;
+			border: none;
+			background-color: #fff;
+			color: $dark_text;
+			font-style: normal;
+			@include transition(all .3s $cb6);
+
+			&:hover {
+				box-shadow: $bs3h-medium;
+			}
+
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+
+		.button-primary {
+			margin: 0 0 0 15px;
+			opacity: 1;
+			float: right;
+			color: #fff;
+			text-shadow: none;
+			box-shadow: $box-shadow3;
+			background-color: $blue;
+
+			&:hover {
+				box-shadow: 0 10px 45px -5px rgba(119, 73, 255, 0.8);
+			}
+		}
+
+		.button-medium {
+			font-size: 10px;
+			padding: 1em 2em;
+			line-height: 1.5em;
+		}
+
+		.button-large {
+			font-size: 11px;
+			padding: 12px 2.5em;
+			line-height: 22px;
+		}
+	}
+}
+
+.wc-return-to-dashboard {
+	font-size: .85em;
+	color: $border;
+	margin: 1.18em 0;
+	display: block;
+	text-align: center;
+	@include transition(all .3s $cb6);
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+.dtbaker_loading_button_current {
+	color: $dark_text !important;
+	text-align: center;
+}
+
+.envato-wizard-plugins {
+	text-align: left;
+
+	li {
+		position: relative;
+		display: block;
+		color: $dark_text;
+		font-weight: 600;
+		margin: 10px 0;
+		padding: 0 0 10px 0;
+		border-bottom: 1px dashed $border;
+		line-height: 24px;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		span {
+			margin-left: 10px;
+			padding: 0 10px;
+			font-size: 12px;
+			line-height: 24px;
+			border-radius: 4px;
+			display: inline-block;
+			position: relative;
+
+			color: $dark_text;
+			background-color: $new_bg_grey;
+			border: 1px solid $border;
+			font-weight: normal;
+			float: right;
+			@include transition(all .3s $cb6);
+		}
+
+		.spinner {
+			display: inline-block;
+			position: absolute;
+		}
+	}
+}
+
+.envato-wizard-plugins.installing {
+	li {
+		.spinner {
+			visibility: visible;
+		}
+
+		span {
+			color: #fff;
+			background-color: $blue;
+			border-color: transparent;
+		}
+	}
+}
+.envato-setup-pages {
+	width: 100%;
+
+	.check {
+		width: 35px;
+	}
+
+	.item {
+		width: 90px;
+	}
+
+	td {
+		padding: 5px;
+	}
+
+	th {
+		padding: 5px;
+	}
+
+	.status {
+		display: none;
+	}
+
+	.spinner {
+		display: inline-block;
+		position: absolute;
+	}
+}
+.envato-setup-pages.installing {
+	.status {
+		display: table-cell;
+
+		span {
+			display: inline-block;
+			position: relative;
+		}
+	}
+	.description {
+		display: none;
+	}
+
+	.spinner {
+		visibility: visible;
+	}
+}
+.theme-presets {
+	ul {
+		list-style: none;
+		margin: 0px 0 15px 0;
+		padding: 0;
+		overflow-x: auto;
+		display: block;
+		white-space: nowrap;
+
+		li {
+			list-style: none;
+			display: inline-block;
+			padding: 6px;
+			margin: 0;
+			vertical-align: bottom;
+
+			a {
+				float: left;
+				line-height: 0;
+
+				img {
+					width: 90px;
+					height: auto;
+				}
+			}
+		}
+		li.current {
+			background: #FE529E;
+			border-radius: 5px;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.envato-setup-content {
+		padding: 30px;
+
+		.envato-setup-next-steps {
+			ul {
+				padding: 0;
+			}
+
+			.envato-setup-next-steps-first {
+				width: 100%;
+				float: none;
+			}
+
+			.envato-setup-next-steps-last {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}

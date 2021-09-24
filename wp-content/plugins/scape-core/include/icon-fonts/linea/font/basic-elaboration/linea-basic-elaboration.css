@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "linea-basic-elaboration-10";
+  src:url("fonts/linea-basic-elaboration-10.eot");
+  src:url("fonts/linea-basic-elaboration-10.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linea-basic-elaboration-10.woff") format("woff"),
+    url("fonts/linea-basic-elaboration-10.ttf") format("truetype"),
+    url("fonts/linea-basic-elaboration-10.svg#linea-basic-elaboration-10") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "linea-basic-elaboration-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="scape-linea-basic-elaboration-"]:before,
+[class*=" scape-linea-basic-elaboration-"]:before {
+  font-family: "linea-basic-elaboration-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scape-linea-basic-elaboration-bookmark-checck:before {
+  content: "a";
+}
+.scape-linea-basic-elaboration-bookmark-minus:before {
+  content: "b";
+}
+.scape-linea-basic-elaboration-bookmark-plus:before {
+  content: "c";
+}
+.scape-linea-basic-elaboration-bookmark-remove:before {
+  content: "d";
+}
+.scape-linea-basic-elaboration-briefcase-check:before {
+  content: "e";
+}
+.scape-linea-basic-elaboration-briefcase-download:before {
+  content: "f";
+}
+.scape-linea-basic-elaboration-briefcase-flagged:before {
+  content: "g";
+}
+.scape-linea-basic-elaboration-briefcase-minus:before {
+  content: "h";
+}
+.scape-linea-basic-elaboration-briefcase-plus:before {
+  content: "i";
+}
+.scape-linea-basic-elaboration-briefcase-refresh:before {
+  content: "j";
+}
+.scape-linea-basic-elaboration-briefcase-remove:before {
+  content: "k";
+}
+.scape-linea-basic-elaboration-briefcase-search:before {
+  content: "l";
+}
+.scape-linea-basic-elaboration-briefcase-star:before {
+  content: "m";
+}
+.scape-linea-basic-elaboration-briefcase-upload:before {
+  content: "n";
+}
+.scape-linea-basic-elaboration-browser-check:before {
+  content: "o";
+}
+.scape-linea-basic-elaboration-browser-download:before {
+  content: "p";
+}
+.scape-linea-basic-elaboration-browser-minus:before {
+  content: "q";
+}
+.scape-linea-basic-elaboration-browser-plus:before {
+  content: "r";
+}
+.scape-linea-basic-elaboration-browser-refresh:before {
+  content: "s";
+}
+.scape-linea-basic-elaboration-browser-remove:before {
+  content: "t";
+}
+.scape-linea-basic-elaboration-browser-search:before {
+  content: "u";
+}
+.scape-linea-basic-elaboration-browser-star:before {
+  content: "v";
+}
+.scape-linea-basic-elaboration-browser-upload:before {
+  content: "w";
+}
+.scape-linea-basic-elaboration-calendar-check:before {
+  content: "x";
+}
+.scape-linea-basic-elaboration-calendar-cloud:before {
+  content: "y";
+}
+.scape-linea-basic-elaboration-calendar-download:before {
+  content: "z";
+}
+.scape-linea-basic-elaboration-calendar-empty:before {
+  content: "A";
+}
+.scape-linea-basic-elaboration-calendar-flagged:before {
+  content: "B";
+}
+.scape-linea-basic-elaboration-calendar-heart:before {
+  content: "C";
+}
+.scape-linea-basic-elaboration-calendar-minus:before {
+  content: "D";
+}
+.scape-linea-basic-elaboration-calendar-next:before {
+  content: "E";
+}
+.scape-linea-basic-elaboration-calendar-noaccess:before {
+  content: "F";
+}
+.scape-linea-basic-elaboration-calendar-pencil:before {
+  content: "G";
+}
+.scape-linea-basic-elaboration-calendar-plus:before {
+  content: "H";
+}
+.scape-linea-basic-elaboration-calendar-previous:before {
+  content: "I";
+}
+.scape-linea-basic-elaboration-calendar-refresh:before {
+  content: "J";
+}
+.scape-linea-basic-elaboration-calendar-remove:before {
+  content: "K";
+}
+.scape-linea-basic-elaboration-calendar-search:before {
+  content: "L";
+}
+.scape-linea-basic-elaboration-calendar-star:before {
+  content: "M";
+}
+.scape-linea-basic-elaboration-calendar-upload:before {
+  content: "N";
+}
+.scape-linea-basic-elaboration-cloud-check:before {
+  content: "O";
+}
+.scape-linea-basic-elaboration-cloud-download:before {
+  content: "P";
+}
+.scape-linea-basic-elaboration-cloud-minus:before {
+  content: "Q";
+}
+.scape-linea-basic-elaboration-cloud-noaccess:before {
+  content: "R";
+}
+.scape-linea-basic-elaboration-cloud-plus:before {
+  content: "S";
+}
+.scape-linea-basic-elaboration-cloud-refresh:before {
+  content: "T";
+}
+.scape-linea-basic-elaboration-cloud-remove:before {
+  content: "U";
+}
+.scape-linea-basic-elaboration-cloud-search:before {
+  content: "V";
+}
+.scape-linea-basic-elaboration-cloud-upload:before {
+  content: "W";
+}
+.scape-linea-basic-elaboration-document-check:before {
+  content: "X";
+}
+.scape-linea-basic-elaboration-document-cloud:before {
+  content: "Y";
+}
+.scape-linea-basic-elaboration-document-download:before {
+  content: "Z";
+}
+.scape-linea-basic-elaboration-document-flagged:before {
+  content: "0";
+}
+.scape-linea-basic-elaboration-document-graph:before {
+  content: "1";
+}
+.scape-linea-basic-elaboration-document-heart:before {
+  content: "2";
+}
+.scape-linea-basic-elaboration-document-minus:before {
+  content: "3";
+}
+.scape-linea-basic-elaboration-document-next:before {
+  content: "4";
+}
+.scape-linea-basic-elaboration-document-noaccess:before {
+  content: "5";
+}
+.scape-linea-basic-elaboration-document-note:before {
+  content: "6";
+}
+.scape-linea-basic-elaboration-document-pencil:before {
+  content: "7";
+}
+.scape-linea-basic-elaboration-document-picture:before {
+  content: "8";
+}
+.scape-linea-basic-elaboration-document-plus:before {
+  content: "9";
+}
+.scape-linea-basic-elaboration-document-previous:before {
+  content: "!";
+}
+.scape-linea-basic-elaboration-document-refresh:before {
+  content: "\"";
+}
+.scape-linea-basic-elaboration-document-remove:before {
+  content: "#";
+}
+.scape-linea-basic-elaboration-document-search:before {
+  content: "$";
+}
+.scape-linea-basic-elaboration-document-star:before {
+  content: "%";
+}
+.scape-linea-basic-elaboration-document-upload:before {
+  content: "&";
+}
+.scape-linea-basic-elaboration-folder-check:before {
+  content: "'";
+}
+.scape-linea-basic-elaboration-folder-cloud:before {
+  content: "(";
+}
+.scape-linea-basic-elaboration-folder-document:before {
+  content: ")";
+}
+.scape-linea-basic-elaboration-folder-download:before {
+  content: "*";
+}
+.scape-linea-basic-elaboration-folder-flagged:before {
+  content: "+";
+}
+.scape-linea-basic-elaboration-folder-graph:before {
+  content: ",";
+}
+.scape-linea-basic-elaboration-folder-heart:before {
+  content: "-";
+}
+.scape-linea-basic-elaboration-folder-minus:before {
+  content: ".";
+}
+.scape-linea-basic-elaboration-folder-next:before {
+  content: "/";
+}
+.scape-linea-basic-elaboration-folder-noaccess:before {
+  content: ":";
+}
+.scape-linea-basic-elaboration-folder-note:before {
+  content: ";";
+}
+.scape-linea-basic-elaboration-folder-pencil:before {
+  content: "<";
+}
+.scape-linea-basic-elaboration-folder-picture:before {
+  content: "=";
+}
+.scape-linea-basic-elaboration-folder-plus:before {
+  content: ">";
+}
+.scape-linea-basic-elaboration-folder-previous:before {
+  content: "?";
+}
+.scape-linea-basic-elaboration-folder-refresh:before {
+  content: "@";
+}
+.scape-linea-basic-elaboration-folder-remove:before {
+  content: "[";
+}
+.scape-linea-basic-elaboration-folder-search:before {
+  content: "]";
+}
+.scape-linea-basic-elaboration-folder-star:before {
+  content: "^";
+}
+.scape-linea-basic-elaboration-folder-upload:before {
+  content: "_";
+}
+.scape-linea-basic-elaboration-mail-check:before {
+  content: "`";
+}
+.scape-linea-basic-elaboration-mail-cloud:before {
+  content: "{";
+}
+.scape-linea-basic-elaboration-mail-document:before {
+  content: "|";
+}
+.scape-linea-basic-elaboration-mail-download:before {
+  content: "}";
+}
+.scape-linea-basic-elaboration-mail-flagged:before {
+  content: "~";
+}
+.scape-linea-basic-elaboration-mail-heart:before {
+  content: "\\";
+}
+.scape-linea-basic-elaboration-mail-next:before {
+  content: "\e000";
+}
+.scape-linea-basic-elaboration-mail-noaccess:before {
+  content: "\e001";
+}
+.scape-linea-basic-elaboration-mail-note:before {
+  content: "\e002";
+}
+.scape-linea-basic-elaboration-mail-pencil:before {
+  content: "\e003";
+}
+.scape-linea-basic-elaboration-mail-picture:before {
+  content: "\e004";
+}
+.scape-linea-basic-elaboration-mail-previous:before {
+  content: "\e005";
+}
+.scape-linea-basic-elaboration-mail-refresh:before {
+  content: "\e006";
+}
+.scape-linea-basic-elaboration-mail-remove:before {
+  content: "\e007";
+}
+.scape-linea-basic-elaboration-mail-search:before {
+  content: "\e008";
+}
+.scape-linea-basic-elaboration-mail-star:before {
+  content: "\e009";
+}
+.scape-linea-basic-elaboration-mail-upload:before {
+  content: "\e00a";
+}
+.scape-linea-basic-elaboration-message-check:before {
+  content: "\e00b";
+}
+.scape-linea-basic-elaboration-message-dots:before {
+  content: "\e00c";
+}
+.scape-linea-basic-elaboration-message-happy:before {
+  content: "\e00d";
+}
+.scape-linea-basic-elaboration-message-heart:before {
+  content: "\e00e";
+}
+.scape-linea-basic-elaboration-message-minus:before {
+  content: "\e00f";
+}
+.scape-linea-basic-elaboration-message-note:before {
+  content: "\e010";
+}
+.scape-linea-basic-elaboration-message-plus:before {
+  content: "\e011";
+}
+.scape-linea-basic-elaboration-message-refresh:before {
+  content: "\e012";
+}
+.scape-linea-basic-elaboration-message-remove:before {
+  content: "\e013";
+}
+.scape-linea-basic-elaboration-message-sad:before {
+  content: "\e014";
+}
+.scape-linea-basic-elaboration-smartphone-cloud:before {
+  content: "\e015";
+}
+.scape-linea-basic-elaboration-smartphone-heart:before {
+  content: "\e016";
+}
+.scape-linea-basic-elaboration-smartphone-noaccess:before {
+  content: "\e017";
+}
+.scape-linea-basic-elaboration-smartphone-note:before {
+  content: "\e018";
+}
+.scape-linea-basic-elaboration-smartphone-pencil:before {
+  content: "\e019";
+}
+.scape-linea-basic-elaboration-smartphone-picture:before {
+  content: "\e01a";
+}
+.scape-linea-basic-elaboration-smartphone-refresh:before {
+  content: "\e01b";
+}
+.scape-linea-basic-elaboration-smartphone-search:before {
+  content: "\e01c";
+}
+.scape-linea-basic-elaboration-tablet-cloud:before {
+  content: "\e01d";
+}
+.scape-linea-basic-elaboration-tablet-heart:before {
+  content: "\e01e";
+}
+.scape-linea-basic-elaboration-tablet-noaccess:before {
+  content: "\e01f";
+}
+.scape-linea-basic-elaboration-tablet-note:before {
+  content: "\e020";
+}
+.scape-linea-basic-elaboration-tablet-pencil:before {
+  content: "\e021";
+}
+.scape-linea-basic-elaboration-tablet-picture:before {
+  content: "\e022";
+}
+.scape-linea-basic-elaboration-tablet-refresh:before {
+  content: "\e023";
+}
+.scape-linea-basic-elaboration-tablet-search:before {
+  content: "\e024";
+}
+.scape-linea-basic-elaboration-todolist-2:before {
+  content: "\e025";
+}
+.scape-linea-basic-elaboration-todolist-check:before {
+  content: "\e026";
+}
+.scape-linea-basic-elaboration-todolist-cloud:before {
+  content: "\e027";
+}
+.scape-linea-basic-elaboration-todolist-download:before {
+  content: "\e028";
+}
+.scape-linea-basic-elaboration-todolist-flagged:before {
+  content: "\e029";
+}
+.scape-linea-basic-elaboration-todolist-minus:before {
+  content: "\e02a";
+}
+.scape-linea-basic-elaboration-todolist-noaccess:before {
+  content: "\e02b";
+}
+.scape-linea-basic-elaboration-todolist-pencil:before {
+  content: "\e02c";
+}
+.scape-linea-basic-elaboration-todolist-plus:before {
+  content: "\e02d";
+}
+.scape-linea-basic-elaboration-todolist-refresh:before {
+  content: "\e02e";
+}
+.scape-linea-basic-elaboration-todolist-remove:before {
+  content: "\e02f";
+}
+.scape-linea-basic-elaboration-todolist-search:before {
+  content: "\e030";
+}
+.scape-linea-basic-elaboration-todolist-star:before {
+  content: "\e031";
+}
+.scape-linea-basic-elaboration-todolist-upload:before {
+  content: "\e032";
+}

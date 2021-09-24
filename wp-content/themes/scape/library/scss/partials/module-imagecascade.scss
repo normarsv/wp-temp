@@ -1,0 +1,476 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+
+/*
+* Image Cascade
+*/
+
+.wtbx_vc_image_cascade {
+	line-height: 0;
+	font-size: 0;
+	padding: 5%;
+
+	.wtbx_image_cascade_wrapper {
+		padding: 10%;
+
+		.wtbx_image_cascade_inner {
+			position: relative;
+		}
+	}
+
+	.wtbx_image_wrapper {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		z-index: 1;
+		@include transition(all .5s $cb6);
+
+		&.wtbx-element-reveal:not(.wtbx-element-visible) {
+			opacity: 0;
+		}
+
+		.wtbx_image_inner {
+			position: relative;
+			border-radius: inherit;
+			overflow: hidden;
+			@include translate3d(0, 0, 0);
+			@include transition(transform .5s $cb6);
+		}
+
+		.wtbx-lightbox-item {
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			border-radius: inherit;
+		}
+	}
+
+	&.wtbx_shadow {
+		.wtbx_cascade_image_1 {
+			.wtbx_image_inner {
+				box-shadow: $bs4-medium;
+			}
+		}
+		.wtbx_cascade_image_2 {
+			.wtbx_image_inner {
+				box-shadow: $bs3-medium;
+			}
+		}
+		.wtbx_cascade_image_3 {
+			.wtbx_image_inner {
+				box-shadow: $bs2-medium;
+			}
+		}
+		.wtbx_cascade_image_4 {
+			.wtbx_image_inner {
+				box-shadow: $bs2-light;
+			}
+		}
+	}
+
+	.wtbx_cascade_image_1 {
+		z-index: 4;
+
+		&.wtbx-element-reveal {
+			@include transition(all .4s $cb6, transform 1s $cb6);
+		}
+	}
+	.wtbx_cascade_image_2 {
+		z-index: 3;
+
+		&.wtbx-element-reveal {
+			@include transition(all .4s $cb6, transform .8s $cb6);
+		}
+	}
+	.wtbx_cascade_image_3 {
+		z-index: 2;
+
+		&.wtbx-element-reveal {
+			@include transition(all .4s $cb6, transform .6s $cb6);
+		}
+	}
+	.wtbx_cascade_image_4 {
+		z-index: 1;
+
+		&.wtbx-element-reveal {
+			@include transition(all .4s $cb6, transform .4s $cb6);
+		}
+	}
+
+	.wtbx_cascade_image_1,
+	.wtbx_cascade_image_2,
+	.wtbx_cascade_image_3,
+	.wtbx_cascade_image_4 {
+		&.wtbx-element-reveal:not(.wtbx-element-visible) {
+			@include translate3d(-50%,-50%,0);
+		}
+	}
+
+	&.wtbx_layout_1 {
+		.wtbx_cascade_image_1 {
+			@include translate3d(-55%,-60%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-55%,-60%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 90%;
+			@include translate3d(-40%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-38%,-35%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_2 {
+		.wtbx_cascade_image_1 {
+			@include translate3d(-45%,-60%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-45%,-60%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 90%;
+			@include translate3d(-60%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-62%,-35%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_3 {
+		.wtbx_cascade_image_1 {
+			@include translate3d(-57%,-50%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-57%,-50%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 80%;
+			@include translate3d(-30%,-50%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-28%,-50%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_4 {
+		.wtbx_cascade_image_1 {
+			@include translate3d(-43%,-50%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-43%,-50%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 80%;
+			@include translate3d(-70%,-50%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-72%,-50%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_5 {
+		.wtbx_cascade_image_1 {
+			width: 70%;
+			@include translate3d(-75%,-55%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-75%,-55%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 55%;
+			@include translate3d(-5%,-30%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-3%,-28%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 50%;
+			@include translate3d(-10%,-65%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-7%,-68%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_6 {
+		.wtbx_cascade_image_1 {
+			width: 70%;
+			@include translate3d(-25%,-55%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-25%,-55%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 55%;
+			@include translate3d(-95%,-30%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-97%,-28%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 50%;
+			@include translate3d(-90%,-65%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-93%,-68%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_7 {
+		.wtbx_cascade_image_1 {
+			width: 60%;
+			@include translate3d(-85%,-45%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-85%,-45%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 45%;
+			@include translate3d(15%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(17%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 55%;
+			@include translate3d(-35%,-65%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-33%,-67%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_8 {
+		.wtbx_cascade_image_1 {
+			width: 65%;
+			@include translate3d(-15%,-45%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-15%,-45%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 45%;
+			@include translate3d(-115%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-117%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 55%;
+			@include translate3d(-65%,-65%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-67%,-67%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_9 {
+		.wtbx_cascade_image_1 {
+			width: 55%;
+			@include translate3d(-85%,-55%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-85%,-55%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 45%;
+			@include translate3d(10%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(12%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 55%;
+			@include translate3d(-35%,-65%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-33%,-65%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_4 {
+			width: 50%;
+			@include translate3d(-75%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-77%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_10 {
+		.wtbx_cascade_image_1 {
+			width: 55%;
+			@include translate3d(-15%,-55%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-15%,-55%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 45%;
+			@include translate3d(-110%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-112%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 55%;
+			@include translate3d(-65%,-65%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-67%,-67%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_4 {
+			width: 50%;
+			@include translate3d(-25%,-30%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-23%,-28%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_11 {
+		.wtbx_cascade_image_1 {
+			width: 50%;
+			@include translate3d(-105%,-45%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-105%,-45%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 45%;
+			@include translate3d(15%,-75%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(17%,-75%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 50%;
+			@include translate3d(-70%,-60%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-72%,-62%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_4 {
+			width: 50%;
+			@include translate3d(-20%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-18%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+
+	&.wtbx_layout_12 {
+		.wtbx_cascade_image_1 {
+			width: 50%;
+			@include translate3d(5%,-45%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(5%,-45%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_2 {
+			width: 45%;
+			@include translate3d(-115%,-75%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-117%,-75%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_3 {
+			width: 50%;
+			@include translate3d(-30%,-60%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-28%,-62%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+		.wtbx_cascade_image_4 {
+			width: 50%;
+			@include translate3d(-80%,-35%,0);
+
+			&.wtbx_with_lightbox:hover {
+				@include transition(all .5s $cb6);
+				@include transform( translate3d(-82%,-33%,0) scale3d(1.02,1.02,1) );
+			}
+		}
+	}
+}

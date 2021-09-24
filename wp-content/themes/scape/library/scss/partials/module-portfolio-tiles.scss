@@ -1,0 +1,209 @@
+
+// Import sass variables
+@import "../../scss/partials/variables";
+
+// Import mixins
+@import "../../scss/partials/mixins";
+
+/*---------------------------------------------------------------*/
+/* --   TILES LAYOUT
+/*---------------------------------------------------------------*/
+
+.portfolio-tiles {
+	padding: 0;
+
+	.wtbx-grid-tiles {
+		max-width: none;
+	}
+
+	article.portfolio-entry {
+		margin: 0;
+		z-index: 1;
+
+		.portfolio-tiles-inner {
+			position: relative;
+			overflow: hidden;
+			background-color: #fff;
+			box-shadow: $bs4;
+			z-index: 1;
+
+			&:hover {
+				@include translate3d(0,-5px,0);
+				box-shadow: $bs4h;
+				@include transition(all .2s $cb6);
+
+				.portfolio-tiles-media {
+					@include scale3d(1.05,1.05,1);
+					@include transition(all .2s $cb6);
+				}
+
+				.portfolio-tiles-button {
+					opacity: 1;
+					@include scale3d(1,1,1);
+				}
+			}
+
+			.meta-link:hover {
+				opacity: 1;
+			}
+
+			.portfolio-tiles-box {
+				overflow: hidden;
+				@include scale3d(1,1,1);
+				@include transition(all .2s $cb6);
+			}
+
+			.portfolio-tiles-media {
+				@include transform-origin(top center);
+				@include transition(all 1s $cb6);
+
+				.portfolio-thumb-inner {
+					position: relative;
+
+					.portfolio-thumbnail {
+						border-radius: inherit;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+					}
+				}
+			}
+
+			.portfolio-tiles-overlay {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 1;
+				cursor: pointer;
+				@include translate3d(0,0,0);
+				@include transition(opacity .2s $cb6);
+				border-radius: inherit;
+
+				.portfolio-tiles-bg {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+				}
+
+				i {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					color: #fff;
+					font-size: 14px;
+					width: 60px;
+					height: 60px;
+					line-height: 60px;
+					border-radius: 50%;
+					background-color: rgba(0,0,0,.2);
+					text-align: center;
+					@include transform( translate3d(-50%,-50%,0) scale3d(.7,.7,1) );
+					@include transition(all .3s $cb6);
+				}
+
+				&:hover {
+					@include transition(all .2s $cb6);
+					opacity: 1;
+
+					i {
+						@include transform( translate3d(-50%,-50%,0) scale3d(1,1,1) );
+					}
+				}
+			}
+
+			.portfolio-tiles-button {
+				display: block;
+				position: absolute;
+				top: -23px;
+				right: 30px;
+				width: 46px;
+				height: 46px;
+				border-radius: 50%;
+				background-color: #fff;
+				z-index: 2;
+				box-shadow: $bs2-medium;
+				opacity: 0;
+				@include scale3d(.95,.95,1);
+				@include transition(all .3s $cb6);
+
+				i {
+					font-size: 17px;
+					line-height: 46px;
+					display: block;
+					text-align: center;
+					@include transition(all .3s $cb6);
+				}
+
+				&:hover {
+					i {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.portfolio-entry-meta {
+			display: block;
+			padding: 1em 1.75em;
+			position: relative;
+			z-index: 2;
+
+			&.like-enabled {
+				padding-right: 60px;
+			}
+
+		}
+	}
+
+	.portfolio-meta-primary {
+		margin: 0;
+		font-size: inherit;
+		line-height: 1.5;
+		font-weight: 600;
+		text-transform: none;
+		display: block;
+		text-overflow: clip;
+		text-overflow: ellipsis;
+		text-overflow: "…";
+		white-space: nowrap;
+		overflow: hidden;
+		padding-right: 50px;
+	}
+
+	.portfolio-meta-secondary {
+		margin: 0;
+		font-size: .857143em;
+		line-height: 1.5;
+		font-weight: 600;
+		min-height: 18px;
+		display: block;
+		text-overflow: clip;
+		text-overflow: ellipsis;
+		text-overflow: "…";
+		white-space: nowrap;
+		overflow: hidden;
+		padding-right: 50px;
+	}
+}
+
+.wtbx_vc_portfolio_grid.wtbx_meta_skin_dark {
+
+	article.portfolio-entry {
+		.portfolio-tiles-inner {
+			//box-shadow: 0 10px 20px -5px rgba(0,0,0,0.6);
+			box-shadow: 0 15px 55px -5px rgba(0,0,0,.2);
+
+			&:hover {
+				//box-shadow:  0 35px 40px -20px rgba(0,0,0,0.8);
+				box-shadow: 0 20px 70px -10px rgba(0,0,0,.4);
+			}
+		}
+	}
+}

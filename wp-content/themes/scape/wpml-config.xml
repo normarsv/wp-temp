@@ -1,0 +1,290 @@
+<wpml-config>
+    <admin-texts>
+        <key name="wtbx">
+            <key name="h1-text-info"/>
+            <key name="h1-button-primary-text"/>
+            <key name="h1-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h1-button-secondary-text"/>
+            <key name="h1-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h2-text-info"/>
+            <key name="h2-button-primary-text"/>
+            <key name="h2-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h2-button-secondary-text"/>
+            <key name="h2-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h3-text-info"/>
+            <key name="h3-button-primary-text"/>
+            <key name="h3-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h3-button-secondary-text"/>
+            <key name="h3-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h4-text-info"/>
+            <key name="h4-button-primary-text"/>
+            <key name="h4-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h4-button-secondary-text"/>
+            <key name="h4-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h5-text-info"/>
+            <key name="h5-button-primary-text"/>
+            <key name="h5-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h5-button-secondary-text"/>
+            <key name="h5-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h6-text-info"/>
+            <key name="h6-button-primary-text"/>
+            <key name="h6-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h6-button-secondary-text"/>
+            <key name="h6-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h7-text-info"/>
+            <key name="h7-button-primary-text"/>
+            <key name="h7-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h7-button-secondary-text"/>
+            <key name="h7-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h8-text-info"/>
+            <key name="h8-button-primary-text"/>
+            <key name="h8-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h8-button-secondary-text"/>
+            <key name="h8-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h9-text-info"/>
+            <key name="h9-button-primary-text"/>
+            <key name="h9-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h9-button-secondary-text"/>
+            <key name="h9-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h10-text-info"/>
+            <key name="h10-button-primary-text"/>
+            <key name="h10-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h10-button-secondary-text"/>
+            <key name="h10-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h11-text-info"/>
+            <key name="h11-button-primary-text"/>
+            <key name="h11-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h11-button-secondary-text"/>
+            <key name="h11-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h12-text-info"/>
+            <key name="h12-button-primary-text"/>
+            <key name="h12-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h12-button-secondary-text"/>
+            <key name="h12-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h13-text-info"/>
+            <key name="h13-button-primary-text"/>
+            <key name="h13-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h13-button-secondary-text"/>
+            <key name="h13-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h14-text-info"/>
+            <key name="h14-button-primary-text"/>
+            <key name="h14-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="h14-button-secondary-text"/>
+            <key name="h14-button-secondary-link" type="link" encoding="allow_html_tags"/>
+            <key name="hm-text-info"/>
+            <key name="hm-button-primary-text"/>
+            <key name="hm-button-primary-link" type="link" encoding="allow_html_tags"/>
+            <key name="hm-button-secondary-text"/>
+            <key name="hm-button-secondary-link" type="link" encoding="allow_html_tags"/>
+        </key>
+    </admin-texts>
+    <custom-types>
+        <custom-type translate="2">portfolio</custom-type>
+        <custom-type translate="2">content_block</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="2">portfolio_category</taxonomy>
+        <taxonomy translate="2">content_block_category</taxonomy>
+    </taxonomies>
+    <custom-fields>
+        <custom-field action="copy-once">header-section-height-slider-single</custom-field>
+        <custom-field action="copy-once">page-layout-sidebar-width-single</custom-field>
+        <custom-field action="copy-once">page-template-type-single</custom-field>
+        <custom-field action="copy-once">_wtbx_mega_menu_icon</custom-field>
+        <custom-field action="copy-once">_wtbx_mega_menu_enabled</custom-field>
+        <custom-field action="copy-once">_wtbx_full_width_menu_enabled</custom-field>
+        <custom-field action="copy-once">_wtbx_mega_menu_opposite</custom-field>
+        <custom-field action="copy-once">_wtbx_mega_menu_image</custom-field>
+        <custom-field action="copy-once">_wtbx_mega_menu_bg_position</custom-field>
+        <custom-field action="copy-once">_wtbx_mega_menu_columns</custom-field>
+        <custom-field action="copy-once">post-add-image_id</custom-field>
+        <custom-field action="copy-once">post-slides-ratio</custom-field>
+        <custom-field action="copy-once">post-slides-skin</custom-field>
+        <custom-field action="copy-once">post-quote-image_id</custom-field>
+        <custom-field action="copy-once">post-video-selfhosted_id</custom-field>
+        <custom-field action="copy-once">post-video-poster_id</custom-field>
+        <custom-field action="copy-once">post-audio-selfhosted_id</custom-field>
+        <custom-field action="copy-once">post-audio-thumbnail_id</custom-field>
+        <custom-field action="copy-once">portfolio-item-title-enable</custom-field>
+        <custom-field action="copy-once">portfolio-item-description-enable</custom-field>
+        <custom-field action="copy-once">portfolio-item-details-enable</custom-field>
+        <custom-field action="copy-once">portfolio-item-content-position</custom-field>
+        <custom-field action="copy-once">portfolio-item-media-enable</custom-field>
+        <custom-field action="copy-once">portfolio-item-media</custom-field>
+        <custom-field action="copy-once">portfolio-item-video-selfhosted_id</custom-field>
+        <custom-field action="copy-once">portfolio-item-video-poster_id</custom-field>
+        <custom-field action="copy-once">portfolio-item-audio-selfhosted_id</custom-field>
+        <custom-field action="copy-once">portfolio-item-audio-thumbnail_id</custom-field>
+        <custom-field action="copy-once">portfolio-item-add-images</custom-field>
+        <custom-field action="copy-once">portfolio-item-images-ratio</custom-field>
+        <custom-field action="copy-once">portfolio-item-arrows</custom-field>
+        <custom-field action="copy-once">portfolio-item-bullets</custom-field>
+        <custom-field action="copy-once">portfolio-list-width</custom-field>
+        <custom-field action="copy-once">portfolio-list-height</custom-field>
+    </custom-fields>
+    <shortcodes>
+        <shortcode>
+            <tag>vc_heading</tag>
+            <attributes>
+                <attribute>heading_text</attribute>
+                <attribute>number_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_text_element</tag>
+            <attributes>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_service</tag>
+            <attributes>
+                <attribute>number</attribute>
+                <attribute>abbr</attribute>
+                <attribute>heading</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_split_text</tag>
+            <attributes>
+                <attribute>text_single</attribute>
+                <attribute>text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_animated_text</tag>
+            <attributes>
+                <attribute>prefix_text</attribute>
+                <attribute>animated_text</attribute>
+                <attribute>postfix_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_testimonial</tag>
+            <attributes>
+                <attribute>referee</attribute>
+                <attribute>author_name</attribute>
+                <attribute>author_occupation</attribute>
+                <attribute>author_company</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_rating</tag>
+            <attributes>
+                <attribute>reason</attribute>
+                <attribute>referee</attribute>
+                <attribute>author_name</attribute>
+                <attribute>author_occupation</attribute>
+                <attribute>author_company</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_team_member</tag>
+            <attributes>
+                <attribute>name</attribute>
+                <attribute>position</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_pricing_box</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute>meta</attribute>
+                <attribute encoding="allow_html_tags">description</attribute>
+                <attribute>price</attribute>
+                <attribute>currency</attribute>
+                <attribute>time</attribute>
+                <attribute>btn_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_image_caption</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute encoding="allow_html_tags">description</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_image_box</tag>
+            <attributes>
+                <attribute>title</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_video_button</tag>
+            <attributes>
+                <attribute>heading</attribute>
+                <attribute>subheading</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_message_box</tag>
+            <attributes>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_banner</tag>
+            <attributes>
+                <attribute>title_text</attribute>
+                <attribute>subtitle_text</attribute>
+                <attribute>button_text</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_scape_google_map</tag>
+            <attributes>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_button_default</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_button_arrow</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_button_link</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_button_glowing</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_button_filling</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_button_custom</tag>
+            <attributes>
+                <attribute>title</attribute>
+            </attributes>
+        </shortcode>
+        <shortcode>
+            <tag>vc_list_item</tag>
+            <attributes>
+                <attribute>bullet_text</attribute>
+                <attribute encoding="allow_html_tags">content</attribute>
+            </attributes>
+        </shortcode>
+    </shortcodes>
+</wpml-config>
