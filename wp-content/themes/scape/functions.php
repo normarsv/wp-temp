@@ -16,6 +16,9 @@ define('WTBX_PLUGINS', get_template_directory() . '/inc/plugins');
 define('WTBX_THEME_NAME', 'scape');
 define('SCAPE_VERSION', $theme->get( 'Version' ));
 
+@ini_set( 'max_execution_time', '120' );
+
+
 // Add language support
 load_theme_textdomain('scape', get_template_directory() . '/languages');
 
