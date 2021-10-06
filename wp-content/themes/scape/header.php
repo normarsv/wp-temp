@@ -47,3 +47,17 @@
 
 			<!-- Page-wrap start -->
 			<div id="page-wrap" class="clearfix<?php if ($wtbx_fullscreen_slider) {echo ' page-wrap-slider';} ?>">
+
+                <script>
+                    jQuery(document).ready(function($) {
+                        $(window).scroll(function() {
+                            var scroll = $(window).scrollTop();
+
+                            if ($(window).scrollTop() >= 150) {
+                                $("#site-header").addClass('change-bg-color');
+                            } else {
+                                $("#site-header").removeClass('change-bg-color');
+                            }
+                        });
+                    });
+                </script>
