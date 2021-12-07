@@ -6,10 +6,6 @@
   Crafted by Normars for the World
 </p>
 
-<h3 align="center">
-  <a href="https://guaostudio.atlassian.net/wiki/spaces/GUAOS/pages/1126498325/Proper+Structure+for+Developers"  target="_blank">Proper Structure <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_confluence_icon_130672.png" height="15px" title="Confluence" alt="Confluence icon" class="aa30d277 pl3" data-nosnippet="true"></a>
-</h3>
-
 ## <img src="https://github.com/amido/azure-vector-icons/blob/master/renders/server-rack.png?raw=true" height="25px" title="Wordpress" alt="Wordpress icon" class="aa30d277 pl3" data-nosnippet="true"> Requirements for Server
 
 - NGINX 
