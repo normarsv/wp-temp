@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Crafted by Guaostudio for Guaostudio
+  Crafted by Normars for the World
 </p>
 
 <h3 align="center">
